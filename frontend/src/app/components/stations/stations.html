@@ -1,0 +1,30 @@
+<div class="container mt-3">
+    <div class="row">
+      @for (station of station_list(); track station.station_id) {
+        <div class="col-sm-6 col-lg-4">
+          <div class="card text-white bg-secondary mb-3" style="cursor: pointer;"
+               [routerLink]="['/stations', station.station_id]">
+            <div class="card-header">{{ station.name }}</div>
+            <div class="card-body">
+              Zone: {{ station.zone }}<br>
+              Bikes available: {{ station.bikes_available }}
+            </div>
+            <div class="card-footer">
+              Free docks: {{ station.free_docks }} / {{ station.total_docks }}
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <button class="btn btn-primary" (click)="previousPage()">Previous</button>
+      </div>
+      <div class="col-sm-4 text-center align-self-center">
+        Showing page {{ page() }} of {{ lastPage() }}
+      </div>
+      <div class="col-sm-4 text-end">
+        <button class="btn btn-primary" (click)="nextPage()">Next</button>
+      </div>
+    </div>
+  </div>
