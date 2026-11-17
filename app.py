@@ -10,7 +10,7 @@ from blueprints.admin.admin import admin_bp
 
 app = Flask(__name__)
 from flask_cors import CORS
-CORS(app)
+CORS(app, resources={r"/api/*": {"origins": "http://localhost:4200"}})
 app.json.sort_keys = False      # keep JSON fields in the order we wrote them
 
 for bp in [auth_bp, stations_bp, bikes_bp, rentals_bp, payments_bp, maintenance_bp, admin_bp]:
