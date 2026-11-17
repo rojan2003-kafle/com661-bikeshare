@@ -1,0 +1,1682 @@
+[
+  {
+    "station_id": "ST001",
+    "name": "Queen's Walk, Waterloo",
+    "address": "139 Queen's Walk, Waterloo, London SE1 3PJ",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.119884,
+        51.501592
+      ]
+    },
+    "total_docks": 16,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST002",
+    "name": "Church Lane, Southwark",
+    "address": "151 Church Lane, Southwark, London SE1 9QZ",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.106264,
+        51.505613
+      ]
+    },
+    "total_docks": 24,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST003",
+    "name": "Church Gardens, London Bridge",
+    "address": "26 Church Gardens, London Bridge, London SE1 6WR",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.086533,
+        51.502564
+      ]
+    },
+    "total_docks": 20,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST004",
+    "name": "Albert Walk, Bankside",
+    "address": "190 Albert Walk, Bankside, London SE1 2EW",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.096279,
+        51.50535
+      ]
+    },
+    "total_docks": 20,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST005",
+    "name": "Queen's Street, Covent Garden",
+    "address": "130 Queen's Street, Covent Garden, London WC2 8SR",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.117649,
+        51.515219
+      ]
+    },
+    "total_docks": 10,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST006",
+    "name": "Market Place, Soho",
+    "address": "58 Market Place, Soho, London W1 1WU",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.141454,
+        51.511477
+      ]
+    },
+    "total_docks": 15,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST007",
+    "name": "King's Lane, Holborn",
+    "address": "29 King's Lane, Holborn, London WC1 6NX",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.120391,
+        51.513271
+      ]
+    },
+    "total_docks": 12,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST008",
+    "name": "Garden Lane, Bloomsbury",
+    "address": "119 Garden Lane, Bloomsbury, London WC1 6YB",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.121965,
+        51.521267
+      ]
+    },
+    "total_docks": 10,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST009",
+    "name": "Church Place, Fitzrovia",
+    "address": "13 Church Place, Fitzrovia, London W1 2DE",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.137945,
+        51.515709
+      ]
+    },
+    "total_docks": 16,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST010",
+    "name": "Bridge Row, Marylebone",
+    "address": "162 Bridge Row, Marylebone, London W1 5FS",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.151145,
+        51.523272
+      ]
+    },
+    "total_docks": 18,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST011",
+    "name": "Grove Lane, Mayfair",
+    "address": "59 Grove Lane, Mayfair, London W1 4JL",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.142871,
+        51.510524
+      ]
+    },
+    "total_docks": 12,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST012",
+    "name": "Wharf Street, Westminster",
+    "address": "196 Wharf Street, Westminster, London SW1 6ER",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.134413,
+        51.501568
+      ]
+    },
+    "total_docks": 18,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST013",
+    "name": "Market Street, Victoria",
+    "address": "196 Market Street, Victoria, London SW1 2QA",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.14423,
+        51.497661
+      ]
+    },
+    "total_docks": 18,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST014",
+    "name": "Station Gardens, Pimlico",
+    "address": "206 Station Gardens, Pimlico, London SW1 3WA",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.138312,
+        51.485343
+      ]
+    },
+    "total_docks": 10,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST015",
+    "name": "Bridge Gardens, Farringdon",
+    "address": "85 Bridge Gardens, Farringdon, London EC1 4UX",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.104976,
+        51.522892
+      ]
+    },
+    "total_docks": 10,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST016",
+    "name": "Grove Row, Clerkenwell",
+    "address": "44 Grove Row, Clerkenwell, London EC1 5LA",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.111267,
+        51.52509
+      ]
+    },
+    "total_docks": 24,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST017",
+    "name": "Grove Row, Barbican",
+    "address": "123 Grove Row, Barbican, London EC2 2BW",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.093807,
+        51.5225
+      ]
+    },
+    "total_docks": 18,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST018",
+    "name": "Garden Row, Moorgate",
+    "address": "107 Garden Row, Moorgate, London EC2 9PY",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.086653,
+        51.516878
+      ]
+    },
+    "total_docks": 15,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST019",
+    "name": "Union Row, Liverpool Street",
+    "address": "5 Union Row, Liverpool Street, London EC2 2FU",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.079214,
+        51.516223
+      ]
+    },
+    "total_docks": 24,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST020",
+    "name": "Queen's Place, Aldgate",
+    "address": "180 Queen's Place, Aldgate, London EC3 4SR",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.079691,
+        51.518275
+      ]
+    },
+    "total_docks": 12,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST021",
+    "name": "Mill Row, Tower Hill",
+    "address": "136 Mill Row, Tower Hill, London EC3 1LX",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.076758,
+        51.506173
+      ]
+    },
+    "total_docks": 24,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST022",
+    "name": "Chapel Square, St Paul's",
+    "address": "18 Chapel Square, St Paul's, London EC4 9RN",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.100506,
+        51.512196
+      ]
+    },
+    "total_docks": 24,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST023",
+    "name": "Queen's Street, King's Cross",
+    "address": "106 Queen's Street, King's Cross, London N1 8PF",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.127892,
+        51.527738
+      ]
+    },
+    "total_docks": 15,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST024",
+    "name": "Mill Lane, Euston",
+    "address": "33 Mill Lane, Euston, London NW1 8XJ",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.138399,
+        51.528985
+      ]
+    },
+    "total_docks": 15,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST025",
+    "name": "Station Lane, Camden Town",
+    "address": "7 Station Lane, Camden Town, London NW1 4BS",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.1411,
+        51.534857
+      ]
+    },
+    "total_docks": 12,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST026",
+    "name": "Park Walk, Islington",
+    "address": "81 Park Walk, Islington, London N1 7EZ",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.101887,
+        51.538277
+      ]
+    },
+    "total_docks": 18,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST027",
+    "name": "High Street, Angel",
+    "address": "127 High Street, Angel, London N1 4UP",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.107747,
+        51.527782
+      ]
+    },
+    "total_docks": 15,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST028",
+    "name": "Wharf Lane, Shoreditch",
+    "address": "45 Wharf Lane, Shoreditch, London E1 9BB",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.083209,
+        51.524066
+      ]
+    },
+    "total_docks": 20,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST029",
+    "name": "Queen's Walk, Hoxton",
+    "address": "34 Queen's Walk, Hoxton, London N1 2NA",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.082696,
+        51.532377
+      ]
+    },
+    "total_docks": 10,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST030",
+    "name": "Grove Street, Whitechapel",
+    "address": "157 Grove Street, Whitechapel, London E1 9QH",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.054671,
+        51.522067
+      ]
+    },
+    "total_docks": 15,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST031",
+    "name": "Bridge Walk, Bethnal Green",
+    "address": "70 Bridge Walk, Bethnal Green, London E2 3AQ",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.057069,
+        51.522661
+      ]
+    },
+    "total_docks": 18,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST032",
+    "name": "Market Road, Hackney",
+    "address": "1 Market Road, Hackney, London E8 7LW",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.054998,
+        51.548238
+      ]
+    },
+    "total_docks": 10,
+    "zone": "outer"
+  },
+  {
+    "station_id": "ST033",
+    "name": "Garden Walk, Kensington",
+    "address": "147 Garden Walk, Kensington, London W8 1NT",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.194936,
+        51.498144
+      ]
+    },
+    "total_docks": 16,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST034",
+    "name": "Wharf Lane, South Kensington",
+    "address": "28 Wharf Lane, South Kensington, London SW7 8QF",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.17761,
+        51.493788
+      ]
+    },
+    "total_docks": 12,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST035",
+    "name": "Station Place, Chelsea",
+    "address": "44 Station Place, Chelsea, London SW3 4JR",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.172275,
+        51.491965
+      ]
+    },
+    "total_docks": 12,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST036",
+    "name": "Union Gardens, Knightsbridge",
+    "address": "139 Union Gardens, Knightsbridge, London SW1 3TL",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.162406,
+        51.501994
+      ]
+    },
+    "total_docks": 24,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST037",
+    "name": "King's Road, Paddington",
+    "address": "36 King's Road, Paddington, London W2 4FY",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.179873,
+        51.51139
+      ]
+    },
+    "total_docks": 18,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST038",
+    "name": "Bridge Row, Notting Hill",
+    "address": "67 Bridge Row, Notting Hill, London W11 5LH",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.194802,
+        51.505803
+      ]
+    },
+    "total_docks": 10,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST039",
+    "name": "Grove Square, Battersea",
+    "address": "151 Grove Square, Battersea, London SW11 1NJ",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.152578,
+        51.48218
+      ]
+    },
+    "total_docks": 12,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST040",
+    "name": "Garden Square, Vauxhall",
+    "address": "78 Garden Square, Vauxhall, London SE11 4RD",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.127159,
+        51.48608
+      ]
+    },
+    "total_docks": 16,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST041",
+    "name": "Grove Street, Kennington",
+    "address": "3 Grove Street, Kennington, London SE11 7HE",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.101795,
+        51.491189
+      ]
+    },
+    "total_docks": 16,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST042",
+    "name": "Park Walk, Elephant & Castle",
+    "address": "199 Park Walk, Elephant & Castle, London SE1 1HL",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.103982,
+        51.493833
+      ]
+    },
+    "total_docks": 16,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST043",
+    "name": "Grove Row, Bermondsey",
+    "address": "7 Grove Row, Bermondsey, London SE1 3AS",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.064414,
+        51.500668
+      ]
+    },
+    "total_docks": 18,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST044",
+    "name": "Church Row, Canary Wharf",
+    "address": "107 Church Row, Canary Wharf, London E14 7QD",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.021803,
+        51.503803
+      ]
+    },
+    "total_docks": 10,
+    "zone": "outer"
+  },
+  {
+    "station_id": "ST045",
+    "name": "Wharf Gardens, Limehouse",
+    "address": "125 Wharf Gardens, Limehouse, London E14 6DH",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.03652,
+        51.5152
+      ]
+    },
+    "total_docks": 15,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST046",
+    "name": "Wharf Street, Stratford",
+    "address": "75 Wharf Street, Stratford, London E15 1FG",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.009786,
+        51.540121
+      ]
+    },
+    "total_docks": 15,
+    "zone": "outer"
+  },
+  {
+    "station_id": "ST047",
+    "name": "Albert Street, Brixton",
+    "address": "126 Albert Street, Brixton, London SW9 5FF",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.118277,
+        51.463739
+      ]
+    },
+    "total_docks": 10,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST048",
+    "name": "Church Square, Clapham",
+    "address": "181 Church Square, Clapham, London SW4 8TZ",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.142246,
+        51.458306
+      ]
+    },
+    "total_docks": 20,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST049",
+    "name": "Wharf Road, Fulham",
+    "address": "123 Wharf Road, Fulham, London SW6 7JX",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.198963,
+        51.476654
+      ]
+    },
+    "total_docks": 24,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST050",
+    "name": "Wharf Gardens, Hammersmith",
+    "address": "48 Wharf Gardens, Hammersmith, London W6 7JZ",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.225417,
+        51.495622
+      ]
+    },
+    "total_docks": 15,
+    "zone": "outer"
+  },
+  {
+    "station_id": "ST051",
+    "name": "King's Place, Shepherd's Bush",
+    "address": "46 King's Place, Shepherd's Bush, London W12 2XQ",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.220773,
+        51.508215
+      ]
+    },
+    "total_docks": 20,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST052",
+    "name": "Mill Place, Wandsworth",
+    "address": "94 Mill Place, Wandsworth, London SW18 9QG",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.195279,
+        51.452641
+      ]
+    },
+    "total_docks": 10,
+    "zone": "outer"
+  },
+  {
+    "station_id": "ST053",
+    "name": "Garden Square, Greenwich",
+    "address": "119 Garden Square, Greenwich, London SE10 2BZ",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.001243,
+        51.485416
+      ]
+    },
+    "total_docks": 16,
+    "zone": "outer"
+  },
+  {
+    "station_id": "ST054",
+    "name": "Mill Lane, Peckham",
+    "address": "100 Mill Lane, Peckham, London SE15 4UL",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.074903,
+        51.477182
+      ]
+    },
+    "total_docks": 10,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST055",
+    "name": "Union Lane, Waterloo",
+    "address": "32 Union Lane, Waterloo, London SE1 5JR",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.111605,
+        51.506967
+      ]
+    },
+    "total_docks": 15,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST056",
+    "name": "Queen's Row, Southwark",
+    "address": "189 Queen's Row, Southwark, London SE1 8EF",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.099066,
+        51.50436
+      ]
+    },
+    "total_docks": 24,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST057",
+    "name": "Grove Row, London Bridge",
+    "address": "173 Grove Row, London Bridge, London SE1 4RF",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.086738,
+        51.501617
+      ]
+    },
+    "total_docks": 12,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST058",
+    "name": "High Street, Bankside",
+    "address": "44 High Street, Bankside, London SE1 5PT",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.099633,
+        51.507241
+      ]
+    },
+    "total_docks": 20,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST059",
+    "name": "Mill Row, Covent Garden",
+    "address": "116 Mill Row, Covent Garden, London WC2 9LN",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.120963,
+        51.507243
+      ]
+    },
+    "total_docks": 10,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST060",
+    "name": "King's Row, Soho",
+    "address": "197 King's Row, Soho, London W1 3WR",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.138758,
+        51.510657
+      ]
+    },
+    "total_docks": 18,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST061",
+    "name": "Grove Walk, Holborn",
+    "address": "133 Grove Walk, Holborn, London WC1 4UX",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.115799,
+        51.517743
+      ]
+    },
+    "total_docks": 24,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST062",
+    "name": "Wharf Place, Bloomsbury",
+    "address": "203 Wharf Place, Bloomsbury, London WC1 4ZD",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.12027,
+        51.526089
+      ]
+    },
+    "total_docks": 10,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST063",
+    "name": "Wharf Walk, Fitzrovia",
+    "address": "11 Wharf Walk, Fitzrovia, London W1 6HJ",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.143,
+        51.518079
+      ]
+    },
+    "total_docks": 18,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST064",
+    "name": "Union Square, Marylebone",
+    "address": "65 Union Square, Marylebone, London W1 5DL",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.149265,
+        51.521337
+      ]
+    },
+    "total_docks": 20,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST065",
+    "name": "Chapel Place, Mayfair",
+    "address": "210 Chapel Place, Mayfair, London W1 9ZY",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.15034,
+        51.507534
+      ]
+    },
+    "total_docks": 10,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST066",
+    "name": "Market Row, Westminster",
+    "address": "150 Market Row, Westminster, London SW1 9WX",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.132669,
+        51.50296
+      ]
+    },
+    "total_docks": 16,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST067",
+    "name": "Victoria Gardens, Victoria",
+    "address": "85 Victoria Gardens, Victoria, London SW1 7EB",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.140467,
+        51.494918
+      ]
+    },
+    "total_docks": 12,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST068",
+    "name": "Albert Place, Pimlico",
+    "address": "123 Albert Place, Pimlico, London SW1 3RZ",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.138393,
+        51.490763
+      ]
+    },
+    "total_docks": 18,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST069",
+    "name": "Market Gardens, Farringdon",
+    "address": "104 Market Gardens, Farringdon, London EC1 6PR",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.104926,
+        51.516944
+      ]
+    },
+    "total_docks": 18,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST070",
+    "name": "Albert Walk, Clerkenwell",
+    "address": "110 Albert Walk, Clerkenwell, London EC1 7XL",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.101799,
+        51.526759
+      ]
+    },
+    "total_docks": 10,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST071",
+    "name": "Wharf Place, Barbican",
+    "address": "179 Wharf Place, Barbican, London EC2 6GA",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.093585,
+        51.520561
+      ]
+    },
+    "total_docks": 12,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST072",
+    "name": "Queen's Place, Moorgate",
+    "address": "195 Queen's Place, Moorgate, London EC2 6PE",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.086535,
+        51.518826
+      ]
+    },
+    "total_docks": 15,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST073",
+    "name": "Grove Lane, Liverpool Street",
+    "address": "2 Grove Lane, Liverpool Street, London EC2 3LW",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.087354,
+        51.515188
+      ]
+    },
+    "total_docks": 24,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST074",
+    "name": "Chapel Road, Aldgate",
+    "address": "41 Chapel Road, Aldgate, London EC3 8ZA",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.07993,
+        51.511594
+      ]
+    },
+    "total_docks": 18,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST075",
+    "name": "Chapel Walk, Tower Hill",
+    "address": "88 Chapel Walk, Tower Hill, London EC3 6BH",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.080433,
+        51.509679
+      ]
+    },
+    "total_docks": 18,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST076",
+    "name": "Albert Row, St Paul's",
+    "address": "79 Albert Row, St Paul's, London EC4 4ZU",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.10322,
+        51.517004
+      ]
+    },
+    "total_docks": 15,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST077",
+    "name": "Church Walk, King's Cross",
+    "address": "34 Church Walk, King's Cross, London N1 8SD",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.130101,
+        51.534241
+      ]
+    },
+    "total_docks": 24,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST078",
+    "name": "High Walk, Euston",
+    "address": "210 High Walk, Euston, London NW1 3HE",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.136644,
+        51.524552
+      ]
+    },
+    "total_docks": 18,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST079",
+    "name": "Wharf Road, Camden Town",
+    "address": "164 Wharf Road, Camden Town, London NW1 9GQ",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.137775,
+        51.540331
+      ]
+    },
+    "total_docks": 20,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST080",
+    "name": "Queen's Road, Islington",
+    "address": "218 Queen's Road, Islington, London N1 4YA",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.101028,
+        51.540377
+      ]
+    },
+    "total_docks": 24,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST081",
+    "name": "Garden Place, Angel",
+    "address": "108 Garden Place, Angel, London N1 1DU",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.108316,
+        51.532147
+      ]
+    },
+    "total_docks": 10,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST082",
+    "name": "High Road, Shoreditch",
+    "address": "21 High Road, Shoreditch, London E1 8GU",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.084144,
+        51.528262
+      ]
+    },
+    "total_docks": 20,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST083",
+    "name": "Bridge Square, Hoxton",
+    "address": "55 Bridge Square, Hoxton, London N1 5LN",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.083611,
+        51.529123
+      ]
+    },
+    "total_docks": 10,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST084",
+    "name": "Park Walk, Whitechapel",
+    "address": "86 Park Walk, Whitechapel, London E1 3BZ",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.053802,
+        51.515023
+      ]
+    },
+    "total_docks": 20,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST085",
+    "name": "Church Row, Bethnal Green",
+    "address": "101 Church Row, Bethnal Green, London E2 8ZJ",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.049793,
+        51.531261
+      ]
+    },
+    "total_docks": 20,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST086",
+    "name": "Park Walk, Hackney",
+    "address": "107 Park Walk, Hackney, London E8 9US",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.049217,
+        51.54924
+      ]
+    },
+    "total_docks": 12,
+    "zone": "outer"
+  },
+  {
+    "station_id": "ST087",
+    "name": "Chapel Walk, Kensington",
+    "address": "119 Chapel Walk, Kensington, London W8 5RU",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.198254,
+        51.499452
+      ]
+    },
+    "total_docks": 15,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST088",
+    "name": "Albert Gardens, South Kensington",
+    "address": "161 Albert Gardens, South Kensington, London SW7 9DS",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.176151,
+        51.496277
+      ]
+    },
+    "total_docks": 16,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST089",
+    "name": "Albert Place, Chelsea",
+    "address": "209 Albert Place, Chelsea, London SW3 3FH",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.16443,
+        51.491341
+      ]
+    },
+    "total_docks": 15,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST090",
+    "name": "Station Square, Knightsbridge",
+    "address": "105 Station Square, Knightsbridge, London SW1 7SN",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.164083,
+        51.504666
+      ]
+    },
+    "total_docks": 12,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST091",
+    "name": "Station Lane, Paddington",
+    "address": "171 Station Lane, Paddington, London W2 7EF",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.171306,
+        51.515078
+      ]
+    },
+    "total_docks": 10,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST092",
+    "name": "Albert Gardens, Notting Hill",
+    "address": "120 Albert Gardens, Notting Hill, London W11 4NH",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.191358,
+        51.513477
+      ]
+    },
+    "total_docks": 20,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST093",
+    "name": "Park Street, Battersea",
+    "address": "63 Park Street, Battersea, London SW11 1RJ",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.143752,
+        51.477236
+      ]
+    },
+    "total_docks": 15,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST094",
+    "name": "Victoria Lane, Vauxhall",
+    "address": "166 Victoria Lane, Vauxhall, London SE11 4SD",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.128615,
+        51.483213
+      ]
+    },
+    "total_docks": 24,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST095",
+    "name": "King's Lane, Kennington",
+    "address": "213 King's Lane, Kennington, London SE11 3PP",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.099142,
+        51.492247
+      ]
+    },
+    "total_docks": 20,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST096",
+    "name": "Garden Lane, Elephant & Castle",
+    "address": "159 Garden Lane, Elephant & Castle, London SE1 6ZE",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.096841,
+        51.497061
+      ]
+    },
+    "total_docks": 10,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST097",
+    "name": "Chapel Square, Bermondsey",
+    "address": "184 Chapel Square, Bermondsey, London SE1 5HG",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.057792,
+        51.494742
+      ]
+    },
+    "total_docks": 18,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST098",
+    "name": "King's Street, Canary Wharf",
+    "address": "52 King's Street, Canary Wharf, London E14 4JP",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.023152,
+        51.502349
+      ]
+    },
+    "total_docks": 10,
+    "zone": "outer"
+  },
+  {
+    "station_id": "ST099",
+    "name": "Garden Walk, Limehouse",
+    "address": "96 Garden Walk, Limehouse, London E14 1JN",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.036264,
+        51.515498
+      ]
+    },
+    "total_docks": 12,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST100",
+    "name": "Station Lane, Stratford",
+    "address": "32 Station Lane, Stratford, London E15 3XG",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.000726,
+        51.538723
+      ]
+    },
+    "total_docks": 15,
+    "zone": "outer"
+  },
+  {
+    "station_id": "ST101",
+    "name": "Garden Road, Brixton",
+    "address": "83 Garden Road, Brixton, London SW9 3UQ",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.116184,
+        51.462405
+      ]
+    },
+    "total_docks": 15,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST102",
+    "name": "Bridge Street, Clapham",
+    "address": "23 Bridge Street, Clapham, London SW4 4JJ",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.13923,
+        51.465608
+      ]
+    },
+    "total_docks": 12,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST103",
+    "name": "Wharf Place, Fulham",
+    "address": "141 Wharf Place, Fulham, London SW6 6QW",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.203223,
+        51.477078
+      ]
+    },
+    "total_docks": 20,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST104",
+    "name": "Mill Lane, Hammersmith",
+    "address": "55 Mill Lane, Hammersmith, London W6 8DP",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.226302,
+        51.496795
+      ]
+    },
+    "total_docks": 12,
+    "zone": "outer"
+  },
+  {
+    "station_id": "ST105",
+    "name": "Station Walk, Shepherd's Bush",
+    "address": "128 Station Walk, Shepherd's Bush, London W12 2ZW",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.225099,
+        51.501432
+      ]
+    },
+    "total_docks": 12,
+    "zone": "outer"
+  },
+  {
+    "station_id": "ST106",
+    "name": "Wharf Walk, Wandsworth",
+    "address": "88 Wharf Walk, Wandsworth, London SW18 1EQ",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.195582,
+        51.457686
+      ]
+    },
+    "total_docks": 15,
+    "zone": "outer"
+  },
+  {
+    "station_id": "ST107",
+    "name": "Church Place, Greenwich",
+    "address": "142 Church Place, Greenwich, London SE10 2JW",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.009653,
+        51.486244
+      ]
+    },
+    "total_docks": 12,
+    "zone": "outer"
+  },
+  {
+    "station_id": "ST108",
+    "name": "Station Place, Peckham",
+    "address": "8 Station Place, Peckham, London SE15 6AB",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.071894,
+        51.477679
+      ]
+    },
+    "total_docks": 20,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST109",
+    "name": "Park Lane, Waterloo",
+    "address": "115 Park Lane, Waterloo, London SE1 9BJ",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.120279,
+        51.50702
+      ]
+    },
+    "total_docks": 12,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST110",
+    "name": "Union Row, Southwark",
+    "address": "154 Union Row, Southwark, London SE1 1JJ",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.100438,
+        51.504066
+      ]
+    },
+    "total_docks": 10,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST111",
+    "name": "Wharf Place, London Bridge",
+    "address": "195 Wharf Place, London Bridge, London SE1 3NY",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.081278,
+        51.505086
+      ]
+    },
+    "total_docks": 18,
+    "zone": "inner"
+  },
+  {
+    "station_id": "ST112",
+    "name": "Union Square, Bankside",
+    "address": "29 Union Square, Bankside, London SE1 4ST",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.099401,
+        51.504618
+      ]
+    },
+    "total_docks": 20,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST113",
+    "name": "Union Walk, Covent Garden",
+    "address": "88 Union Walk, Covent Garden, London WC2 4DS",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.129436,
+        51.509056
+      ]
+    },
+    "total_docks": 10,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST114",
+    "name": "Chapel Road, Soho",
+    "address": "189 Chapel Road, Soho, London W1 7QH",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.132019,
+        51.512383
+      ]
+    },
+    "total_docks": 16,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST115",
+    "name": "Church Gardens, Holborn",
+    "address": "193 Church Gardens, Holborn, London WC1 9NL",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.11835,
+        51.520771
+      ]
+    },
+    "total_docks": 20,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST116",
+    "name": "King's Place, Bloomsbury",
+    "address": "185 King's Place, Bloomsbury, London WC1 1RL",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.124865,
+        51.524178
+      ]
+    },
+    "total_docks": 12,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST117",
+    "name": "Station Lane, Fitzrovia",
+    "address": "84 Station Lane, Fitzrovia, London W1 4QF",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.139742,
+        51.520799
+      ]
+    },
+    "total_docks": 18,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST118",
+    "name": "Market Gardens, Marylebone",
+    "address": "195 Market Gardens, Marylebone, London W1 8DE",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.15906,
+        51.520127
+      ]
+    },
+    "total_docks": 12,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST119",
+    "name": "Station Row, Mayfair",
+    "address": "99 Station Row, Mayfair, London W1 6ZU",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.15131,
+        51.509117
+      ]
+    },
+    "total_docks": 16,
+    "zone": "central"
+  },
+  {
+    "station_id": "ST120",
+    "name": "Victoria Gardens, Westminster",
+    "address": "155 Victoria Gardens, Westminster, London SW1 1BE",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -0.132885,
+        51.502176
+      ]
+    },
+    "total_docks": 20,
+    "zone": "central"
+  }
+]

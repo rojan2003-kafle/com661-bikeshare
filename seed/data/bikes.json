@@ -1,0 +1,6302 @@
+[
+  {
+    "bike_id": "BK0001",
+    "station_id": "ST028",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0002",
+    "station_id": "ST067",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0003",
+    "station_id": "ST051",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0004",
+    "station_id": "ST113",
+    "type": "electric",
+    "battery_level": 98,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0005",
+    "station_id": "ST102",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0006",
+    "station_id": "ST039",
+    "type": "standard",
+    "battery_level": null,
+    "status": "reserved"
+  },
+  {
+    "bike_id": "BK0007",
+    "station_id": "ST028",
+    "type": "electric",
+    "battery_level": 95,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0008",
+    "station_id": "ST013",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0009",
+    "station_id": "ST022",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0010",
+    "station_id": null,
+    "type": "standard",
+    "battery_level": null,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0011",
+    "station_id": "ST072",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0012",
+    "station_id": "ST085",
+    "type": "electric",
+    "battery_level": 34,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0013",
+    "station_id": "ST109",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0014",
+    "station_id": "ST077",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0015",
+    "station_id": "ST120",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0016",
+    "station_id": "ST011",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0017",
+    "station_id": "ST112",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0018",
+    "station_id": "ST085",
+    "type": "electric",
+    "battery_level": 21,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0019",
+    "station_id": "ST095",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0020",
+    "station_id": "ST028",
+    "type": "electric",
+    "battery_level": 52,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0021",
+    "station_id": "ST030",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0022",
+    "station_id": "ST033",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0023",
+    "station_id": "ST092",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0024",
+    "station_id": "ST021",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0025",
+    "station_id": "ST039",
+    "type": "electric",
+    "battery_level": 19,
+    "status": "reserved"
+  },
+  {
+    "bike_id": "BK0026",
+    "station_id": "ST078",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0027",
+    "station_id": "ST106",
+    "type": "electric",
+    "battery_level": 40,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0028",
+    "station_id": "ST014",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0029",
+    "station_id": "ST071",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0030",
+    "station_id": "ST092",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0031",
+    "station_id": "ST044",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0032",
+    "station_id": "ST065",
+    "type": "electric",
+    "battery_level": 91,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0033",
+    "station_id": "ST069",
+    "type": "electric",
+    "battery_level": 73,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0034",
+    "station_id": "ST040",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0035",
+    "station_id": "ST006",
+    "type": "electric",
+    "battery_level": 88,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0036",
+    "station_id": "ST009",
+    "type": "electric",
+    "battery_level": 41,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0037",
+    "station_id": "ST018",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0038",
+    "station_id": "ST006",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0039",
+    "station_id": "ST101",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0040",
+    "station_id": "ST112",
+    "type": "electric",
+    "battery_level": 76,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0041",
+    "station_id": "ST067",
+    "type": "electric",
+    "battery_level": 18,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0042",
+    "station_id": "ST009",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0043",
+    "station_id": "ST033",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0044",
+    "station_id": "ST118",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0045",
+    "station_id": "ST039",
+    "type": "standard",
+    "battery_level": null,
+    "status": "reserved"
+  },
+  {
+    "bike_id": "BK0046",
+    "station_id": "ST074",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0047",
+    "station_id": "ST025",
+    "type": "electric",
+    "battery_level": 59,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0048",
+    "station_id": "ST014",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0049",
+    "station_id": "ST075",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0050",
+    "station_id": "ST087",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0051",
+    "station_id": "ST092",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0052",
+    "station_id": "ST120",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0053",
+    "station_id": "ST100",
+    "type": "electric",
+    "battery_level": 61,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0054",
+    "station_id": "ST051",
+    "type": "electric",
+    "battery_level": 78,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0055",
+    "station_id": "ST078",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0056",
+    "station_id": "ST107",
+    "type": "electric",
+    "battery_level": 99,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0057",
+    "station_id": "ST111",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0058",
+    "station_id": "ST006",
+    "type": "electric",
+    "battery_level": 39,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0059",
+    "station_id": "ST043",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0060",
+    "station_id": "ST061",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0061",
+    "station_id": "ST001",
+    "type": "electric",
+    "battery_level": 82,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0062",
+    "station_id": "ST106",
+    "type": "electric",
+    "battery_level": 83,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0063",
+    "station_id": "ST039",
+    "type": "standard",
+    "battery_level": null,
+    "status": "reserved"
+  },
+  {
+    "bike_id": "BK0064",
+    "station_id": "ST033",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0065",
+    "station_id": "ST014",
+    "type": "electric",
+    "battery_level": 15,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0066",
+    "station_id": "ST119",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0067",
+    "station_id": "ST083",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0068",
+    "station_id": "ST097",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0069",
+    "station_id": "ST030",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0070",
+    "station_id": "ST031",
+    "type": "electric",
+    "battery_level": 77,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0071",
+    "station_id": "ST061",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0072",
+    "station_id": "ST102",
+    "type": "electric",
+    "battery_level": 39,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0073",
+    "station_id": "ST062",
+    "type": "electric",
+    "battery_level": 61,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0074",
+    "station_id": "ST074",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0075",
+    "station_id": "ST093",
+    "type": "electric",
+    "battery_level": 70,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0076",
+    "station_id": "ST088",
+    "type": "electric",
+    "battery_level": 74,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0077",
+    "station_id": "ST038",
+    "type": "electric",
+    "battery_level": 41,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0078",
+    "station_id": "ST099",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0079",
+    "station_id": "ST106",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0080",
+    "station_id": "ST030",
+    "type": "electric",
+    "battery_level": 31,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0081",
+    "station_id": "ST051",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0082",
+    "station_id": "ST102",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0083",
+    "station_id": "ST039",
+    "type": "standard",
+    "battery_level": null,
+    "status": "reserved"
+  },
+  {
+    "bike_id": "BK0084",
+    "station_id": "ST055",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0085",
+    "station_id": "ST042",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0086",
+    "station_id": "ST109",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0087",
+    "station_id": "ST112",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0088",
+    "station_id": "ST048",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0089",
+    "station_id": "ST112",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0090",
+    "station_id": "ST115",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0091",
+    "station_id": "ST056",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0092",
+    "station_id": "ST009",
+    "type": "electric",
+    "battery_level": 15,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0093",
+    "station_id": "ST020",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0094",
+    "station_id": "ST089",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0095",
+    "station_id": "ST118",
+    "type": "electric",
+    "battery_level": 52,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0096",
+    "station_id": "ST048",
+    "type": "electric",
+    "battery_level": 20,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0097",
+    "station_id": "ST096",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0098",
+    "station_id": "ST106",
+    "type": "electric",
+    "battery_level": 58,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0099",
+    "station_id": "ST093",
+    "type": "electric",
+    "battery_level": 44,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0100",
+    "station_id": "ST097",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0101",
+    "station_id": "ST040",
+    "type": "electric",
+    "battery_level": 82,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0102",
+    "station_id": "ST100",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0103",
+    "station_id": "ST048",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0104",
+    "station_id": null,
+    "type": "electric",
+    "battery_level": 51,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0105",
+    "station_id": "ST109",
+    "type": "electric",
+    "battery_level": 48,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0106",
+    "station_id": null,
+    "type": "standard",
+    "battery_level": null,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0107",
+    "station_id": "ST112",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0108",
+    "station_id": "ST097",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0109",
+    "station_id": "ST048",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0110",
+    "station_id": "ST108",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0111",
+    "station_id": "ST085",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0112",
+    "station_id": "ST071",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0113",
+    "station_id": "ST066",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0114",
+    "station_id": "ST069",
+    "type": "electric",
+    "battery_level": 72,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0115",
+    "station_id": "ST048",
+    "type": "electric",
+    "battery_level": 17,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0116",
+    "station_id": "ST092",
+    "type": "electric",
+    "battery_level": 92,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0117",
+    "station_id": "ST092",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0118",
+    "station_id": "ST064",
+    "type": "electric",
+    "battery_level": 33,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0119",
+    "station_id": "ST055",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0120",
+    "station_id": "ST017",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0121",
+    "station_id": "ST019",
+    "type": "electric",
+    "battery_level": 88,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0122",
+    "station_id": "ST023",
+    "type": "electric",
+    "battery_level": 29,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0123",
+    "station_id": "ST074",
+    "type": "electric",
+    "battery_level": 20,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0124",
+    "station_id": "ST023",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0125",
+    "station_id": "ST078",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0126",
+    "station_id": "ST021",
+    "type": "electric",
+    "battery_level": 63,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0127",
+    "station_id": "ST043",
+    "type": "electric",
+    "battery_level": 55,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0128",
+    "station_id": "ST096",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0129",
+    "station_id": "ST020",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0130",
+    "station_id": "ST104",
+    "type": "electric",
+    "battery_level": 49,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0131",
+    "station_id": "ST107",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0132",
+    "station_id": "ST109",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0133",
+    "station_id": "ST019",
+    "type": "electric",
+    "battery_level": 80,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0134",
+    "station_id": "ST058",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0135",
+    "station_id": "ST088",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0136",
+    "station_id": "ST033",
+    "type": "electric",
+    "battery_level": 16,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0137",
+    "station_id": "ST053",
+    "type": "electric",
+    "battery_level": 39,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0138",
+    "station_id": "ST052",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0139",
+    "station_id": "ST047",
+    "type": "electric",
+    "battery_level": 51,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0140",
+    "station_id": "ST110",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0141",
+    "station_id": "ST108",
+    "type": "electric",
+    "battery_level": 24,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0142",
+    "station_id": "ST112",
+    "type": "electric",
+    "battery_level": 56,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0143",
+    "station_id": "ST076",
+    "type": "electric",
+    "battery_level": 16,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0144",
+    "station_id": "ST001",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0145",
+    "station_id": "ST105",
+    "type": "electric",
+    "battery_level": 92,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0146",
+    "station_id": "ST052",
+    "type": "electric",
+    "battery_level": 30,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0147",
+    "station_id": "ST004",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0148",
+    "station_id": "ST112",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0149",
+    "station_id": "ST090",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0150",
+    "station_id": "ST051",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0151",
+    "station_id": "ST029",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0152",
+    "station_id": "ST054",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0153",
+    "station_id": null,
+    "type": "standard",
+    "battery_level": null,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0154",
+    "station_id": "ST005",
+    "type": "electric",
+    "battery_level": 39,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0155",
+    "station_id": "ST037",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0156",
+    "station_id": "ST043",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0157",
+    "station_id": "ST028",
+    "type": "electric",
+    "battery_level": 75,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0158",
+    "station_id": "ST060",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0159",
+    "station_id": "ST092",
+    "type": "electric",
+    "battery_level": 42,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0160",
+    "station_id": "ST108",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0161",
+    "station_id": "ST082",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0162",
+    "station_id": "ST009",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0163",
+    "station_id": "ST041",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0164",
+    "station_id": "ST055",
+    "type": "electric",
+    "battery_level": 96,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0165",
+    "station_id": "ST105",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0166",
+    "station_id": "ST062",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0167",
+    "station_id": "ST061",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0168",
+    "station_id": "ST061",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0169",
+    "station_id": "ST023",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0170",
+    "station_id": "ST101",
+    "type": "electric",
+    "battery_level": 68,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0171",
+    "station_id": "ST053",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0172",
+    "station_id": "ST090",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0173",
+    "station_id": "ST090",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0174",
+    "station_id": "ST088",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0175",
+    "station_id": "ST065",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0176",
+    "station_id": "ST104",
+    "type": "electric",
+    "battery_level": 72,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0177",
+    "station_id": "ST043",
+    "type": "electric",
+    "battery_level": 73,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0178",
+    "station_id": "ST024",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0179",
+    "station_id": "ST017",
+    "type": "electric",
+    "battery_level": 63,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0180",
+    "station_id": "ST001",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0181",
+    "station_id": "ST075",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0182",
+    "station_id": "ST042",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0183",
+    "station_id": "ST089",
+    "type": "electric",
+    "battery_level": 44,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0184",
+    "station_id": "ST010",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0185",
+    "station_id": null,
+    "type": "standard",
+    "battery_level": null,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0186",
+    "station_id": "ST049",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0187",
+    "station_id": "ST073",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0188",
+    "station_id": "ST029",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0189",
+    "station_id": "ST091",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0190",
+    "station_id": "ST023",
+    "type": "electric",
+    "battery_level": 93,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0191",
+    "station_id": "ST079",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0192",
+    "station_id": null,
+    "type": "standard",
+    "battery_level": null,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0193",
+    "station_id": "ST101",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0194",
+    "station_id": "ST005",
+    "type": "electric",
+    "battery_level": 79,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0195",
+    "station_id": "ST111",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0196",
+    "station_id": "ST031",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0197",
+    "station_id": "ST049",
+    "type": "electric",
+    "battery_level": 65,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0198",
+    "station_id": "ST039",
+    "type": "electric",
+    "battery_level": 82,
+    "status": "reserved"
+  },
+  {
+    "bike_id": "BK0199",
+    "station_id": "ST040",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0200",
+    "station_id": null,
+    "type": "standard",
+    "battery_level": null,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0201",
+    "station_id": "ST033",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0202",
+    "station_id": "ST047",
+    "type": "electric",
+    "battery_level": 23,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0203",
+    "station_id": "ST096",
+    "type": "electric",
+    "battery_level": 42,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0204",
+    "station_id": "ST083",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0205",
+    "station_id": "ST009",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0206",
+    "station_id": null,
+    "type": "electric",
+    "battery_level": 92,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0207",
+    "station_id": null,
+    "type": "standard",
+    "battery_level": null,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0208",
+    "station_id": "ST063",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0209",
+    "station_id": "ST007",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0210",
+    "station_id": "ST090",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0211",
+    "station_id": "ST094",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0212",
+    "station_id": "ST062",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0213",
+    "station_id": "ST101",
+    "type": "electric",
+    "battery_level": 76,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0214",
+    "station_id": "ST008",
+    "type": "electric",
+    "battery_level": 16,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0215",
+    "station_id": "ST075",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0216",
+    "station_id": "ST014",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0217",
+    "station_id": "ST075",
+    "type": "electric",
+    "battery_level": 32,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0218",
+    "station_id": "ST088",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0219",
+    "station_id": "ST001",
+    "type": "electric",
+    "battery_level": 55,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0220",
+    "station_id": "ST011",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0221",
+    "station_id": "ST063",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0222",
+    "station_id": "ST091",
+    "type": "electric",
+    "battery_level": 93,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0223",
+    "station_id": "ST111",
+    "type": "electric",
+    "battery_level": 99,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0224",
+    "station_id": "ST020",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0225",
+    "station_id": "ST099",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0226",
+    "station_id": "ST047",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0227",
+    "station_id": "ST006",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0228",
+    "station_id": "ST058",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0229",
+    "station_id": "ST089",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0230",
+    "station_id": "ST076",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0231",
+    "station_id": "ST049",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0232",
+    "station_id": "ST074",
+    "type": "electric",
+    "battery_level": 50,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0233",
+    "station_id": "ST001",
+    "type": "electric",
+    "battery_level": 88,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0234",
+    "station_id": "ST113",
+    "type": "electric",
+    "battery_level": 48,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0235",
+    "station_id": "ST075",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0236",
+    "station_id": "ST112",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0237",
+    "station_id": "ST041",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0238",
+    "station_id": "ST086",
+    "type": "electric",
+    "battery_level": 61,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0239",
+    "station_id": "ST027",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0240",
+    "station_id": "ST023",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0241",
+    "station_id": "ST040",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0242",
+    "station_id": "ST032",
+    "type": "electric",
+    "battery_level": 37,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0243",
+    "station_id": "ST016",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0244",
+    "station_id": "ST072",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0245",
+    "station_id": "ST005",
+    "type": "electric",
+    "battery_level": 22,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0246",
+    "station_id": "ST096",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0247",
+    "station_id": "ST097",
+    "type": "electric",
+    "battery_level": 36,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0248",
+    "station_id": "ST018",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0249",
+    "station_id": "ST089",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0250",
+    "station_id": "ST058",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0251",
+    "station_id": "ST104",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0252",
+    "station_id": "ST016",
+    "type": "electric",
+    "battery_level": 38,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0253",
+    "station_id": "ST011",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0254",
+    "station_id": "ST057",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0255",
+    "station_id": "ST042",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0256",
+    "station_id": "ST066",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0257",
+    "station_id": "ST046",
+    "type": "electric",
+    "battery_level": 86,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0258",
+    "station_id": "ST011",
+    "type": "electric",
+    "battery_level": 74,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0259",
+    "station_id": "ST103",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0260",
+    "station_id": "ST054",
+    "type": "electric",
+    "battery_level": 39,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0261",
+    "station_id": "ST045",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0262",
+    "station_id": "ST118",
+    "type": "electric",
+    "battery_level": 72,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0263",
+    "station_id": "ST055",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0264",
+    "station_id": "ST113",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0265",
+    "station_id": "ST120",
+    "type": "electric",
+    "battery_level": 59,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0266",
+    "station_id": "ST062",
+    "type": "electric",
+    "battery_level": 95,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0267",
+    "station_id": "ST049",
+    "type": "electric",
+    "battery_level": 64,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0268",
+    "station_id": "ST054",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0269",
+    "station_id": "ST056",
+    "type": "electric",
+    "battery_level": 59,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0270",
+    "station_id": "ST062",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0271",
+    "station_id": "ST045",
+    "type": "electric",
+    "battery_level": 24,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0272",
+    "station_id": "ST103",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0273",
+    "station_id": "ST063",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0274",
+    "station_id": "ST086",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0275",
+    "station_id": "ST009",
+    "type": "electric",
+    "battery_level": 16,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0276",
+    "station_id": "ST030",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0277",
+    "station_id": "ST095",
+    "type": "electric",
+    "battery_level": 27,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0278",
+    "station_id": "ST060",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0279",
+    "station_id": "ST099",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0280",
+    "station_id": "ST070",
+    "type": "electric",
+    "battery_level": 94,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0281",
+    "station_id": "ST078",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0282",
+    "station_id": null,
+    "type": "electric",
+    "battery_level": 74,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0283",
+    "station_id": "ST022",
+    "type": "electric",
+    "battery_level": 89,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0284",
+    "station_id": "ST072",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0285",
+    "station_id": "ST104",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0286",
+    "station_id": "ST073",
+    "type": "electric",
+    "battery_level": 38,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0287",
+    "station_id": "ST053",
+    "type": "electric",
+    "battery_level": 66,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0288",
+    "station_id": "ST067",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0289",
+    "station_id": "ST110",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0290",
+    "station_id": null,
+    "type": "standard",
+    "battery_level": null,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0291",
+    "station_id": "ST032",
+    "type": "electric",
+    "battery_level": 74,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0292",
+    "station_id": "ST052",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0293",
+    "station_id": "ST094",
+    "type": "electric",
+    "battery_level": 58,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0294",
+    "station_id": "ST018",
+    "type": "electric",
+    "battery_level": 40,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0295",
+    "station_id": "ST103",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0296",
+    "station_id": "ST088",
+    "type": "electric",
+    "battery_level": 69,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0297",
+    "station_id": "ST067",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0298",
+    "station_id": "ST078",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0299",
+    "station_id": "ST017",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0300",
+    "station_id": "ST009",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0301",
+    "station_id": "ST085",
+    "type": "electric",
+    "battery_level": 96,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0302",
+    "station_id": "ST021",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0303",
+    "station_id": "ST104",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0304",
+    "station_id": null,
+    "type": "standard",
+    "battery_level": null,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0305",
+    "station_id": "ST073",
+    "type": "electric",
+    "battery_level": 66,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0306",
+    "station_id": "ST034",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0307",
+    "station_id": "ST023",
+    "type": "electric",
+    "battery_level": 31,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0308",
+    "station_id": "ST110",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0309",
+    "station_id": "ST100",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0310",
+    "station_id": "ST017",
+    "type": "electric",
+    "battery_level": 83,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0311",
+    "station_id": "ST049",
+    "type": "electric",
+    "battery_level": 52,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0312",
+    "station_id": "ST043",
+    "type": "electric",
+    "battery_level": 81,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0313",
+    "station_id": "ST108",
+    "type": "electric",
+    "battery_level": 67,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0314",
+    "station_id": "ST034",
+    "type": "electric",
+    "battery_level": 38,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0315",
+    "station_id": "ST017",
+    "type": "electric",
+    "battery_level": 85,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0316",
+    "station_id": "ST120",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0317",
+    "station_id": "ST086",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0318",
+    "station_id": "ST033",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0319",
+    "station_id": "ST052",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0320",
+    "station_id": "ST117",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0321",
+    "station_id": "ST115",
+    "type": "electric",
+    "battery_level": 67,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0322",
+    "station_id": "ST075",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0323",
+    "station_id": "ST060",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0324",
+    "station_id": "ST045",
+    "type": "electric",
+    "battery_level": 96,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0325",
+    "station_id": "ST026",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0326",
+    "station_id": "ST017",
+    "type": "electric",
+    "battery_level": 99,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0327",
+    "station_id": "ST043",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0328",
+    "station_id": "ST113",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0329",
+    "station_id": "ST034",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0330",
+    "station_id": "ST063",
+    "type": "electric",
+    "battery_level": 48,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0331",
+    "station_id": "ST033",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0332",
+    "station_id": "ST097",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0333",
+    "station_id": "ST054",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0334",
+    "station_id": "ST056",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0335",
+    "station_id": "ST045",
+    "type": "electric",
+    "battery_level": 95,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0336",
+    "station_id": "ST084",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0337",
+    "station_id": "ST049",
+    "type": "electric",
+    "battery_level": 35,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0338",
+    "station_id": "ST025",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0339",
+    "station_id": "ST093",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0340",
+    "station_id": "ST110",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0341",
+    "station_id": "ST023",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0342",
+    "station_id": "ST092",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0343",
+    "station_id": "ST102",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0344",
+    "station_id": "ST106",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0345",
+    "station_id": "ST044",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0346",
+    "station_id": "ST096",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0347",
+    "station_id": "ST089",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0348",
+    "station_id": "ST099",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0349",
+    "station_id": null,
+    "type": "standard",
+    "battery_level": null,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0350",
+    "station_id": "ST034",
+    "type": "electric",
+    "battery_level": 37,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0351",
+    "station_id": "ST044",
+    "type": "electric",
+    "battery_level": 94,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0352",
+    "station_id": "ST097",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0353",
+    "station_id": "ST039",
+    "type": "standard",
+    "battery_level": null,
+    "status": "reserved"
+  },
+  {
+    "bike_id": "BK0354",
+    "station_id": null,
+    "type": "electric",
+    "battery_level": 70,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0355",
+    "station_id": "ST026",
+    "type": "electric",
+    "battery_level": 90,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0356",
+    "station_id": "ST114",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0357",
+    "station_id": "ST005",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0358",
+    "station_id": "ST057",
+    "type": "electric",
+    "battery_level": 75,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0359",
+    "station_id": "ST117",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0360",
+    "station_id": "ST071",
+    "type": "electric",
+    "battery_level": 75,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0361",
+    "station_id": "ST071",
+    "type": "electric",
+    "battery_level": 65,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0362",
+    "station_id": "ST007",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0363",
+    "station_id": "ST097",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0364",
+    "station_id": "ST040",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0365",
+    "station_id": null,
+    "type": "standard",
+    "battery_level": null,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0366",
+    "station_id": "ST011",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0367",
+    "station_id": "ST002",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0368",
+    "station_id": "ST020",
+    "type": "electric",
+    "battery_level": 18,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0369",
+    "station_id": "ST026",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0370",
+    "station_id": "ST063",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0371",
+    "station_id": "ST068",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0372",
+    "station_id": "ST005",
+    "type": "electric",
+    "battery_level": 89,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0373",
+    "station_id": null,
+    "type": "electric",
+    "battery_level": 77,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0374",
+    "station_id": null,
+    "type": "standard",
+    "battery_level": null,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0375",
+    "station_id": "ST089",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0376",
+    "station_id": "ST070",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0377",
+    "station_id": "ST017",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0378",
+    "station_id": "ST112",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0379",
+    "station_id": "ST068",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0380",
+    "station_id": "ST015",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0381",
+    "station_id": "ST100",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0382",
+    "station_id": "ST052",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0383",
+    "station_id": "ST051",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0384",
+    "station_id": "ST021",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0385",
+    "station_id": "ST021",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0386",
+    "station_id": "ST060",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0387",
+    "station_id": "ST044",
+    "type": "electric",
+    "battery_level": 62,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0388",
+    "station_id": "ST119",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0389",
+    "station_id": "ST024",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0390",
+    "station_id": "ST006",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0391",
+    "station_id": "ST009",
+    "type": "electric",
+    "battery_level": 27,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0392",
+    "station_id": "ST053",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0393",
+    "station_id": "ST113",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0394",
+    "station_id": "ST004",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0395",
+    "station_id": "ST092",
+    "type": "electric",
+    "battery_level": 27,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0396",
+    "station_id": "ST107",
+    "type": "electric",
+    "battery_level": 59,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0397",
+    "station_id": "ST085",
+    "type": "electric",
+    "battery_level": 100,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0398",
+    "station_id": "ST097",
+    "type": "electric",
+    "battery_level": 32,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0399",
+    "station_id": "ST006",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0400",
+    "station_id": "ST004",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0401",
+    "station_id": "ST034",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0402",
+    "station_id": "ST023",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0403",
+    "station_id": "ST028",
+    "type": "electric",
+    "battery_level": 37,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0404",
+    "station_id": "ST015",
+    "type": "electric",
+    "battery_level": 91,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0405",
+    "station_id": "ST038",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0406",
+    "station_id": "ST110",
+    "type": "electric",
+    "battery_level": 19,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0407",
+    "station_id": "ST090",
+    "type": "electric",
+    "battery_level": 54,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0408",
+    "station_id": "ST067",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0409",
+    "station_id": "ST101",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0410",
+    "station_id": "ST006",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0411",
+    "station_id": "ST029",
+    "type": "electric",
+    "battery_level": 20,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0412",
+    "station_id": "ST026",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0413",
+    "station_id": "ST096",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0414",
+    "station_id": null,
+    "type": "electric",
+    "battery_level": 31,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0415",
+    "station_id": "ST058",
+    "type": "electric",
+    "battery_level": 58,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0416",
+    "station_id": "ST038",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0417",
+    "station_id": "ST014",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0418",
+    "station_id": "ST039",
+    "type": "electric",
+    "battery_level": 98,
+    "status": "reserved"
+  },
+  {
+    "bike_id": "BK0419",
+    "station_id": "ST017",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0420",
+    "station_id": "ST064",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0421",
+    "station_id": "ST005",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0422",
+    "station_id": "ST093",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0423",
+    "station_id": "ST112",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0424",
+    "station_id": "ST107",
+    "type": "electric",
+    "battery_level": 59,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0425",
+    "station_id": "ST086",
+    "type": "electric",
+    "battery_level": 84,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0426",
+    "station_id": "ST017",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0427",
+    "station_id": "ST105",
+    "type": "electric",
+    "battery_level": 55,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0428",
+    "station_id": "ST094",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0429",
+    "station_id": "ST080",
+    "type": "electric",
+    "battery_level": 91,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0430",
+    "station_id": null,
+    "type": "standard",
+    "battery_level": null,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0431",
+    "station_id": "ST010",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0432",
+    "station_id": "ST024",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0433",
+    "station_id": "ST031",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0434",
+    "station_id": "ST094",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0435",
+    "station_id": "ST099",
+    "type": "electric",
+    "battery_level": 72,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0436",
+    "station_id": "ST054",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0437",
+    "station_id": null,
+    "type": "standard",
+    "battery_level": null,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0438",
+    "station_id": "ST026",
+    "type": "electric",
+    "battery_level": 31,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0439",
+    "station_id": "ST079",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0440",
+    "station_id": "ST112",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0441",
+    "station_id": "ST111",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0442",
+    "station_id": "ST084",
+    "type": "electric",
+    "battery_level": 22,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0443",
+    "station_id": "ST067",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0444",
+    "station_id": "ST108",
+    "type": "electric",
+    "battery_level": 44,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0445",
+    "station_id": "ST022",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0446",
+    "station_id": "ST020",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0447",
+    "station_id": "ST034",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0448",
+    "station_id": "ST078",
+    "type": "electric",
+    "battery_level": 57,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0449",
+    "station_id": "ST084",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0450",
+    "station_id": "ST108",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0451",
+    "station_id": "ST054",
+    "type": "electric",
+    "battery_level": 76,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0452",
+    "station_id": "ST118",
+    "type": "electric",
+    "battery_level": 81,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0453",
+    "station_id": "ST085",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0454",
+    "station_id": "ST114",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0455",
+    "station_id": "ST009",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0456",
+    "station_id": "ST021",
+    "type": "electric",
+    "battery_level": 97,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0457",
+    "station_id": "ST072",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0458",
+    "station_id": "ST023",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0459",
+    "station_id": "ST048",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0460",
+    "station_id": "ST027",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0461",
+    "station_id": "ST094",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0462",
+    "station_id": "ST062",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0463",
+    "station_id": "ST024",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0464",
+    "station_id": "ST052",
+    "type": "electric",
+    "battery_level": 94,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0465",
+    "station_id": "ST042",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0466",
+    "station_id": "ST073",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0467",
+    "station_id": "ST047",
+    "type": "electric",
+    "battery_level": 74,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0468",
+    "station_id": null,
+    "type": "electric",
+    "battery_level": 55,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0469",
+    "station_id": "ST027",
+    "type": "electric",
+    "battery_level": 78,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0470",
+    "station_id": "ST038",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0471",
+    "station_id": "ST085",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0472",
+    "station_id": "ST112",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0473",
+    "station_id": "ST062",
+    "type": "electric",
+    "battery_level": 70,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0474",
+    "station_id": "ST021",
+    "type": "electric",
+    "battery_level": 34,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0475",
+    "station_id": "ST080",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0476",
+    "station_id": "ST094",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0477",
+    "station_id": null,
+    "type": "standard",
+    "battery_level": null,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0478",
+    "station_id": "ST014",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0479",
+    "station_id": "ST093",
+    "type": "electric",
+    "battery_level": 32,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0480",
+    "station_id": null,
+    "type": "electric",
+    "battery_level": 92,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0481",
+    "station_id": "ST027",
+    "type": "electric",
+    "battery_level": 70,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0482",
+    "station_id": "ST047",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0483",
+    "station_id": "ST083",
+    "type": "electric",
+    "battery_level": 95,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0484",
+    "station_id": "ST091",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0485",
+    "station_id": "ST094",
+    "type": "electric",
+    "battery_level": 72,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0486",
+    "station_id": "ST052",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0487",
+    "station_id": "ST115",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0488",
+    "station_id": "ST017",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0489",
+    "station_id": "ST061",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0490",
+    "station_id": "ST111",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0491",
+    "station_id": "ST017",
+    "type": "electric",
+    "battery_level": 60,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0492",
+    "station_id": "ST013",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0493",
+    "station_id": "ST001",
+    "type": "electric",
+    "battery_level": 48,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0494",
+    "station_id": "ST061",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0495",
+    "station_id": "ST115",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0496",
+    "station_id": "ST084",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0497",
+    "station_id": "ST013",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0498",
+    "station_id": "ST089",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0499",
+    "station_id": "ST102",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0500",
+    "station_id": "ST024",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0501",
+    "station_id": null,
+    "type": "electric",
+    "battery_level": 73,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0502",
+    "station_id": "ST061",
+    "type": "electric",
+    "battery_level": 32,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0503",
+    "station_id": "ST091",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0504",
+    "station_id": "ST038",
+    "type": "electric",
+    "battery_level": 98,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0505",
+    "station_id": "ST073",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0506",
+    "station_id": "ST089",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0507",
+    "station_id": "ST057",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0508",
+    "station_id": "ST019",
+    "type": "electric",
+    "battery_level": 68,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0509",
+    "station_id": "ST054",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0510",
+    "station_id": "ST018",
+    "type": "electric",
+    "battery_level": 54,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0511",
+    "station_id": "ST014",
+    "type": "electric",
+    "battery_level": 96,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0512",
+    "station_id": "ST082",
+    "type": "electric",
+    "battery_level": 41,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0513",
+    "station_id": "ST106",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0514",
+    "station_id": "ST021",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0515",
+    "station_id": "ST025",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0516",
+    "station_id": "ST109",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0517",
+    "station_id": "ST022",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0518",
+    "station_id": "ST080",
+    "type": "electric",
+    "battery_level": 62,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0519",
+    "station_id": "ST113",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0520",
+    "station_id": "ST101",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0521",
+    "station_id": "ST041",
+    "type": "electric",
+    "battery_level": 63,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0522",
+    "station_id": "ST084",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0523",
+    "station_id": "ST113",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0524",
+    "station_id": "ST077",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0525",
+    "station_id": "ST062",
+    "type": "electric",
+    "battery_level": 93,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0526",
+    "station_id": "ST073",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0527",
+    "station_id": "ST085",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0528",
+    "station_id": "ST065",
+    "type": "electric",
+    "battery_level": 29,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0529",
+    "station_id": "ST109",
+    "type": "electric",
+    "battery_level": 90,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0530",
+    "station_id": "ST112",
+    "type": "electric",
+    "battery_level": 45,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0531",
+    "station_id": "ST089",
+    "type": "electric",
+    "battery_level": 36,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0532",
+    "station_id": "ST017",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0533",
+    "station_id": "ST001",
+    "type": "electric",
+    "battery_level": 92,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0534",
+    "station_id": "ST039",
+    "type": "electric",
+    "battery_level": 25,
+    "status": "reserved"
+  },
+  {
+    "bike_id": "BK0535",
+    "station_id": "ST120",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0536",
+    "station_id": "ST096",
+    "type": "electric",
+    "battery_level": 18,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0537",
+    "station_id": "ST067",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0538",
+    "station_id": null,
+    "type": "standard",
+    "battery_level": null,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0539",
+    "station_id": "ST042",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0540",
+    "station_id": "ST102",
+    "type": "electric",
+    "battery_level": 69,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0541",
+    "station_id": "ST067",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0542",
+    "station_id": "ST039",
+    "type": "standard",
+    "battery_level": null,
+    "status": "reserved"
+  },
+  {
+    "bike_id": "BK0543",
+    "station_id": "ST038",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0544",
+    "station_id": "ST069",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0545",
+    "station_id": "ST032",
+    "type": "electric",
+    "battery_level": 22,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0546",
+    "station_id": "ST096",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0547",
+    "station_id": "ST105",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0548",
+    "station_id": "ST114",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0549",
+    "station_id": "ST048",
+    "type": "electric",
+    "battery_level": 45,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0550",
+    "station_id": null,
+    "type": "standard",
+    "battery_level": null,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0551",
+    "station_id": "ST073",
+    "type": "electric",
+    "battery_level": 98,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0552",
+    "station_id": "ST068",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0553",
+    "station_id": "ST027",
+    "type": "electric",
+    "battery_level": 76,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0554",
+    "station_id": "ST105",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0555",
+    "station_id": "ST039",
+    "type": "standard",
+    "battery_level": null,
+    "status": "reserved"
+  },
+  {
+    "bike_id": "BK0556",
+    "station_id": "ST001",
+    "type": "electric",
+    "battery_level": 85,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0557",
+    "station_id": "ST063",
+    "type": "electric",
+    "battery_level": 72,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0558",
+    "station_id": "ST101",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0559",
+    "station_id": "ST026",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0560",
+    "station_id": "ST074",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0561",
+    "station_id": "ST072",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0562",
+    "station_id": "ST090",
+    "type": "electric",
+    "battery_level": 94,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0563",
+    "station_id": "ST010",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0564",
+    "station_id": "ST085",
+    "type": "electric",
+    "battery_level": 29,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0565",
+    "station_id": "ST053",
+    "type": "electric",
+    "battery_level": 26,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0566",
+    "station_id": "ST046",
+    "type": "electric",
+    "battery_level": 87,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0567",
+    "station_id": "ST056",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0568",
+    "station_id": "ST078",
+    "type": "electric",
+    "battery_level": 81,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0569",
+    "station_id": "ST107",
+    "type": "electric",
+    "battery_level": 34,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0570",
+    "station_id": "ST013",
+    "type": "electric",
+    "battery_level": 26,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0571",
+    "station_id": "ST088",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0572",
+    "station_id": "ST112",
+    "type": "electric",
+    "battery_level": 63,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0573",
+    "station_id": "ST048",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0574",
+    "station_id": "ST066",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0575",
+    "station_id": "ST010",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0576",
+    "station_id": "ST079",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0577",
+    "station_id": "ST083",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0578",
+    "station_id": "ST022",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0579",
+    "station_id": "ST069",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0580",
+    "station_id": "ST086",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0581",
+    "station_id": "ST026",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0582",
+    "station_id": "ST111",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0583",
+    "station_id": "ST083",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0584",
+    "station_id": "ST026",
+    "type": "electric",
+    "battery_level": 71,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0585",
+    "station_id": "ST077",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0586",
+    "station_id": "ST107",
+    "type": "electric",
+    "battery_level": 47,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0587",
+    "station_id": "ST053",
+    "type": "electric",
+    "battery_level": 86,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0588",
+    "station_id": "ST103",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0589",
+    "station_id": "ST068",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0590",
+    "station_id": "ST051",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0591",
+    "station_id": "ST078",
+    "type": "electric",
+    "battery_level": 79,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0592",
+    "station_id": "ST107",
+    "type": "electric",
+    "battery_level": 70,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0593",
+    "station_id": "ST091",
+    "type": "electric",
+    "battery_level": 76,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0594",
+    "station_id": "ST107",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0595",
+    "station_id": "ST101",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0596",
+    "station_id": "ST095",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0597",
+    "station_id": "ST015",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0598",
+    "station_id": "ST042",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0599",
+    "station_id": "ST091",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0600",
+    "station_id": "ST115",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0601",
+    "station_id": "ST103",
+    "type": "electric",
+    "battery_level": 74,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0602",
+    "station_id": "ST055",
+    "type": "electric",
+    "battery_level": 86,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0603",
+    "station_id": "ST078",
+    "type": "electric",
+    "battery_level": 46,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0604",
+    "station_id": "ST017",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0605",
+    "station_id": null,
+    "type": "electric",
+    "battery_level": 69,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0606",
+    "station_id": "ST056",
+    "type": "electric",
+    "battery_level": 47,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0607",
+    "station_id": "ST022",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0608",
+    "station_id": "ST016",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0609",
+    "station_id": "ST090",
+    "type": "electric",
+    "battery_level": 62,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0610",
+    "station_id": "ST053",
+    "type": "electric",
+    "battery_level": 63,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0611",
+    "station_id": "ST112",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0612",
+    "station_id": "ST024",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0613",
+    "station_id": "ST068",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0614",
+    "station_id": "ST053",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0615",
+    "station_id": "ST077",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0616",
+    "station_id": "ST105",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0617",
+    "station_id": "ST111",
+    "type": "electric",
+    "battery_level": 40,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0618",
+    "station_id": "ST067",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0619",
+    "station_id": "ST018",
+    "type": "electric",
+    "battery_level": 62,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0620",
+    "station_id": "ST080",
+    "type": "electric",
+    "battery_level": 36,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0621",
+    "station_id": "ST072",
+    "type": "electric",
+    "battery_level": 65,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0622",
+    "station_id": null,
+    "type": "standard",
+    "battery_level": null,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0623",
+    "station_id": "ST085",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0624",
+    "station_id": "ST110",
+    "type": "electric",
+    "battery_level": 81,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0625",
+    "station_id": "ST060",
+    "type": "electric",
+    "battery_level": 41,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0626",
+    "station_id": "ST109",
+    "type": "electric",
+    "battery_level": 54,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0627",
+    "station_id": "ST044",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0628",
+    "station_id": "ST058",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0629",
+    "station_id": null,
+    "type": "standard",
+    "battery_level": null,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0630",
+    "station_id": "ST071",
+    "type": "electric",
+    "battery_level": 67,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0631",
+    "station_id": "ST063",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0632",
+    "station_id": null,
+    "type": "standard",
+    "battery_level": null,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0633",
+    "station_id": "ST078",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0634",
+    "station_id": "ST053",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0635",
+    "station_id": "ST053",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0636",
+    "station_id": "ST120",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0637",
+    "station_id": "ST076",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0638",
+    "station_id": "ST112",
+    "type": "electric",
+    "battery_level": 49,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0639",
+    "station_id": "ST072",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0640",
+    "station_id": "ST037",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0641",
+    "station_id": "ST119",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0642",
+    "station_id": "ST003",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0643",
+    "station_id": "ST027",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0644",
+    "station_id": "ST085",
+    "type": "electric",
+    "battery_level": 79,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0645",
+    "station_id": "ST024",
+    "type": "electric",
+    "battery_level": 79,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0646",
+    "station_id": "ST014",
+    "type": "electric",
+    "battery_level": 63,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0647",
+    "station_id": "ST040",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0648",
+    "station_id": "ST020",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0649",
+    "station_id": "ST048",
+    "type": "electric",
+    "battery_level": 52,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0650",
+    "station_id": null,
+    "type": "electric",
+    "battery_level": 75,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0651",
+    "station_id": "ST113",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0652",
+    "station_id": "ST038",
+    "type": "electric",
+    "battery_level": 92,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0653",
+    "station_id": null,
+    "type": "standard",
+    "battery_level": null,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0654",
+    "station_id": "ST068",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0655",
+    "station_id": null,
+    "type": "standard",
+    "battery_level": null,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0656",
+    "station_id": "ST119",
+    "type": "electric",
+    "battery_level": 89,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0657",
+    "station_id": "ST037",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0658",
+    "station_id": null,
+    "type": "standard",
+    "battery_level": null,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0659",
+    "station_id": "ST063",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0660",
+    "station_id": "ST030",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0661",
+    "station_id": "ST017",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0662",
+    "station_id": "ST067",
+    "type": "electric",
+    "battery_level": 28,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0663",
+    "station_id": "ST023",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0664",
+    "station_id": "ST106",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0665",
+    "station_id": "ST002",
+    "type": "electric",
+    "battery_level": 31,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0666",
+    "station_id": "ST053",
+    "type": "electric",
+    "battery_level": 24,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0667",
+    "station_id": "ST102",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0668",
+    "station_id": "ST092",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0669",
+    "station_id": "ST071",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0670",
+    "station_id": "ST064",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0671",
+    "station_id": "ST074",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0672",
+    "station_id": "ST102",
+    "type": "electric",
+    "battery_level": 55,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0673",
+    "station_id": "ST093",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0674",
+    "station_id": "ST079",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0675",
+    "station_id": "ST070",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0676",
+    "station_id": "ST001",
+    "type": "electric",
+    "battery_level": 99,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0677",
+    "station_id": "ST075",
+    "type": "electric",
+    "battery_level": 71,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0678",
+    "station_id": "ST072",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0679",
+    "station_id": "ST009",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0680",
+    "station_id": "ST066",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0681",
+    "station_id": "ST001",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0682",
+    "station_id": "ST083",
+    "type": "electric",
+    "battery_level": 59,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0683",
+    "station_id": "ST099",
+    "type": "electric",
+    "battery_level": 16,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0684",
+    "station_id": "ST027",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0685",
+    "station_id": "ST006",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0686",
+    "station_id": "ST030",
+    "type": "electric",
+    "battery_level": 34,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0687",
+    "station_id": "ST055",
+    "type": "electric",
+    "battery_level": 92,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0688",
+    "station_id": "ST011",
+    "type": "electric",
+    "battery_level": 66,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0689",
+    "station_id": "ST019",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0690",
+    "station_id": "ST068",
+    "type": "electric",
+    "battery_level": 98,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0691",
+    "station_id": null,
+    "type": "electric",
+    "battery_level": 76,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0692",
+    "station_id": "ST065",
+    "type": "electric",
+    "battery_level": 71,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0693",
+    "station_id": "ST053",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0694",
+    "station_id": "ST119",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0695",
+    "station_id": "ST047",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0696",
+    "station_id": "ST058",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0697",
+    "station_id": "ST078",
+    "type": "electric",
+    "battery_level": 58,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0698",
+    "station_id": "ST101",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0699",
+    "station_id": "ST112",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0700",
+    "station_id": "ST044",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0701",
+    "station_id": "ST044",
+    "type": "electric",
+    "battery_level": 15,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0702",
+    "station_id": "ST106",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0703",
+    "station_id": "ST068",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0704",
+    "station_id": "ST093",
+    "type": "electric",
+    "battery_level": 37,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0705",
+    "station_id": "ST008",
+    "type": "electric",
+    "battery_level": 99,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0706",
+    "station_id": "ST104",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0707",
+    "station_id": "ST007",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0708",
+    "station_id": "ST033",
+    "type": "electric",
+    "battery_level": 61,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0709",
+    "station_id": "ST065",
+    "type": "electric",
+    "battery_level": 89,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0710",
+    "station_id": "ST025",
+    "type": "electric",
+    "battery_level": 45,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0711",
+    "station_id": "ST039",
+    "type": "electric",
+    "battery_level": 89,
+    "status": "reserved"
+  },
+  {
+    "bike_id": "BK0712",
+    "station_id": "ST009",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0713",
+    "station_id": "ST057",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0714",
+    "station_id": "ST107",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0715",
+    "station_id": "ST052",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0716",
+    "station_id": "ST023",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0717",
+    "station_id": "ST109",
+    "type": "electric",
+    "battery_level": 69,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0718",
+    "station_id": "ST016",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0719",
+    "station_id": "ST086",
+    "type": "electric",
+    "battery_level": 29,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0720",
+    "station_id": "ST010",
+    "type": "electric",
+    "battery_level": 49,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0721",
+    "station_id": "ST085",
+    "type": "electric",
+    "battery_level": 47,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0722",
+    "station_id": "ST066",
+    "type": "electric",
+    "battery_level": 77,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0723",
+    "station_id": "ST006",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0724",
+    "station_id": null,
+    "type": "electric",
+    "battery_level": 87,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0725",
+    "station_id": "ST017",
+    "type": "electric",
+    "battery_level": 22,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0726",
+    "station_id": "ST051",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0727",
+    "station_id": "ST100",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0728",
+    "station_id": "ST045",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0729",
+    "station_id": "ST015",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0730",
+    "station_id": "ST017",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0731",
+    "station_id": "ST110",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0732",
+    "station_id": "ST092",
+    "type": "electric",
+    "battery_level": 73,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0733",
+    "station_id": "ST049",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0734",
+    "station_id": "ST015",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0735",
+    "station_id": "ST009",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0736",
+    "station_id": "ST112",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0737",
+    "station_id": "ST026",
+    "type": "electric",
+    "battery_level": 73,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0738",
+    "station_id": "ST092",
+    "type": "electric",
+    "battery_level": 88,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0739",
+    "station_id": "ST058",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0740",
+    "station_id": "ST023",
+    "type": "electric",
+    "battery_level": 61,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0741",
+    "station_id": "ST030",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0742",
+    "station_id": "ST075",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0743",
+    "station_id": "ST089",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0744",
+    "station_id": "ST024",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0745",
+    "station_id": "ST073",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0746",
+    "station_id": "ST061",
+    "type": "electric",
+    "battery_level": 98,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0747",
+    "station_id": "ST027",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0748",
+    "station_id": "ST016",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0749",
+    "station_id": "ST109",
+    "type": "electric",
+    "battery_level": 38,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0750",
+    "station_id": "ST080",
+    "type": "electric",
+    "battery_level": 30,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0751",
+    "station_id": "ST067",
+    "type": "electric",
+    "battery_level": 53,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0752",
+    "station_id": "ST028",
+    "type": "electric",
+    "battery_level": 56,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0753",
+    "station_id": "ST070",
+    "type": "electric",
+    "battery_level": 82,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0754",
+    "station_id": "ST001",
+    "type": "electric",
+    "battery_level": 29,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0755",
+    "station_id": "ST013",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0756",
+    "station_id": null,
+    "type": "electric",
+    "battery_level": 59,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0757",
+    "station_id": "ST048",
+    "type": "electric",
+    "battery_level": 21,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0758",
+    "station_id": null,
+    "type": "standard",
+    "battery_level": null,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0759",
+    "station_id": "ST074",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0760",
+    "station_id": "ST112",
+    "type": "electric",
+    "battery_level": 15,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0761",
+    "station_id": null,
+    "type": "standard",
+    "battery_level": null,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0762",
+    "station_id": "ST099",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0763",
+    "station_id": "ST025",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0764",
+    "station_id": "ST042",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0765",
+    "station_id": "ST004",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0766",
+    "station_id": "ST103",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0767",
+    "station_id": null,
+    "type": "standard",
+    "battery_level": null,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0768",
+    "station_id": "ST093",
+    "type": "electric",
+    "battery_level": 60,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0769",
+    "station_id": "ST105",
+    "type": "electric",
+    "battery_level": 22,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0770",
+    "station_id": "ST078",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0771",
+    "station_id": "ST065",
+    "type": "electric",
+    "battery_level": 79,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0772",
+    "station_id": "ST001",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0773",
+    "station_id": "ST073",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0774",
+    "station_id": "ST023",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0775",
+    "station_id": "ST089",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0776",
+    "station_id": "ST082",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0777",
+    "station_id": "ST009",
+    "type": "electric",
+    "battery_level": 94,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0778",
+    "station_id": null,
+    "type": "electric",
+    "battery_level": 53,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0779",
+    "station_id": "ST001",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0780",
+    "station_id": "ST025",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0781",
+    "station_id": "ST003",
+    "type": "electric",
+    "battery_level": 33,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0782",
+    "station_id": "ST073",
+    "type": "electric",
+    "battery_level": 20,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0783",
+    "station_id": "ST043",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0784",
+    "station_id": "ST105",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0785",
+    "station_id": "ST001",
+    "type": "electric",
+    "battery_level": 28,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0786",
+    "station_id": "ST020",
+    "type": "electric",
+    "battery_level": 66,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0787",
+    "station_id": "ST007",
+    "type": "electric",
+    "battery_level": 44,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0788",
+    "station_id": "ST073",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0789",
+    "station_id": "ST031",
+    "type": "electric",
+    "battery_level": 98,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0790",
+    "station_id": "ST119",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0791",
+    "station_id": "ST102",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0792",
+    "station_id": "ST047",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0793",
+    "station_id": "ST024",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0794",
+    "station_id": null,
+    "type": "standard",
+    "battery_level": null,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0795",
+    "station_id": "ST083",
+    "type": "electric",
+    "battery_level": 83,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0796",
+    "station_id": "ST057",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0797",
+    "station_id": "ST065",
+    "type": "electric",
+    "battery_level": 83,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0798",
+    "station_id": "ST111",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0799",
+    "station_id": "ST008",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0800",
+    "station_id": "ST021",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0801",
+    "station_id": "ST102",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0802",
+    "station_id": "ST072",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0803",
+    "station_id": "ST003",
+    "type": "electric",
+    "battery_level": 69,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0804",
+    "station_id": "ST115",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0805",
+    "station_id": "ST119",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0806",
+    "station_id": "ST033",
+    "type": "electric",
+    "battery_level": 59,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0807",
+    "station_id": "ST002",
+    "type": "electric",
+    "battery_level": 64,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0808",
+    "station_id": "ST090",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0809",
+    "station_id": "ST064",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0810",
+    "station_id": "ST072",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0811",
+    "station_id": "ST099",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0812",
+    "station_id": "ST077",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0813",
+    "station_id": "ST022",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0814",
+    "station_id": "ST064",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0815",
+    "station_id": "ST046",
+    "type": "electric",
+    "battery_level": 19,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0816",
+    "station_id": "ST016",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0817",
+    "station_id": "ST015",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0818",
+    "station_id": "ST110",
+    "type": "electric",
+    "battery_level": 98,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0819",
+    "station_id": "ST097",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0820",
+    "station_id": "ST042",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0821",
+    "station_id": "ST091",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0822",
+    "station_id": "ST025",
+    "type": "electric",
+    "battery_level": 69,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0823",
+    "station_id": "ST042",
+    "type": "electric",
+    "battery_level": 55,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0824",
+    "station_id": "ST041",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0825",
+    "station_id": "ST089",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0826",
+    "station_id": "ST115",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0827",
+    "station_id": "ST028",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0828",
+    "station_id": "ST083",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0829",
+    "station_id": "ST002",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0830",
+    "station_id": "ST095",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0831",
+    "station_id": "ST034",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0832",
+    "station_id": "ST017",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0833",
+    "station_id": "ST027",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0834",
+    "station_id": "ST051",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0835",
+    "station_id": "ST015",
+    "type": "electric",
+    "battery_level": 40,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0836",
+    "station_id": "ST038",
+    "type": "electric",
+    "battery_level": 45,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0837",
+    "station_id": "ST048",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0838",
+    "station_id": "ST097",
+    "type": "electric",
+    "battery_level": 77,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0839",
+    "station_id": "ST049",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0840",
+    "station_id": "ST070",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0841",
+    "station_id": "ST005",
+    "type": "electric",
+    "battery_level": 26,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0842",
+    "station_id": "ST006",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0843",
+    "station_id": "ST033",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0844",
+    "station_id": "ST005",
+    "type": "electric",
+    "battery_level": 42,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0845",
+    "station_id": "ST008",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0846",
+    "station_id": "ST109",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0847",
+    "station_id": "ST074",
+    "type": "electric",
+    "battery_level": 52,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0848",
+    "station_id": "ST017",
+    "type": "electric",
+    "battery_level": 90,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0849",
+    "station_id": "ST103",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0850",
+    "station_id": "ST021",
+    "type": "electric",
+    "battery_level": 38,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0851",
+    "station_id": "ST033",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0852",
+    "station_id": "ST007",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0853",
+    "station_id": "ST021",
+    "type": "electric",
+    "battery_level": 48,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0854",
+    "station_id": "ST111",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0855",
+    "station_id": "ST081",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0856",
+    "station_id": "ST089",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0857",
+    "station_id": "ST008",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0858",
+    "station_id": "ST075",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0859",
+    "station_id": "ST118",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0860",
+    "station_id": "ST041",
+    "type": "electric",
+    "battery_level": 19,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0861",
+    "station_id": "ST027",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0862",
+    "station_id": "ST004",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0863",
+    "station_id": null,
+    "type": "standard",
+    "battery_level": null,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0864",
+    "station_id": "ST090",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0865",
+    "station_id": "ST031",
+    "type": "electric",
+    "battery_level": 54,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0866",
+    "station_id": "ST005",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0867",
+    "station_id": "ST029",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0868",
+    "station_id": "ST068",
+    "type": "electric",
+    "battery_level": 97,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0869",
+    "station_id": "ST107",
+    "type": "electric",
+    "battery_level": 70,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0870",
+    "station_id": "ST067",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0871",
+    "station_id": null,
+    "type": "electric",
+    "battery_level": 86,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0872",
+    "station_id": "ST081",
+    "type": "electric",
+    "battery_level": 96,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0873",
+    "station_id": "ST103",
+    "type": "electric",
+    "battery_level": 26,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0874",
+    "station_id": "ST028",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0875",
+    "station_id": "ST029",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0876",
+    "station_id": "ST024",
+    "type": "electric",
+    "battery_level": 39,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0877",
+    "station_id": "ST006",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0878",
+    "station_id": "ST108",
+    "type": "electric",
+    "battery_level": 40,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0879",
+    "station_id": "ST089",
+    "type": "electric",
+    "battery_level": 20,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0880",
+    "station_id": "ST051",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0881",
+    "station_id": "ST086",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0882",
+    "station_id": "ST064",
+    "type": "electric",
+    "battery_level": 28,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0883",
+    "station_id": "ST090",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0884",
+    "station_id": "ST047",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0885",
+    "station_id": "ST006",
+    "type": "electric",
+    "battery_level": 35,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0886",
+    "station_id": "ST106",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0887",
+    "station_id": "ST118",
+    "type": "electric",
+    "battery_level": 21,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0888",
+    "station_id": "ST089",
+    "type": "electric",
+    "battery_level": 16,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0889",
+    "station_id": null,
+    "type": "electric",
+    "battery_level": 36,
+    "status": "in_use"
+  },
+  {
+    "bike_id": "BK0890",
+    "station_id": "ST091",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0891",
+    "station_id": "ST082",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0892",
+    "station_id": "ST015",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0893",
+    "station_id": "ST074",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0894",
+    "station_id": "ST060",
+    "type": "electric",
+    "battery_level": 40,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0895",
+    "station_id": "ST112",
+    "type": "standard",
+    "battery_level": null,
+    "status": "under_repair"
+  },
+  {
+    "bike_id": "BK0896",
+    "station_id": "ST097",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0897",
+    "station_id": "ST085",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0898",
+    "station_id": "ST060",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0899",
+    "station_id": "ST034",
+    "type": "standard",
+    "battery_level": null,
+    "status": "available"
+  },
+  {
+    "bike_id": "BK0900",
+    "station_id": "ST005",
+    "type": "electric",
+    "battery_level": 87,
+    "status": "available"
+  }
+]

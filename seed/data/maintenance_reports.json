@@ -1,0 +1,7894 @@
+[
+  {
+    "report_id": "MR0001",
+    "bike_id": "BK0640",
+    "reported_by": "U096",
+    "issue_type": "brakes",
+    "description": "Brake lever loose",
+    "status": "resolved",
+    "assigned_to": "U016",
+    "created_at": {
+      "$date": "2026-07-26T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-07-28T02:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "edb2839a3b824d9f08738a12"
+        },
+        "mechanic_id": "U016",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-07-27T05:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "b7e8be688325d5e7e87dccad"
+        },
+        "mechanic_id": "U016",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-07-28T02:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0002",
+    "bike_id": "BK0883",
+    "reported_by": "U066",
+    "issue_type": "brakes",
+    "description": "Brake lever loose",
+    "status": "resolved",
+    "assigned_to": "U012",
+    "created_at": {
+      "$date": "2026-07-26T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-07-27T13:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "70477e8f7b43b8209ba27539"
+        },
+        "mechanic_id": "U012",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-07-26T17:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "4e3ece8623f8515243a3edeb"
+        },
+        "mechanic_id": "U012",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-07-27T11:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "14bf8f03b5229cde718159ad"
+        },
+        "mechanic_id": "U012",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-07-27T13:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0003",
+    "bike_id": "BK0551",
+    "reported_by": "U116",
+    "issue_type": "battery",
+    "description": "Motor cuts out on hills",
+    "status": "resolved",
+    "assigned_to": "U006",
+    "created_at": {
+      "$date": "2026-07-26T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-07-28T06:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "1183259f36331caa673f4265"
+        },
+        "mechanic_id": "U006",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-07-26T23:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5d4b512512e25aa59f1e0e01"
+        },
+        "mechanic_id": "U006",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-07-27T05:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "4a6ce77b04922ba6b015bc0f"
+        },
+        "mechanic_id": "U006",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-07-28T06:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0004",
+    "bike_id": "BK0584",
+    "reported_by": "U068",
+    "issue_type": "tyre",
+    "description": "Front tyre flat",
+    "status": "resolved",
+    "assigned_to": "U013",
+    "created_at": {
+      "$date": "2026-07-26T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-07-27T14:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "8a64fbeb68015f1544b2eeec"
+        },
+        "mechanic_id": "U013",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-07-26T21:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "c374af373557be72c228eb51"
+        },
+        "mechanic_id": "U013",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-07-27T14:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0005",
+    "bike_id": "BK0141",
+    "reported_by": "U123",
+    "issue_type": "brakes",
+    "description": "Rear brake not gripping",
+    "status": "resolved",
+    "assigned_to": "U020",
+    "created_at": {
+      "$date": "2026-07-27T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-07-28T20:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "0e0d41cf26eda95c8741bd60"
+        },
+        "mechanic_id": "U020",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-07-28T01:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "1bac4ae0b4c35525a0e1ad19"
+        },
+        "mechanic_id": "U020",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-07-28T20:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0006",
+    "bike_id": "BK0022",
+    "reported_by": "U025",
+    "issue_type": "tyre",
+    "description": "Slow leak in rear tyre",
+    "status": "resolved",
+    "assigned_to": "U019",
+    "created_at": {
+      "$date": "2026-07-27T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-07-28T19:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "5c71a6518e2cfd672fd85589"
+        },
+        "mechanic_id": "U019",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-07-27T23:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "8b69650ace7c7c23279518f4"
+        },
+        "mechanic_id": "U019",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-07-28T04:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "538e0c219148b8cfc6597fef"
+        },
+        "mechanic_id": "U019",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-07-28T19:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0007",
+    "bike_id": "BK0716",
+    "reported_by": "U083",
+    "issue_type": "other",
+    "description": "Saddle won't adjust",
+    "status": "resolved",
+    "assigned_to": "U016",
+    "created_at": {
+      "$date": "2026-07-27T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-07-28T21:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "8ed79b9468e887e8ced6e0a7"
+        },
+        "mechanic_id": "U016",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-07-28T06:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "07fbf7e454a4cc4117f295ac"
+        },
+        "mechanic_id": "U016",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-07-28T21:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0008",
+    "bike_id": "BK0847",
+    "reported_by": "U036",
+    "issue_type": "battery",
+    "description": "Display shows battery error",
+    "status": "resolved",
+    "assigned_to": "U020",
+    "created_at": {
+      "$date": "2026-07-27T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-07-29T03:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "163245c171682c10f9c35b16"
+        },
+        "mechanic_id": "U020",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-07-28T06:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "037d28e4216e38dc53698b5c"
+        },
+        "mechanic_id": "U020",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-07-28T14:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "1d0cceaa896740e63e5c0b7c"
+        },
+        "mechanic_id": "U020",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-07-29T03:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0009",
+    "bike_id": "BK0738",
+    "reported_by": "U085",
+    "issue_type": "tyre",
+    "description": "Tyre worn down to the tread",
+    "status": "resolved",
+    "assigned_to": "U013",
+    "created_at": {
+      "$date": "2026-07-27T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-07-29T04:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "17d29faba20e995f778c2e23"
+        },
+        "mechanic_id": "U013",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-07-27T22:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "6bccaf01d5b7bad7eea14eb8"
+        },
+        "mechanic_id": "U013",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-07-28T05:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "3cf5284726b71cfb338b0a97"
+        },
+        "mechanic_id": "U013",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-07-29T04:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0010",
+    "bike_id": "BK0340",
+    "reported_by": "U109",
+    "issue_type": "tyre",
+    "description": "Front tyre flat",
+    "status": "resolved",
+    "assigned_to": "U015",
+    "created_at": {
+      "$date": "2026-07-28T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-07-30T04:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "6062223f44fb71bdc493e1b2"
+        },
+        "mechanic_id": "U015",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-07-29T01:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "558410edbaffc4c1c3fa028b"
+        },
+        "mechanic_id": "U015",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-07-29T08:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "f6874d5d247ca04a8668dead"
+        },
+        "mechanic_id": "U015",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-07-30T04:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0011",
+    "bike_id": "BK0617",
+    "reported_by": "U048",
+    "issue_type": "battery",
+    "description": "Battery won't charge",
+    "status": "resolved",
+    "assigned_to": "U018",
+    "created_at": {
+      "$date": "2026-07-28T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-07-30T02:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "6ace18bd1504d1becd086b73"
+        },
+        "mechanic_id": "U018",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-07-29T00:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "1600337ed767ee26ed3334f6"
+        },
+        "mechanic_id": "U018",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-07-29T14:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "4c13896db8295d62b3246a50"
+        },
+        "mechanic_id": "U018",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-07-30T02:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0012",
+    "bike_id": "BK0278",
+    "reported_by": "U139",
+    "issue_type": "tyre",
+    "description": "Rear tyre puncture",
+    "status": "resolved",
+    "assigned_to": "U018",
+    "created_at": {
+      "$date": "2026-07-28T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-07-29T09:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "bdbfefa8b205edf15c86a43d"
+        },
+        "mechanic_id": "U018",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-07-28T18:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "853c9c32e026fb5f9ebe28b1"
+        },
+        "mechanic_id": "U018",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-07-29T09:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0013",
+    "bike_id": "BK0301",
+    "reported_by": "U041",
+    "issue_type": "other",
+    "description": "Basket bent",
+    "status": "resolved",
+    "assigned_to": "U009",
+    "created_at": {
+      "$date": "2026-07-29T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-07-30T02:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "00ae6b15cb2838d63d22ddff"
+        },
+        "mechanic_id": "U009",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-07-30T01:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "6fbdba071079f74fc463c3dd"
+        },
+        "mechanic_id": "U009",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-07-30T02:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0014",
+    "bike_id": "BK0663",
+    "reported_by": "U039",
+    "issue_type": "brakes",
+    "description": "Rear brake not gripping",
+    "status": "resolved",
+    "assigned_to": "U016",
+    "created_at": {
+      "$date": "2026-07-30T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-01T00:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "7c2ab893544279ee70ccd7cb"
+        },
+        "mechanic_id": "U016",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-07-31T09:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "b0d7f37c72a72de5bafa921e"
+        },
+        "mechanic_id": "U016",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-08-01T00:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0015",
+    "bike_id": "BK0322",
+    "reported_by": "U148",
+    "issue_type": "tyre",
+    "description": "Slow leak in rear tyre",
+    "status": "resolved",
+    "assigned_to": "U020",
+    "created_at": {
+      "$date": "2026-07-30T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-07-31T02:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "dd2a6d51675f0f6046489ce0"
+        },
+        "mechanic_id": "U020",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-07-30T22:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "979f1fa018794706f94d06be"
+        },
+        "mechanic_id": "U020",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-07-31T02:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0016",
+    "bike_id": "BK0602",
+    "reported_by": "U147",
+    "issue_type": "other",
+    "description": "Dock lock stuck",
+    "status": "resolved",
+    "assigned_to": "U006",
+    "created_at": {
+      "$date": "2026-07-31T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-01T06:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "45b42a2e12abdb50b8502b79"
+        },
+        "mechanic_id": "U006",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-07-31T20:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "7c44d16dd7b2fec831228ff4"
+        },
+        "mechanic_id": "U006",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-08-01T06:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0017",
+    "bike_id": "BK0685",
+    "reported_by": "U040",
+    "issue_type": "brakes",
+    "description": "Brake lever loose",
+    "status": "resolved",
+    "assigned_to": "U017",
+    "created_at": {
+      "$date": "2026-08-01T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-02T07:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "02817163313cd6e2ec8665c9"
+        },
+        "mechanic_id": "U017",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-02T03:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "39e3e97d97b661a8064d91df"
+        },
+        "mechanic_id": "U017",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-08-02T07:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0018",
+    "bike_id": "BK0279",
+    "reported_by": "U126",
+    "issue_type": "brakes",
+    "description": "Front brake feels spongy",
+    "status": "resolved",
+    "assigned_to": "U020",
+    "created_at": {
+      "$date": "2026-08-01T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-02T04:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "be9ea9d9fc5b54c5089077a3"
+        },
+        "mechanic_id": "U020",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-01T22:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "3be0d5c14ab026502aea0d06"
+        },
+        "mechanic_id": "U020",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-08-02T04:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0019",
+    "bike_id": "BK0006",
+    "reported_by": "U071",
+    "issue_type": "tyre",
+    "description": "Front tyre flat",
+    "status": "resolved",
+    "assigned_to": "U016",
+    "created_at": {
+      "$date": "2026-08-01T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-03T01:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "794f46a09c1e0026f34ea5e6"
+        },
+        "mechanic_id": "U016",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-02T03:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "ae45ae64cbd3e1d2529ae5c6"
+        },
+        "mechanic_id": "U016",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-08-02T15:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "cc3b7df1090b9855f87d394d"
+        },
+        "mechanic_id": "U016",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-08-03T01:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0020",
+    "bike_id": "BK0126",
+    "reported_by": "U022",
+    "issue_type": "battery",
+    "description": "Battery won't charge",
+    "status": "resolved",
+    "assigned_to": "U007",
+    "created_at": {
+      "$date": "2026-08-02T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-03T18:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "969f462db2298f4f2a10b9d4"
+        },
+        "mechanic_id": "U007",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-03T07:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "babe68d875f52d799befd5d8"
+        },
+        "mechanic_id": "U007",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-08-03T18:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0021",
+    "bike_id": "BK0173",
+    "reported_by": "U091",
+    "issue_type": "tyre",
+    "description": "Front tyre flat",
+    "status": "resolved",
+    "assigned_to": "U009",
+    "created_at": {
+      "$date": "2026-08-03T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-04T10:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "54514e715fa235d81cd26f33"
+        },
+        "mechanic_id": "U009",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-03T15:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "987486c9aca3d42bebd81616"
+        },
+        "mechanic_id": "U009",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-08-03T16:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "76806e46a0c1224bb0dda46c"
+        },
+        "mechanic_id": "U009",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-08-04T10:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0022",
+    "bike_id": "BK0268",
+    "reported_by": "U027",
+    "issue_type": "chain",
+    "description": "Chain rusty and noisy",
+    "status": "resolved",
+    "assigned_to": "U015",
+    "created_at": {
+      "$date": "2026-08-04T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-04T19:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "2c63a2cf5430fa2aa137604c"
+        },
+        "mechanic_id": "U015",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-04T15:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "dfee1cfd432996d3bbd33d69"
+        },
+        "mechanic_id": "U015",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-08-04T19:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0023",
+    "bike_id": "BK0741",
+    "reported_by": "U090",
+    "issue_type": "brakes",
+    "description": "Rear brake not gripping",
+    "status": "resolved",
+    "assigned_to": "U014",
+    "created_at": {
+      "$date": "2026-08-04T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-05T22:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "00c0a1908a930459bd485860"
+        },
+        "mechanic_id": "U014",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-05T00:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "de9000c45970bd92cc952e49"
+        },
+        "mechanic_id": "U014",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-08-05T22:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0024",
+    "bike_id": "BK0066",
+    "reported_by": "U098",
+    "issue_type": "brakes",
+    "description": "Front brake feels spongy",
+    "status": "resolved",
+    "assigned_to": "U016",
+    "created_at": {
+      "$date": "2026-08-04T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-06T14:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "5c4b2665da11ec05ef09ce62"
+        },
+        "mechanic_id": "U016",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-04T20:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "704867f3de523e07ba91ab80"
+        },
+        "mechanic_id": "U016",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-08-05T09:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "4b6172a137d84af9cc534da7"
+        },
+        "mechanic_id": "U016",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-08-06T14:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0025",
+    "bike_id": "BK0141",
+    "reported_by": "U104",
+    "issue_type": "battery",
+    "description": "Battery drains very quickly",
+    "status": "resolved",
+    "assigned_to": "U014",
+    "created_at": {
+      "$date": "2026-08-05T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-08T00:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "f754facaef39e54b18b048ca"
+        },
+        "mechanic_id": "U014",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-06T07:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "3318e3d0ba7c22b1d91004eb"
+        },
+        "mechanic_id": "U014",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-08-06T23:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "592bb3664e29514c6ca4d8e2"
+        },
+        "mechanic_id": "U014",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-08-08T00:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0026",
+    "bike_id": "BK0656",
+    "reported_by": "U122",
+    "issue_type": "battery",
+    "description": "Motor cuts out on hills",
+    "status": "resolved",
+    "assigned_to": "U016",
+    "created_at": {
+      "$date": "2026-08-06T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-07T19:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "91db0d69591bb0a81e958d16"
+        },
+        "mechanic_id": "U016",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-06T14:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "43cde21613c6ef7a0824f8bb"
+        },
+        "mechanic_id": "U016",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-08-07T19:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0027",
+    "bike_id": "BK0401",
+    "reported_by": "U133",
+    "issue_type": "tyre",
+    "description": "Tyre worn down to the tread",
+    "status": "resolved",
+    "assigned_to": "U009",
+    "created_at": {
+      "$date": "2026-08-06T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-07T04:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "2a9f44c2ab61e5dfd52a3f8c"
+        },
+        "mechanic_id": "U009",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-07T01:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "b6c351a6e0757e5223e24887"
+        },
+        "mechanic_id": "U009",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-08-07T04:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0028",
+    "bike_id": "BK0861",
+    "reported_by": "U112",
+    "issue_type": "brakes",
+    "description": "Front brake feels spongy",
+    "status": "resolved",
+    "assigned_to": "U015",
+    "created_at": {
+      "$date": "2026-08-08T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-09T23:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "4450cde007ccf29f37cedcab"
+        },
+        "mechanic_id": "U015",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-08T21:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "eb38b68f7a92c12ace1a3542"
+        },
+        "mechanic_id": "U015",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-08-09T23:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0029",
+    "bike_id": "BK0414",
+    "reported_by": "U139",
+    "issue_type": "battery",
+    "description": "Battery drains very quickly",
+    "status": "resolved",
+    "assigned_to": "U017",
+    "created_at": {
+      "$date": "2026-08-08T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-10T03:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "f9220f872864def19c82bac1"
+        },
+        "mechanic_id": "U017",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-08T21:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "26ae5c672d5da3d790479558"
+        },
+        "mechanic_id": "U017",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-08-09T15:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "2f07d792f448fc19d39b6418"
+        },
+        "mechanic_id": "U017",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-08-10T03:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0030",
+    "bike_id": "BK0801",
+    "reported_by": "U027",
+    "issue_type": "tyre",
+    "description": "Slow leak in rear tyre",
+    "status": "resolved",
+    "assigned_to": "U011",
+    "created_at": {
+      "$date": "2026-08-09T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-11T12:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "432499565979e954586b5265"
+        },
+        "mechanic_id": "U011",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-10T09:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5a0722053f5929cf1564728f"
+        },
+        "mechanic_id": "U011",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-08-11T12:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0031",
+    "bike_id": "BK0296",
+    "reported_by": "U027",
+    "issue_type": "battery",
+    "description": "Display shows battery error",
+    "status": "resolved",
+    "assigned_to": "U008",
+    "created_at": {
+      "$date": "2026-08-10T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-12T07:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "6134262796e1b8658ca03811"
+        },
+        "mechanic_id": "U008",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-11T06:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "a9e1a58af7ee70d623f1bfa8"
+        },
+        "mechanic_id": "U008",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-08-11T12:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "8ea909e9e98acdb1084a6743"
+        },
+        "mechanic_id": "U008",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-08-12T07:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0032",
+    "bike_id": "BK0321",
+    "reported_by": "U038",
+    "issue_type": "battery",
+    "description": "Battery drains very quickly",
+    "status": "resolved",
+    "assigned_to": "U012",
+    "created_at": {
+      "$date": "2026-08-10T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-12T02:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "6857d0f3ac0887b3015e8276"
+        },
+        "mechanic_id": "U012",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-10T20:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "f765da0932e4dbe936eb5fcc"
+        },
+        "mechanic_id": "U012",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-08-12T02:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0033",
+    "bike_id": "BK0621",
+    "reported_by": "U076",
+    "issue_type": "tyre",
+    "description": "Front tyre flat",
+    "status": "resolved",
+    "assigned_to": "U007",
+    "created_at": {
+      "$date": "2026-08-10T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-11T23:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "19d1056d7ac5c3ada70323f2"
+        },
+        "mechanic_id": "U007",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-11T01:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5a6ed602cd77e8ddb1189543"
+        },
+        "mechanic_id": "U007",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-08-11T23:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0034",
+    "bike_id": "BK0637",
+    "reported_by": "U106",
+    "issue_type": "other",
+    "description": "Front light not working",
+    "status": "resolved",
+    "assigned_to": "U006",
+    "created_at": {
+      "$date": "2026-08-11T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-12T01:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "15bafa67048561662b6b6fa4"
+        },
+        "mechanic_id": "U006",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-11T23:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "a614e352332fe4d1fe733e77"
+        },
+        "mechanic_id": "U006",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-08-12T01:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0035",
+    "bike_id": "BK0193",
+    "reported_by": "U082",
+    "issue_type": "chain",
+    "description": "Gears skipping",
+    "status": "resolved",
+    "assigned_to": "U006",
+    "created_at": {
+      "$date": "2026-08-11T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-11T22:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "5090c6ba8177df3370a8c613"
+        },
+        "mechanic_id": "U006",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-11T14:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "187057e9c72c21b7099e9221"
+        },
+        "mechanic_id": "U006",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-08-11T22:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0036",
+    "bike_id": "BK0694",
+    "reported_by": "U142",
+    "issue_type": "tyre",
+    "description": "Tyre worn down to the tread",
+    "status": "resolved",
+    "assigned_to": "U009",
+    "created_at": {
+      "$date": "2026-08-11T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-13T01:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "93f98dd24760ed125e9e357a"
+        },
+        "mechanic_id": "U009",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-11T20:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "805e7ef69aff31cc5973352d"
+        },
+        "mechanic_id": "U009",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-08-13T01:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0037",
+    "bike_id": "BK0250",
+    "reported_by": "U083",
+    "issue_type": "other",
+    "description": "Dock lock stuck",
+    "status": "resolved",
+    "assigned_to": "U008",
+    "created_at": {
+      "$date": "2026-08-11T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-13T16:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "868a14dac92a9af87968412e"
+        },
+        "mechanic_id": "U008",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-12T03:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "a01c2f37e907447cc3a7d61e"
+        },
+        "mechanic_id": "U008",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-08-13T01:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "37bbfdfddd473f3db379de97"
+        },
+        "mechanic_id": "U008",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-08-13T16:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0038",
+    "bike_id": "BK0141",
+    "reported_by": "U082",
+    "issue_type": "other",
+    "description": "Saddle won't adjust",
+    "status": "resolved",
+    "assigned_to": "U007",
+    "created_at": {
+      "$date": "2026-08-11T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-13T05:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "f5a910ffbd3ecb9f3d9ade2d"
+        },
+        "mechanic_id": "U007",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-11T16:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "48074c7cc9ccbe88767b2246"
+        },
+        "mechanic_id": "U007",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-08-12T06:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5f2ab0cc08a76c6eeda445c9"
+        },
+        "mechanic_id": "U007",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-08-13T05:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0039",
+    "bike_id": "BK0092",
+    "reported_by": "U089",
+    "issue_type": "battery",
+    "description": "Motor cuts out on hills",
+    "status": "resolved",
+    "assigned_to": "U009",
+    "created_at": {
+      "$date": "2026-08-11T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-12T21:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "4a9eb5fd83cf95cd557a13fa"
+        },
+        "mechanic_id": "U009",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-12T08:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5f9701e9d606b5a0c92380dc"
+        },
+        "mechanic_id": "U009",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-08-12T21:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0040",
+    "bike_id": "BK0640",
+    "reported_by": "U147",
+    "issue_type": "other",
+    "description": "Bell missing",
+    "status": "resolved",
+    "assigned_to": "U008",
+    "created_at": {
+      "$date": "2026-08-12T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-13T11:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "5c4f2458a2939342147879d5"
+        },
+        "mechanic_id": "U008",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-12T15:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "f46fa88187f2f26889c9c9f3"
+        },
+        "mechanic_id": "U008",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-08-13T11:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0041",
+    "bike_id": "BK0602",
+    "reported_by": "U090",
+    "issue_type": "other",
+    "description": "Saddle won't adjust",
+    "status": "resolved",
+    "assigned_to": "U019",
+    "created_at": {
+      "$date": "2026-08-12T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-14T06:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "2999b18ea63491b2461eaeea"
+        },
+        "mechanic_id": "U019",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-12T21:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "1b3e82e423f0810bb383198c"
+        },
+        "mechanic_id": "U019",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-08-13T05:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "2227cf5f9909162e374737cf"
+        },
+        "mechanic_id": "U019",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-08-14T06:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0042",
+    "bike_id": "BK0314",
+    "reported_by": "U074",
+    "issue_type": "battery",
+    "description": "Battery drains very quickly",
+    "status": "resolved",
+    "assigned_to": "U016",
+    "created_at": {
+      "$date": "2026-08-13T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-14T18:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "9875d13cc8e8d7008b7490b2"
+        },
+        "mechanic_id": "U016",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-13T20:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "299e901097ce4a135d24294a"
+        },
+        "mechanic_id": "U016",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-08-14T18:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0043",
+    "bike_id": "BK0432",
+    "reported_by": "U099",
+    "issue_type": "brakes",
+    "description": "Front brake feels spongy",
+    "status": "resolved",
+    "assigned_to": "U020",
+    "created_at": {
+      "$date": "2026-08-13T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-14T17:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "ccda920d13714251cde89e50"
+        },
+        "mechanic_id": "U020",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-14T05:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "33df63a185e2053b022c00e9"
+        },
+        "mechanic_id": "U020",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-08-14T17:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0044",
+    "bike_id": "BK0095",
+    "reported_by": "U145",
+    "issue_type": "other",
+    "description": "Basket bent",
+    "status": "resolved",
+    "assigned_to": "U006",
+    "created_at": {
+      "$date": "2026-08-14T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-14T22:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "2653ac3652ba38816750a984"
+        },
+        "mechanic_id": "U006",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-14T17:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "67973c5099840568581eeb5b"
+        },
+        "mechanic_id": "U006",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-08-14T22:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0045",
+    "bike_id": "BK0651",
+    "reported_by": "U146",
+    "issue_type": "brakes",
+    "description": "Brake lever loose",
+    "status": "resolved",
+    "assigned_to": "U019",
+    "created_at": {
+      "$date": "2026-08-15T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-17T07:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "4dcdbd9cab757fcee7394fc5"
+        },
+        "mechanic_id": "U019",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-16T05:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "ba5c59f5a14d9be09d365a44"
+        },
+        "mechanic_id": "U019",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-08-16T19:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "9788b0e2f5f4656e80508280"
+        },
+        "mechanic_id": "U019",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-08-17T07:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0046",
+    "bike_id": "BK0290",
+    "reported_by": "U064",
+    "issue_type": "tyre",
+    "description": "Tyre worn down to the tread",
+    "status": "resolved",
+    "assigned_to": "U008",
+    "created_at": {
+      "$date": "2026-08-15T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-17T05:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "da3aed86c6c7eb46a5478695"
+        },
+        "mechanic_id": "U008",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-15T17:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "1614ea1bde5ac6ca5a079f31"
+        },
+        "mechanic_id": "U008",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-08-16T15:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "653b3bf5c893cbdd9fd27683"
+        },
+        "mechanic_id": "U008",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-08-17T05:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0047",
+    "bike_id": "BK0365",
+    "reported_by": "U089",
+    "issue_type": "tyre",
+    "description": "Tyre worn down to the tread",
+    "status": "resolved",
+    "assigned_to": "U018",
+    "created_at": {
+      "$date": "2026-08-15T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-16T22:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "41aa49a512ef2074dd25b18e"
+        },
+        "mechanic_id": "U018",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-15T21:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "a785f1a0fffd72399e8e7796"
+        },
+        "mechanic_id": "U018",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-08-16T07:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "fb94b927462aa7a9034ef8cc"
+        },
+        "mechanic_id": "U018",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-08-16T22:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0048",
+    "bike_id": "BK0569",
+    "reported_by": "U060",
+    "issue_type": "tyre",
+    "description": "Front tyre flat",
+    "status": "resolved",
+    "assigned_to": "U011",
+    "created_at": {
+      "$date": "2026-08-15T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-16T17:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "87f5fda11bcf42e1b36231ee"
+        },
+        "mechanic_id": "U011",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-15T14:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5f9e93f55eea3825d5fa1835"
+        },
+        "mechanic_id": "U011",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-08-16T08:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "e154dde93874e1b24dd66498"
+        },
+        "mechanic_id": "U011",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-08-16T17:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0049",
+    "bike_id": "BK0602",
+    "reported_by": "U063",
+    "issue_type": "battery",
+    "description": "Battery won't charge",
+    "status": "resolved",
+    "assigned_to": "U012",
+    "created_at": {
+      "$date": "2026-08-17T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-19T18:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "e9b187218285bb6e803f649c"
+        },
+        "mechanic_id": "U012",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-18T06:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "8b16541a982652e7fecbc788"
+        },
+        "mechanic_id": "U012",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-08-18T16:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "e3cb6a69e0be68142fc47ef9"
+        },
+        "mechanic_id": "U012",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-08-19T18:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0050",
+    "bike_id": "BK0268",
+    "reported_by": "U053",
+    "issue_type": "brakes",
+    "description": "Rear brake not gripping",
+    "status": "resolved",
+    "assigned_to": "U007",
+    "created_at": {
+      "$date": "2026-08-17T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-19T17:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "495c8339ad9358c0f5083307"
+        },
+        "mechanic_id": "U007",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-17T19:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "f38727f9b50ef9b37343a3d7"
+        },
+        "mechanic_id": "U007",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-08-18T16:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "03588885a5d5bec9d6116e73"
+        },
+        "mechanic_id": "U007",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-08-19T17:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0051",
+    "bike_id": "BK0801",
+    "reported_by": "U137",
+    "issue_type": "tyre",
+    "description": "Slow leak in rear tyre",
+    "status": "resolved",
+    "assigned_to": "U020",
+    "created_at": {
+      "$date": "2026-08-17T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-18T19:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "26f677ff3eddaf4428f25eaa"
+        },
+        "mechanic_id": "U020",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-17T22:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "a7b6a52d099195529c579ca1"
+        },
+        "mechanic_id": "U020",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-08-18T19:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0052",
+    "bike_id": "BK0245",
+    "reported_by": "U134",
+    "issue_type": "chain",
+    "description": "Chain came off",
+    "status": "resolved",
+    "assigned_to": "U008",
+    "created_at": {
+      "$date": "2026-08-18T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-19T17:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "c0507004d07e8aa5bc5a73f4"
+        },
+        "mechanic_id": "U008",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-18T23:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "0725392b4245740b0d80f846"
+        },
+        "mechanic_id": "U008",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-08-19T17:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0053",
+    "bike_id": "BK0883",
+    "reported_by": "U042",
+    "issue_type": "tyre",
+    "description": "Tyre worn down to the tread",
+    "status": "resolved",
+    "assigned_to": "U007",
+    "created_at": {
+      "$date": "2026-08-18T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-19T23:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "44c1b47deb262f693028e148"
+        },
+        "mechanic_id": "U007",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-18T21:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "6f55567f2b4d2adde7d3d48a"
+        },
+        "mechanic_id": "U007",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-08-19T19:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "82557a66ad92aed7a6ebbcb3"
+        },
+        "mechanic_id": "U007",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-08-19T23:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0054",
+    "bike_id": "BK0461",
+    "reported_by": "U117",
+    "issue_type": "chain",
+    "description": "Gears skipping",
+    "status": "resolved",
+    "assigned_to": "U008",
+    "created_at": {
+      "$date": "2026-08-18T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-20T08:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "58c91fdb9363b3549eff2790"
+        },
+        "mechanic_id": "U008",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-19T05:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "e7a609b63aab8321d1461be1"
+        },
+        "mechanic_id": "U008",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-08-19T09:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "b334b0730e5f279afa898978"
+        },
+        "mechanic_id": "U008",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-08-20T08:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0055",
+    "bike_id": "BK0739",
+    "reported_by": "U045",
+    "issue_type": "brakes",
+    "description": "Rear brake not gripping",
+    "status": "resolved",
+    "assigned_to": "U020",
+    "created_at": {
+      "$date": "2026-08-18T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-20T07:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "fce7b49567ebc6fa6e999bf3"
+        },
+        "mechanic_id": "U020",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-18T22:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "8805736a638ab7741d72ffb9"
+        },
+        "mechanic_id": "U020",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-08-19T10:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "ceb6736fc1f8a61f78f69803"
+        },
+        "mechanic_id": "U020",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-08-20T07:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0056",
+    "bike_id": "BK0883",
+    "reported_by": "U135",
+    "issue_type": "chain",
+    "description": "Chain rusty and noisy",
+    "status": "resolved",
+    "assigned_to": "U015",
+    "created_at": {
+      "$date": "2026-08-20T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-21T02:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "38ce11014f327724b69a848c"
+        },
+        "mechanic_id": "U015",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-20T22:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "16241d3a1f6c18229bb5a9af"
+        },
+        "mechanic_id": "U015",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-08-21T02:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0057",
+    "bike_id": "BK0140",
+    "reported_by": "U097",
+    "issue_type": "other",
+    "description": "Basket bent",
+    "status": "resolved",
+    "assigned_to": "U007",
+    "created_at": {
+      "$date": "2026-08-20T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-21T03:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "6cabe60b2a4d5aebbcdbd776"
+        },
+        "mechanic_id": "U007",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-20T15:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "572b9d4a40db5cbb73a7277c"
+        },
+        "mechanic_id": "U007",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-08-20T17:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "af4ee85091bba370b628b5c1"
+        },
+        "mechanic_id": "U007",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-08-21T03:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0058",
+    "bike_id": "BK0495",
+    "reported_by": "U044",
+    "issue_type": "brakes",
+    "description": "Brake lever loose",
+    "status": "resolved",
+    "assigned_to": "U013",
+    "created_at": {
+      "$date": "2026-08-20T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-21T08:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "7191e400bac3ae02ea41209a"
+        },
+        "mechanic_id": "U013",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-20T20:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "d8efa1d78950a5c4c9666671"
+        },
+        "mechanic_id": "U013",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-08-20T21:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "6875e983b11cdf741e79bf9a"
+        },
+        "mechanic_id": "U013",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-08-21T08:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0059",
+    "bike_id": "BK0603",
+    "reported_by": "U038",
+    "issue_type": "battery",
+    "description": "Motor cuts out on hills",
+    "status": "resolved",
+    "assigned_to": "U010",
+    "created_at": {
+      "$date": "2026-08-21T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-23T12:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "15eeeff947b4908a86fb3b62"
+        },
+        "mechanic_id": "U010",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-21T21:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "f61b86f1a90986fdb6ba1017"
+        },
+        "mechanic_id": "U010",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-08-22T12:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "7d9e0429bec50cf04edd1fde"
+        },
+        "mechanic_id": "U010",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-08-23T12:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0060",
+    "bike_id": "BK0723",
+    "reported_by": "U128",
+    "issue_type": "chain",
+    "description": "Chain came off",
+    "status": "resolved",
+    "assigned_to": "U006",
+    "created_at": {
+      "$date": "2026-08-21T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-22T11:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "5613b65ac022abb4a8605458"
+        },
+        "mechanic_id": "U006",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-21T23:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "391daffac2c0d414388f6ef8"
+        },
+        "mechanic_id": "U006",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-08-22T11:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0061",
+    "bike_id": "BK0554",
+    "reported_by": "U022",
+    "issue_type": "tyre",
+    "description": "Front tyre flat",
+    "status": "resolved",
+    "assigned_to": "U008",
+    "created_at": {
+      "$date": "2026-08-21T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-22T02:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "ea153654cc904728cf54a78c"
+        },
+        "mechanic_id": "U008",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-21T20:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "cfeb93ab0b06c3e8848514be"
+        },
+        "mechanic_id": "U008",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-08-22T02:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0062",
+    "bike_id": "BK0584",
+    "reported_by": "U057",
+    "issue_type": "other",
+    "description": "Front light not working",
+    "status": "resolved",
+    "assigned_to": "U020",
+    "created_at": {
+      "$date": "2026-08-22T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-23T21:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "5abe0e144193955fed33e7a3"
+        },
+        "mechanic_id": "U020",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-22T23:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "f00c213123d0c967f1c688ea"
+        },
+        "mechanic_id": "U020",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-08-23T21:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0063",
+    "bike_id": "BK0346",
+    "reported_by": "U127",
+    "issue_type": "other",
+    "description": "Bell missing",
+    "status": "resolved",
+    "assigned_to": "U012",
+    "created_at": {
+      "$date": "2026-08-23T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-23T21:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "329f649f874963e38d701f99"
+        },
+        "mechanic_id": "U012",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-23T20:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "d24a43b5a2e248147ba5ff41"
+        },
+        "mechanic_id": "U012",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-08-23T21:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0064",
+    "bike_id": "BK0057",
+    "reported_by": "U076",
+    "issue_type": "chain",
+    "description": "Chain came off",
+    "status": "resolved",
+    "assigned_to": "U017",
+    "created_at": {
+      "$date": "2026-08-23T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-26T01:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "4c3a3d6a85b920c3fa907333"
+        },
+        "mechanic_id": "U017",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-24T01:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "173675d6faba29168f5e5b2a"
+        },
+        "mechanic_id": "U017",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-08-24T22:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "ae5f39f3af4e5cb5662d1c18"
+        },
+        "mechanic_id": "U017",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-08-26T01:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0065",
+    "bike_id": "BK0577",
+    "reported_by": "U116",
+    "issue_type": "brakes",
+    "description": "Rear brake not gripping",
+    "status": "resolved",
+    "assigned_to": "U016",
+    "created_at": {
+      "$date": "2026-08-23T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-25T12:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "29986b5c26a870f1fff317ce"
+        },
+        "mechanic_id": "U016",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-23T22:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "640549d633821401ebf5bf2f"
+        },
+        "mechanic_id": "U016",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-08-24T15:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "0e78917ad19551171459804a"
+        },
+        "mechanic_id": "U016",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-08-25T12:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0066",
+    "bike_id": "BK0494",
+    "reported_by": "U109",
+    "issue_type": "tyre",
+    "description": "Slow leak in rear tyre",
+    "status": "resolved",
+    "assigned_to": "U013",
+    "created_at": {
+      "$date": "2026-08-23T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-24T14:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "198dd2329028e73ec6bf797c"
+        },
+        "mechanic_id": "U013",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-23T17:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "3648fbb736bcd05adba88e0e"
+        },
+        "mechanic_id": "U013",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-08-24T14:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0067",
+    "bike_id": "BK0165",
+    "reported_by": "U131",
+    "issue_type": "chain",
+    "description": "Chain rusty and noisy",
+    "status": "resolved",
+    "assigned_to": "U018",
+    "created_at": {
+      "$date": "2026-08-24T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-26T12:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "1bde24364bdbeb38fa2428a7"
+        },
+        "mechanic_id": "U018",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-24T15:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "2aa10a40b0e41569d485a4d1"
+        },
+        "mechanic_id": "U018",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-08-25T11:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "8a47481c2e8a87ffde214fcb"
+        },
+        "mechanic_id": "U018",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-08-26T12:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0068",
+    "bike_id": "BK0245",
+    "reported_by": "U054",
+    "issue_type": "battery",
+    "description": "Motor cuts out on hills",
+    "status": "resolved",
+    "assigned_to": "U020",
+    "created_at": {
+      "$date": "2026-08-25T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-25T18:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "51b6f303b65da49a61d3a607"
+        },
+        "mechanic_id": "U020",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-25T14:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "f48ec3a5457048c76f89dabb"
+        },
+        "mechanic_id": "U020",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-08-25T16:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "79d1c482b8a1c99d742338d4"
+        },
+        "mechanic_id": "U020",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-08-25T18:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0069",
+    "bike_id": "BK0512",
+    "reported_by": "U115",
+    "issue_type": "battery",
+    "description": "Battery won't charge",
+    "status": "resolved",
+    "assigned_to": "U012",
+    "created_at": {
+      "$date": "2026-08-25T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-27T02:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "d77bfc89418c35e4950bc47d"
+        },
+        "mechanic_id": "U012",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-25T21:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "918c147e9ad87215896bc55c"
+        },
+        "mechanic_id": "U012",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-08-26T03:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "c0a3b1c5de817e2bdec13f55"
+        },
+        "mechanic_id": "U012",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-08-27T02:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0070",
+    "bike_id": "BK0681",
+    "reported_by": "U103",
+    "issue_type": "other",
+    "description": "Front light not working",
+    "status": "resolved",
+    "assigned_to": "U014",
+    "created_at": {
+      "$date": "2026-08-26T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-28T11:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "e5480b26f1d5cc3c9b859a35"
+        },
+        "mechanic_id": "U014",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-26T19:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "b88fabf62751773375a31d82"
+        },
+        "mechanic_id": "U014",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-08-27T18:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "8ab153fd18a93c43e089bf43"
+        },
+        "mechanic_id": "U014",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-08-28T11:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0071",
+    "bike_id": "BK0754",
+    "reported_by": "U082",
+    "issue_type": "chain",
+    "description": "Chain rusty and noisy",
+    "status": "resolved",
+    "assigned_to": "U018",
+    "created_at": {
+      "$date": "2026-08-26T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-27T07:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "06023c2cfef6c9127abbd1ff"
+        },
+        "mechanic_id": "U018",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-26T20:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "46b4159e8765f7990f346a1a"
+        },
+        "mechanic_id": "U018",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-08-27T07:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0072",
+    "bike_id": "BK0044",
+    "reported_by": "U133",
+    "issue_type": "other",
+    "description": "Saddle won't adjust",
+    "status": "resolved",
+    "assigned_to": "U008",
+    "created_at": {
+      "$date": "2026-08-26T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-27T09:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "86b20da63a54fd0a3e81b0c5"
+        },
+        "mechanic_id": "U008",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-26T16:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "73ec872279601921a6c793bc"
+        },
+        "mechanic_id": "U008",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-08-27T09:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0073",
+    "bike_id": "BK0660",
+    "reported_by": "U053",
+    "issue_type": "brakes",
+    "description": "Rear brake not gripping",
+    "status": "resolved",
+    "assigned_to": "U020",
+    "created_at": {
+      "$date": "2026-08-26T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-27T03:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "bf77e66a7448d3bfcabb7840"
+        },
+        "mechanic_id": "U020",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-26T22:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "42e6edcf2fe7559544a32ffe"
+        },
+        "mechanic_id": "U020",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-08-27T03:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0074",
+    "bike_id": "BK0602",
+    "reported_by": "U106",
+    "issue_type": "other",
+    "description": "Bell missing",
+    "status": "resolved",
+    "assigned_to": "U014",
+    "created_at": {
+      "$date": "2026-08-27T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-29T02:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "63462394fc37a1250809feab"
+        },
+        "mechanic_id": "U014",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-27T14:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "f156854ca578f1e7418917c2"
+        },
+        "mechanic_id": "U014",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-08-28T03:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "f259693799303bf787a84545"
+        },
+        "mechanic_id": "U014",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-08-29T02:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0075",
+    "bike_id": "BK0623",
+    "reported_by": "U033",
+    "issue_type": "brakes",
+    "description": "Front brake feels spongy",
+    "status": "resolved",
+    "assigned_to": "U018",
+    "created_at": {
+      "$date": "2026-08-27T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-28T12:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "fbadf68aa01a811cab27f703"
+        },
+        "mechanic_id": "U018",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-28T07:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "1588148fe24b739d84179900"
+        },
+        "mechanic_id": "U018",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-08-28T12:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0076",
+    "bike_id": "BK0553",
+    "reported_by": "U119",
+    "issue_type": "tyre",
+    "description": "Rear tyre puncture",
+    "status": "resolved",
+    "assigned_to": "U017",
+    "created_at": {
+      "$date": "2026-08-28T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-30T02:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "07a0dfced21ce09bfde8aced"
+        },
+        "mechanic_id": "U017",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-29T06:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "d06e503b1e200833372eafe5"
+        },
+        "mechanic_id": "U017",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-08-29T22:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "b44764995799ccf181a2ecac"
+        },
+        "mechanic_id": "U017",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-08-30T02:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0077",
+    "bike_id": "BK0191",
+    "reported_by": "U099",
+    "issue_type": "tyre",
+    "description": "Slow leak in rear tyre",
+    "status": "resolved",
+    "assigned_to": "U010",
+    "created_at": {
+      "$date": "2026-08-29T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-30T13:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "c96921b0e461388f44b5935f"
+        },
+        "mechanic_id": "U010",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-30T08:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "397d454f7f459b3ebfacc64f"
+        },
+        "mechanic_id": "U010",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-08-30T10:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "edcfdda7050a36ee8c911e04"
+        },
+        "mechanic_id": "U010",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-08-30T13:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0078",
+    "bike_id": "BK0591",
+    "reported_by": "U093",
+    "issue_type": "battery",
+    "description": "Display shows battery error",
+    "status": "resolved",
+    "assigned_to": "U014",
+    "created_at": {
+      "$date": "2026-08-30T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-08-30T15:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "14f0e74297ee6bc8968ca344"
+        },
+        "mechanic_id": "U014",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-30T14:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "f62de08edc38144371070ab2"
+        },
+        "mechanic_id": "U014",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-08-30T15:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0079",
+    "bike_id": "BK0863",
+    "reported_by": "U047",
+    "issue_type": "chain",
+    "description": "Chain rusty and noisy",
+    "status": "resolved",
+    "assigned_to": "U020",
+    "created_at": {
+      "$date": "2026-08-30T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-01T08:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "34f3be44288fbaab3b7c20d0"
+        },
+        "mechanic_id": "U020",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-08-31T09:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "4b38017baa054f0e66646981"
+        },
+        "mechanic_id": "U020",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-09-01T08:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0080",
+    "bike_id": "BK0134",
+    "reported_by": "U083",
+    "issue_type": "brakes",
+    "description": "Rear brake not gripping",
+    "status": "resolved",
+    "assigned_to": "U016",
+    "created_at": {
+      "$date": "2026-08-31T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-02T17:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "ec1c90badd65e2a9a96e8790"
+        },
+        "mechanic_id": "U016",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-01T04:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "c61d8812e8657b4bd45feb41"
+        },
+        "mechanic_id": "U016",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-09-01T15:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "ba9c3d9730d5ae35a0bbc63e"
+        },
+        "mechanic_id": "U016",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-09-02T17:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0081",
+    "bike_id": "BK0801",
+    "reported_by": "U042",
+    "issue_type": "other",
+    "description": "Basket bent",
+    "status": "resolved",
+    "assigned_to": "U012",
+    "created_at": {
+      "$date": "2026-09-01T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-02T17:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "e13da9efcadda264453db137"
+        },
+        "mechanic_id": "U012",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-02T07:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "36e7ee1ef33076bc14497a1f"
+        },
+        "mechanic_id": "U012",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-09-02T17:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0082",
+    "bike_id": "BK0140",
+    "reported_by": "U101",
+    "issue_type": "tyre",
+    "description": "Front tyre flat",
+    "status": "resolved",
+    "assigned_to": "U015",
+    "created_at": {
+      "$date": "2026-09-01T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-01T21:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "3a6b9e83d6c588aa52716df1"
+        },
+        "mechanic_id": "U015",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-01T15:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "e346f2bd7783b6aec05e78ce"
+        },
+        "mechanic_id": "U015",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-09-01T21:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0083",
+    "bike_id": "BK0360",
+    "reported_by": "U051",
+    "issue_type": "tyre",
+    "description": "Slow leak in rear tyre",
+    "status": "resolved",
+    "assigned_to": "U006",
+    "created_at": {
+      "$date": "2026-09-02T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-04T00:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "fec9f8bd3d826a2ff1b24397"
+        },
+        "mechanic_id": "U006",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-02T20:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "bfad439fbe6bdd6896775b80"
+        },
+        "mechanic_id": "U006",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-09-03T10:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "3659c3f6790cfe8e6dad8103"
+        },
+        "mechanic_id": "U006",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-09-04T00:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0084",
+    "bike_id": "BK0724",
+    "reported_by": "U039",
+    "issue_type": "brakes",
+    "description": "Brake lever loose",
+    "status": "resolved",
+    "assigned_to": "U015",
+    "created_at": {
+      "$date": "2026-09-02T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-03T12:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "841fd82b5839df5032696020"
+        },
+        "mechanic_id": "U015",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-02T14:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "136a86317c646c7253d704ae"
+        },
+        "mechanic_id": "U015",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-09-03T12:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0085",
+    "bike_id": "BK0475",
+    "reported_by": "U073",
+    "issue_type": "brakes",
+    "description": "Front brake feels spongy",
+    "status": "resolved",
+    "assigned_to": "U008",
+    "created_at": {
+      "$date": "2026-09-03T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-04T14:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "9776a704b7e949b04fbbcf6e"
+        },
+        "mechanic_id": "U008",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-03T17:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "6a5e52ee8151221a3642e4fb"
+        },
+        "mechanic_id": "U008",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-09-04T10:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "8f357e1919081724ba9fa80b"
+        },
+        "mechanic_id": "U008",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-09-04T14:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0086",
+    "bike_id": "BK0840",
+    "reported_by": "U138",
+    "issue_type": "brakes",
+    "description": "Rear brake not gripping",
+    "status": "resolved",
+    "assigned_to": "U019",
+    "created_at": {
+      "$date": "2026-09-04T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-05T14:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "e84dd6dd111057dee78adc91"
+        },
+        "mechanic_id": "U019",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-04T23:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "d57505657fbbe7212b10fe97"
+        },
+        "mechanic_id": "U019",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-09-05T14:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0087",
+    "bike_id": "BK0873",
+    "reported_by": "U124",
+    "issue_type": "other",
+    "description": "Saddle won't adjust",
+    "status": "resolved",
+    "assigned_to": "U007",
+    "created_at": {
+      "$date": "2026-09-04T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-06T14:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "6168eb69690bd8bce19fa070"
+        },
+        "mechanic_id": "U007",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-05T09:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "c214506d685c51262a8f02b3"
+        },
+        "mechanic_id": "U007",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-09-06T14:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0088",
+    "bike_id": "BK0075",
+    "reported_by": "U033",
+    "issue_type": "battery",
+    "description": "Motor cuts out on hills",
+    "status": "resolved",
+    "assigned_to": "U019",
+    "created_at": {
+      "$date": "2026-09-04T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-05T23:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "7788a181843d296f8bb0a6b3"
+        },
+        "mechanic_id": "U019",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-05T01:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "09b4791a156b243229f77b19"
+        },
+        "mechanic_id": "U019",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-09-05T23:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0089",
+    "bike_id": "BK0788",
+    "reported_by": "U111",
+    "issue_type": "chain",
+    "description": "Gears skipping",
+    "status": "resolved",
+    "assigned_to": "U007",
+    "created_at": {
+      "$date": "2026-09-05T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-06T13:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "3c121806c0b70f9b9132c7fd"
+        },
+        "mechanic_id": "U007",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-05T18:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "e385027c10ad87bc41f501ea"
+        },
+        "mechanic_id": "U007",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-09-06T01:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "cbc21c1db29b8896b5564722"
+        },
+        "mechanic_id": "U007",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-09-06T13:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0090",
+    "bike_id": "BK0084",
+    "reported_by": "U105",
+    "issue_type": "tyre",
+    "description": "Front tyre flat",
+    "status": "resolved",
+    "assigned_to": "U011",
+    "created_at": {
+      "$date": "2026-09-05T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-07T09:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "2962370c2e96d8e7cc09e2fb"
+        },
+        "mechanic_id": "U011",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-06T03:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "fc896c4e2181368ed096a1e6"
+        },
+        "mechanic_id": "U011",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-09-06T06:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "27d6d5c901ca2f068fa13d51"
+        },
+        "mechanic_id": "U011",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-09-07T09:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0091",
+    "bike_id": "BK0822",
+    "reported_by": "U095",
+    "issue_type": "chain",
+    "description": "Chain keeps slipping",
+    "status": "resolved",
+    "assigned_to": "U017",
+    "created_at": {
+      "$date": "2026-09-06T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-07T03:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "524eff952515fb77511f3704"
+        },
+        "mechanic_id": "U017",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-06T14:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "91074528b6db20a33e48e243"
+        },
+        "mechanic_id": "U017",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-09-06T20:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "2be484868fc64d1845b701ab"
+        },
+        "mechanic_id": "U017",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-09-07T03:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0092",
+    "bike_id": "BK0360",
+    "reported_by": "U082",
+    "issue_type": "other",
+    "description": "Front light not working",
+    "status": "resolved",
+    "assigned_to": "U013",
+    "created_at": {
+      "$date": "2026-09-07T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-08T05:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "17b42481129c9bbf8343ab30"
+        },
+        "mechanic_id": "U013",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-08T00:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "22c4a194e42b6e1b30d5d2cd"
+        },
+        "mechanic_id": "U013",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-09-08T05:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0093",
+    "bike_id": "BK0360",
+    "reported_by": "U064",
+    "issue_type": "other",
+    "description": "Basket bent",
+    "status": "resolved",
+    "assigned_to": "U009",
+    "created_at": {
+      "$date": "2026-09-08T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-10T08:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "98facacb2076a34ffee6478f"
+        },
+        "mechanic_id": "U009",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-09T07:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "bf693851d8dab1b37a7d038d"
+        },
+        "mechanic_id": "U009",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-09-10T08:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0094",
+    "bike_id": "BK0437",
+    "reported_by": "U140",
+    "issue_type": "chain",
+    "description": "Chain keeps slipping",
+    "status": "resolved",
+    "assigned_to": "U012",
+    "created_at": {
+      "$date": "2026-09-08T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-10T06:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "cc1f9d67577bf1ece9100846"
+        },
+        "mechanic_id": "U012",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-08T19:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "43c6be0e8b11cf944d07a08f"
+        },
+        "mechanic_id": "U012",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-09-09T18:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "bd241623da6f2eced995e6cf"
+        },
+        "mechanic_id": "U012",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-09-10T06:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0095",
+    "bike_id": "BK0474",
+    "reported_by": "U024",
+    "issue_type": "battery",
+    "description": "Display shows battery error",
+    "status": "resolved",
+    "assigned_to": "U018",
+    "created_at": {
+      "$date": "2026-09-09T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-11T02:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "2ddee74d1488fb1477af04dc"
+        },
+        "mechanic_id": "U018",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-09T23:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "07c98108831b4a9c31b0636e"
+        },
+        "mechanic_id": "U018",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-09-11T02:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0096",
+    "bike_id": "BK0505",
+    "reported_by": "U137",
+    "issue_type": "tyre",
+    "description": "Tyre worn down to the tread",
+    "status": "resolved",
+    "assigned_to": "U008",
+    "created_at": {
+      "$date": "2026-09-09T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-11T05:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "876e7f19534261b479d0baa7"
+        },
+        "mechanic_id": "U008",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-10T08:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "dd0e3f41bc3c236154daba97"
+        },
+        "mechanic_id": "U008",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-09-10T12:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "3a06a8ea91e87cfdfc700471"
+        },
+        "mechanic_id": "U008",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-09-11T05:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0097",
+    "bike_id": "BK0591",
+    "reported_by": "U076",
+    "issue_type": "battery",
+    "description": "Motor cuts out on hills",
+    "status": "resolved",
+    "assigned_to": "U007",
+    "created_at": {
+      "$date": "2026-09-10T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-12T09:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "862481233e31cc71b638a152"
+        },
+        "mechanic_id": "U007",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-11T04:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "4f2e6bafdc01d1d885181648"
+        },
+        "mechanic_id": "U007",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-09-12T09:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0098",
+    "bike_id": "BK0245",
+    "reported_by": "U106",
+    "issue_type": "tyre",
+    "description": "Tyre worn down to the tread",
+    "status": "resolved",
+    "assigned_to": "U006",
+    "created_at": {
+      "$date": "2026-09-10T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-11T13:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "cd3aa4dbac472949c5f6f6ec"
+        },
+        "mechanic_id": "U006",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-10T22:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5cdaa5073728bdcf414734f9"
+        },
+        "mechanic_id": "U006",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-09-11T13:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0099",
+    "bike_id": "BK0321",
+    "reported_by": "U139",
+    "issue_type": "chain",
+    "description": "Chain came off",
+    "status": "resolved",
+    "assigned_to": "U009",
+    "created_at": {
+      "$date": "2026-09-10T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-11T14:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "b66c7a2b015a82d1c8619f23"
+        },
+        "mechanic_id": "U009",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-10T14:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "cbc228d3ab81e448a3df30e6"
+        },
+        "mechanic_id": "U009",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-09-11T14:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0100",
+    "bike_id": "BK0620",
+    "reported_by": "U108",
+    "issue_type": "other",
+    "description": "Basket bent",
+    "status": "resolved",
+    "assigned_to": "U018",
+    "created_at": {
+      "$date": "2026-09-10T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-12T02:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "afcee30d1a84c3210f98f7c2"
+        },
+        "mechanic_id": "U018",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-11T08:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "1429da0b11292308bcfe0e2c"
+        },
+        "mechanic_id": "U018",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-09-12T02:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0101",
+    "bike_id": "BK0370",
+    "reported_by": "U027",
+    "issue_type": "other",
+    "description": "Basket bent",
+    "status": "resolved",
+    "assigned_to": "U013",
+    "created_at": {
+      "$date": "2026-09-10T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-11T18:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "ce179a85d47dde5267a15f75"
+        },
+        "mechanic_id": "U013",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-11T05:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5422f6d1b3c529cfcd9520be"
+        },
+        "mechanic_id": "U013",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-09-11T18:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0102",
+    "bike_id": "BK0176",
+    "reported_by": "U055",
+    "issue_type": "battery",
+    "description": "Battery drains very quickly",
+    "status": "resolved",
+    "assigned_to": "U009",
+    "created_at": {
+      "$date": "2026-09-11T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-12T07:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "3cc5ab1d08e9ea745178897b"
+        },
+        "mechanic_id": "U009",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-11T21:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "be59ba8e283404d63c879746"
+        },
+        "mechanic_id": "U009",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-09-12T07:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0103",
+    "bike_id": "BK0126",
+    "reported_by": "U081",
+    "issue_type": "brakes",
+    "description": "Rear brake not gripping",
+    "status": "resolved",
+    "assigned_to": "U011",
+    "created_at": {
+      "$date": "2026-09-12T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-13T16:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "32d829b27ef720ee6b4ed9e5"
+        },
+        "mechanic_id": "U011",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-12T18:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "62215574bf9f840d40c735f2"
+        },
+        "mechanic_id": "U011",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-09-13T16:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0104",
+    "bike_id": "BK0640",
+    "reported_by": "U132",
+    "issue_type": "brakes",
+    "description": "Rear brake not gripping",
+    "status": "resolved",
+    "assigned_to": "U010",
+    "created_at": {
+      "$date": "2026-09-13T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-15T05:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "ee0f7f7f3334772a05d31107"
+        },
+        "mechanic_id": "U010",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-14T03:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5beaacc22909c3d0037261e9"
+        },
+        "mechanic_id": "U010",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-09-15T05:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0105",
+    "bike_id": "BK0296",
+    "reported_by": "U059",
+    "issue_type": "brakes",
+    "description": "Brake lever loose",
+    "status": "resolved",
+    "assigned_to": "U008",
+    "created_at": {
+      "$date": "2026-09-13T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-15T03:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "e1474b8ff5182314692dfe18"
+        },
+        "mechanic_id": "U008",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-14T01:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "90719e92e5d1323e78c720e6"
+        },
+        "mechanic_id": "U008",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-09-15T03:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0106",
+    "bike_id": "BK0302",
+    "reported_by": "U124",
+    "issue_type": "brakes",
+    "description": "Front brake feels spongy",
+    "status": "resolved",
+    "assigned_to": "U006",
+    "created_at": {
+      "$date": "2026-09-13T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-15T05:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "695f50b080dec0e9140f1cc8"
+        },
+        "mechanic_id": "U006",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-14T07:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "1eeb0728deadcc8ef53394a4"
+        },
+        "mechanic_id": "U006",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-09-15T05:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0107",
+    "bike_id": "BK0544",
+    "reported_by": "U062",
+    "issue_type": "brakes",
+    "description": "Rear brake not gripping",
+    "status": "resolved",
+    "assigned_to": "U013",
+    "created_at": {
+      "$date": "2026-09-13T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-15T01:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "c853dc373acf5abf4ea9268c"
+        },
+        "mechanic_id": "U013",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-14T02:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "293ff41e1e41f60bad08dc99"
+        },
+        "mechanic_id": "U013",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-09-14T11:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "79285cc404c982c8b778a924"
+        },
+        "mechanic_id": "U013",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-09-15T01:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0108",
+    "bike_id": "BK0826",
+    "reported_by": "U087",
+    "issue_type": "brakes",
+    "description": "Brake lever loose",
+    "status": "resolved",
+    "assigned_to": "U006",
+    "created_at": {
+      "$date": "2026-09-13T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-14T04:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "ed3d924304ccd19d8343984a"
+        },
+        "mechanic_id": "U006",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-13T17:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "becf6aba2820ac87cf3a718d"
+        },
+        "mechanic_id": "U006",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-09-14T01:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "b6ba8a154a0293f20793ff87"
+        },
+        "mechanic_id": "U006",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-09-14T04:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0109",
+    "bike_id": "BK0308",
+    "reported_by": "U150",
+    "issue_type": "other",
+    "description": "Basket bent",
+    "status": "resolved",
+    "assigned_to": "U006",
+    "created_at": {
+      "$date": "2026-09-14T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-15T23:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "c2e61be3e3955a599991478e"
+        },
+        "mechanic_id": "U006",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-14T20:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "c1c10d0c8a6b6f12c16dd1f6"
+        },
+        "mechanic_id": "U006",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-09-15T01:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5a4209ee1c10738710d8e6de"
+        },
+        "mechanic_id": "U006",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-09-15T23:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0110",
+    "bike_id": "BK0392",
+    "reported_by": "U062",
+    "issue_type": "brakes",
+    "description": "Front brake feels spongy",
+    "status": "resolved",
+    "assigned_to": "U009",
+    "created_at": {
+      "$date": "2026-09-15T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-16T10:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "4fdc23bca288b9130f477837"
+        },
+        "mechanic_id": "U009",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-15T16:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "1ab51c6b0d33429db3c3ed69"
+        },
+        "mechanic_id": "U009",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-09-16T09:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "67cbe53533968aa5a679234f"
+        },
+        "mechanic_id": "U009",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-09-16T10:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0111",
+    "bike_id": "BK0557",
+    "reported_by": "U063",
+    "issue_type": "tyre",
+    "description": "Front tyre flat",
+    "status": "resolved",
+    "assigned_to": "U014",
+    "created_at": {
+      "$date": "2026-09-15T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-16T09:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "0d2c975d31ee98befe5d5e00"
+        },
+        "mechanic_id": "U014",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-16T03:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "122571ddd3a789407b3172d2"
+        },
+        "mechanic_id": "U014",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-09-16T09:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0112",
+    "bike_id": "BK0875",
+    "reported_by": "U087",
+    "issue_type": "chain",
+    "description": "Gears skipping",
+    "status": "resolved",
+    "assigned_to": "U011",
+    "created_at": {
+      "$date": "2026-09-15T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-16T16:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "b0cdb4ee6fa127782b14d737"
+        },
+        "mechanic_id": "U011",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-16T03:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5bb07e2516c7d99356d52ad3"
+        },
+        "mechanic_id": "U011",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-09-16T16:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0113",
+    "bike_id": "BK0524",
+    "reported_by": "U108",
+    "issue_type": "tyre",
+    "description": "Tyre worn down to the tread",
+    "status": "resolved",
+    "assigned_to": "U017",
+    "created_at": {
+      "$date": "2026-09-15T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-15T20:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "4e7dd5e5dbefbfcb263369f0"
+        },
+        "mechanic_id": "U017",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-15T15:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "9ef681f46b1a89f9d47def82"
+        },
+        "mechanic_id": "U017",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-09-15T20:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0114",
+    "bike_id": "BK0685",
+    "reported_by": "U043",
+    "issue_type": "brakes",
+    "description": "Front brake feels spongy",
+    "status": "resolved",
+    "assigned_to": "U018",
+    "created_at": {
+      "$date": "2026-09-16T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-18T16:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "ab5a330cc77f383ebb40ccbe"
+        },
+        "mechanic_id": "U018",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-16T20:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "c7103c3915d066fe7edc6e62"
+        },
+        "mechanic_id": "U018",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-09-17T17:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "e9df3bfe056a0355d102023a"
+        },
+        "mechanic_id": "U018",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-09-18T16:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0115",
+    "bike_id": "BK0550",
+    "reported_by": "U100",
+    "issue_type": "tyre",
+    "description": "Tyre worn down to the tread",
+    "status": "resolved",
+    "assigned_to": "U011",
+    "created_at": {
+      "$date": "2026-09-16T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-17T17:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "2c85229552efbede0da4ae20"
+        },
+        "mechanic_id": "U011",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-17T07:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "adbb9317e3093789408b4fc3"
+        },
+        "mechanic_id": "U011",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-09-17T17:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0116",
+    "bike_id": "BK0049",
+    "reported_by": "U094",
+    "issue_type": "chain",
+    "description": "Chain came off",
+    "status": "resolved",
+    "assigned_to": "U007",
+    "created_at": {
+      "$date": "2026-09-16T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-18T08:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "6b14ddf32768626ea085be43"
+        },
+        "mechanic_id": "U007",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-17T07:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "8eaa7be6494a01fb60887b3d"
+        },
+        "mechanic_id": "U007",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-09-18T08:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0117",
+    "bike_id": "BK0745",
+    "reported_by": "U113",
+    "issue_type": "chain",
+    "description": "Chain rusty and noisy",
+    "status": "resolved",
+    "assigned_to": "U016",
+    "created_at": {
+      "$date": "2026-09-16T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-18T10:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "666744ea21869206b0a69bcb"
+        },
+        "mechanic_id": "U016",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-16T16:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "bf530830b94265d2f061e9e3"
+        },
+        "mechanic_id": "U016",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-09-17T13:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "6bc5f1f5bdf31b43645f144a"
+        },
+        "mechanic_id": "U016",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-09-18T10:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0118",
+    "bike_id": "BK0335",
+    "reported_by": "U037",
+    "issue_type": "tyre",
+    "description": "Front tyre flat",
+    "status": "resolved",
+    "assigned_to": "U008",
+    "created_at": {
+      "$date": "2026-09-16T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-18T01:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "32c548208bd92f546370ac0a"
+        },
+        "mechanic_id": "U008",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-16T22:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "592272f43e48251ad2f18b86"
+        },
+        "mechanic_id": "U008",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-09-18T01:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0119",
+    "bike_id": "BK0685",
+    "reported_by": "U054",
+    "issue_type": "brakes",
+    "description": "Brakes squeal loudly",
+    "status": "resolved",
+    "assigned_to": "U013",
+    "created_at": {
+      "$date": "2026-09-17T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-18T22:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "816463145d6d7e18057c8d79"
+        },
+        "mechanic_id": "U013",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-18T04:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "13de9af6a6865907dedbc28f"
+        },
+        "mechanic_id": "U013",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-09-18T07:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "26096ed01f1ab0fbe996b0f2"
+        },
+        "mechanic_id": "U013",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-09-18T22:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0120",
+    "bike_id": "BK0141",
+    "reported_by": "U049",
+    "issue_type": "battery",
+    "description": "Battery won't charge",
+    "status": "resolved",
+    "assigned_to": "U009",
+    "created_at": {
+      "$date": "2026-09-17T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-19T14:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "b5a6a05df4adfe5da5cc15fe"
+        },
+        "mechanic_id": "U009",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-17T23:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "597d7e6c820ac37215372efc"
+        },
+        "mechanic_id": "U009",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-09-18T19:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "1a2205c334a75037f1c8e869"
+        },
+        "mechanic_id": "U009",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-09-19T14:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0121",
+    "bike_id": "BK0234",
+    "reported_by": "U100",
+    "issue_type": "battery",
+    "description": "Display shows battery error",
+    "status": "resolved",
+    "assigned_to": "U006",
+    "created_at": {
+      "$date": "2026-09-17T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-18T07:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "21b1644a2b0cba990fe3c5b1"
+        },
+        "mechanic_id": "U006",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-17T19:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "bb65e3b4e90449164672e0b4"
+        },
+        "mechanic_id": "U006",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-09-18T07:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0122",
+    "bike_id": "BK0438",
+    "reported_by": "U079",
+    "issue_type": "other",
+    "description": "Dock lock stuck",
+    "status": "resolved",
+    "assigned_to": "U016",
+    "created_at": {
+      "$date": "2026-09-17T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-18T19:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "5a2d033ad84a0bcdb2eecbc1"
+        },
+        "mechanic_id": "U016",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-18T00:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "4f63c293f72c6dfdec4a1f48"
+        },
+        "mechanic_id": "U016",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-09-18T19:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0123",
+    "bike_id": "BK0054",
+    "reported_by": "U050",
+    "issue_type": "other",
+    "description": "Bell missing",
+    "status": "resolved",
+    "assigned_to": "U009",
+    "created_at": {
+      "$date": "2026-09-19T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-20T18:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "f5ced1114234bbf5647adbac"
+        },
+        "mechanic_id": "U009",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-19T20:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "077de844215814fbdad59316"
+        },
+        "mechanic_id": "U009",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-09-20T00:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "d157617f5722c60fb78ca8b3"
+        },
+        "mechanic_id": "U009",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-09-20T18:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0124",
+    "bike_id": "BK0434",
+    "reported_by": "U038",
+    "issue_type": "chain",
+    "description": "Chain rusty and noisy",
+    "status": "resolved",
+    "assigned_to": "U010",
+    "created_at": {
+      "$date": "2026-09-19T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-20T20:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "5c111adbe2d3e4c56b59ec6f"
+        },
+        "mechanic_id": "U010",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-19T19:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "4b562ed0b52fdea945dde7a0"
+        },
+        "mechanic_id": "U010",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-09-19T20:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "eaa85c69bd5c9a4212e5df49"
+        },
+        "mechanic_id": "U010",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-09-20T20:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0125",
+    "bike_id": "BK0444",
+    "reported_by": "U131",
+    "issue_type": "battery",
+    "description": "Display shows battery error",
+    "status": "resolved",
+    "assigned_to": "U018",
+    "created_at": {
+      "$date": "2026-09-20T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-22T07:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "eaee08f33b4635107752ad7f"
+        },
+        "mechanic_id": "U018",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-21T03:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "0b1e29fbafd88278f171a1ac"
+        },
+        "mechanic_id": "U018",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-09-22T07:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0126",
+    "bike_id": "BK0024",
+    "reported_by": "U071",
+    "issue_type": "chain",
+    "description": "Gears skipping",
+    "status": "resolved",
+    "assigned_to": "U012",
+    "created_at": {
+      "$date": "2026-09-20T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-22T07:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "51054ae3feae4c7a736ebddb"
+        },
+        "mechanic_id": "U012",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-21T01:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "4f11cd6bbc517e97b3348a5b"
+        },
+        "mechanic_id": "U012",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-09-22T07:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0127",
+    "bike_id": "BK0888",
+    "reported_by": "U091",
+    "issue_type": "chain",
+    "description": "Chain rusty and noisy",
+    "status": "resolved",
+    "assigned_to": "U007",
+    "created_at": {
+      "$date": "2026-09-20T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-21T21:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "d927add77dbc9ceec98f51ec"
+        },
+        "mechanic_id": "U007",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-21T03:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "dc7c3031ff1592259f3b8344"
+        },
+        "mechanic_id": "U007",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-09-21T21:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0128",
+    "bike_id": "BK0413",
+    "reported_by": "U021",
+    "issue_type": "other",
+    "description": "Saddle won't adjust",
+    "status": "resolved",
+    "assigned_to": "U006",
+    "created_at": {
+      "$date": "2026-09-21T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-22T22:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "b71e53a173ec62f742b1c401"
+        },
+        "mechanic_id": "U006",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-21T17:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "dc2502d6b6219d9e14ed06e7"
+        },
+        "mechanic_id": "U006",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-09-22T22:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0129",
+    "bike_id": "BK0712",
+    "reported_by": "U127",
+    "issue_type": "brakes",
+    "description": "Brakes squeal loudly",
+    "status": "resolved",
+    "assigned_to": "U013",
+    "created_at": {
+      "$date": "2026-09-22T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-25T07:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "992b96e3cb339703a10caa8e"
+        },
+        "mechanic_id": "U013",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-23T07:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "6d011e7d606fb94b8d6dfded"
+        },
+        "mechanic_id": "U013",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-09-24T02:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "71984a232c50a4fc39b66e5e"
+        },
+        "mechanic_id": "U013",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-09-25T07:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0130",
+    "bike_id": "BK0849",
+    "reported_by": "U150",
+    "issue_type": "tyre",
+    "description": "Rear tyre puncture",
+    "status": "resolved",
+    "assigned_to": "U016",
+    "created_at": {
+      "$date": "2026-09-22T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-24T21:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "a7983bbe43c4e2820369a284"
+        },
+        "mechanic_id": "U016",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-23T06:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "08585447fec62e15e4c5a3d0"
+        },
+        "mechanic_id": "U016",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-09-24T01:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "632018c2e2d56d0c4041647e"
+        },
+        "mechanic_id": "U016",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-09-24T21:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0131",
+    "bike_id": "BK0893",
+    "reported_by": "U047",
+    "issue_type": "tyre",
+    "description": "Tyre worn down to the tread",
+    "status": "resolved",
+    "assigned_to": "U016",
+    "created_at": {
+      "$date": "2026-09-22T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-23T23:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "4ae5b8a79ceba2dabbb1b6cd"
+        },
+        "mechanic_id": "U016",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-22T20:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "4ff23620a57da9e83fcdce5a"
+        },
+        "mechanic_id": "U016",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-09-23T09:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "a673af409950e8443a49a344"
+        },
+        "mechanic_id": "U016",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-09-23T23:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0132",
+    "bike_id": "BK0591",
+    "reported_by": "U128",
+    "issue_type": "brakes",
+    "description": "Brake lever loose",
+    "status": "resolved",
+    "assigned_to": "U012",
+    "created_at": {
+      "$date": "2026-09-23T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-24T07:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "11ec57c551b13efb5ceaf159"
+        },
+        "mechanic_id": "U012",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-23T20:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "79111567341356a29e5d6d49"
+        },
+        "mechanic_id": "U012",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-09-24T07:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0133",
+    "bike_id": "BK0631",
+    "reported_by": "U070",
+    "issue_type": "other",
+    "description": "Bell missing",
+    "status": "resolved",
+    "assigned_to": "U010",
+    "created_at": {
+      "$date": "2026-09-23T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-24T12:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "0d7a2a1f7377ec35dac80745"
+        },
+        "mechanic_id": "U010",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-24T03:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "a79d6951ecdf88310d897522"
+        },
+        "mechanic_id": "U010",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-09-24T12:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0134",
+    "bike_id": "BK0118",
+    "reported_by": "U075",
+    "issue_type": "battery",
+    "description": "Battery won't charge",
+    "status": "resolved",
+    "assigned_to": "U016",
+    "created_at": {
+      "$date": "2026-09-23T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-24T14:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "07b594f6ac496817dc047656"
+        },
+        "mechanic_id": "U016",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-24T06:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "0bbc66ff1ebf014c845f5905"
+        },
+        "mechanic_id": "U016",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-09-24T14:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0135",
+    "bike_id": "BK0685",
+    "reported_by": "U052",
+    "issue_type": "brakes",
+    "description": "Rear brake not gripping",
+    "status": "resolved",
+    "assigned_to": "U009",
+    "created_at": {
+      "$date": "2026-09-24T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-26T18:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "5bcf508bac7bb378606e8712"
+        },
+        "mechanic_id": "U009",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-25T09:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "e79fbb87e55bb184f1a7134b"
+        },
+        "mechanic_id": "U009",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-09-25T19:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "606d92d0c0059fd8f76002ad"
+        },
+        "mechanic_id": "U009",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-09-26T18:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0136",
+    "bike_id": "BK0766",
+    "reported_by": "U084",
+    "issue_type": "other",
+    "description": "Basket bent",
+    "status": "resolved",
+    "assigned_to": "U014",
+    "created_at": {
+      "$date": "2026-09-24T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-25T18:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "7d6967cb7b83627e5930acac"
+        },
+        "mechanic_id": "U014",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-25T07:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "0dea25ef48e1487e4917b95c"
+        },
+        "mechanic_id": "U014",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-09-25T18:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0137",
+    "bike_id": "BK0165",
+    "reported_by": "U024",
+    "issue_type": "chain",
+    "description": "Gears skipping",
+    "status": "resolved",
+    "assigned_to": "U006",
+    "created_at": {
+      "$date": "2026-09-24T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-25T12:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "e0b058c989c75880253d28aa"
+        },
+        "mechanic_id": "U006",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-25T02:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "954440349e0f327bcc528a7d"
+        },
+        "mechanic_id": "U006",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-09-25T12:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0138",
+    "bike_id": "BK0684",
+    "reported_by": "U023",
+    "issue_type": "brakes",
+    "description": "Brake lever loose",
+    "status": "resolved",
+    "assigned_to": "U006",
+    "created_at": {
+      "$date": "2026-09-24T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-25T12:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "230ece7a6184389453ef6e24"
+        },
+        "mechanic_id": "U006",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-25T09:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "79104c6d867e65146df85cd9"
+        },
+        "mechanic_id": "U006",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-09-25T12:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0139",
+    "bike_id": "BK0885",
+    "reported_by": "U127",
+    "issue_type": "chain",
+    "description": "Gears skipping",
+    "status": "resolved",
+    "assigned_to": "U013",
+    "created_at": {
+      "$date": "2026-09-25T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-26T10:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "3763ea3b2dec0d4b891c4f91"
+        },
+        "mechanic_id": "U013",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-25T22:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "df59d961b710ad98c1dc42e1"
+        },
+        "mechanic_id": "U013",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-09-26T10:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0140",
+    "bike_id": "BK0210",
+    "reported_by": "U050",
+    "issue_type": "tyre",
+    "description": "Front tyre flat",
+    "status": "resolved",
+    "assigned_to": "U015",
+    "created_at": {
+      "$date": "2026-09-26T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-28T05:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "c1781f452ab27271b88018a6"
+        },
+        "mechanic_id": "U015",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-26T20:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "6550581bf88b98aa57b0864a"
+        },
+        "mechanic_id": "U015",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-09-27T12:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "616a7f6b6dcba1d0df584f0f"
+        },
+        "mechanic_id": "U015",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-09-28T05:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0141",
+    "bike_id": "BK0777",
+    "reported_by": "U083",
+    "issue_type": "battery",
+    "description": "Display shows battery error",
+    "status": "resolved",
+    "assigned_to": "U012",
+    "created_at": {
+      "$date": "2026-09-26T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-27T12:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "44e74a2e7bacb11666b87a61"
+        },
+        "mechanic_id": "U012",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-26T20:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "f9f6f7966baa90d813fd8c22"
+        },
+        "mechanic_id": "U012",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-09-27T12:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0142",
+    "bike_id": "BK0360",
+    "reported_by": "U122",
+    "issue_type": "tyre",
+    "description": "Front tyre flat",
+    "status": "resolved",
+    "assigned_to": "U008",
+    "created_at": {
+      "$date": "2026-09-27T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-28T23:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "4f5467f18b14e1175b925f75"
+        },
+        "mechanic_id": "U008",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-27T21:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "0fd66c67efe649e0e10240c5"
+        },
+        "mechanic_id": "U008",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-09-28T12:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "a7509fa9a816c3d12727a941"
+        },
+        "mechanic_id": "U008",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-09-28T23:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0143",
+    "bike_id": "BK0444",
+    "reported_by": "U028",
+    "issue_type": "brakes",
+    "description": "Brake lever loose",
+    "status": "resolved",
+    "assigned_to": "U011",
+    "created_at": {
+      "$date": "2026-09-28T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-29T18:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "5252a71bbf986c02cda5865d"
+        },
+        "mechanic_id": "U011",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-28T20:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "e476c3295f369f189cfb56f9"
+        },
+        "mechanic_id": "U011",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-09-29T18:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0144",
+    "bike_id": "BK0254",
+    "reported_by": "U038",
+    "issue_type": "brakes",
+    "description": "Brakes squeal loudly",
+    "status": "resolved",
+    "assigned_to": "U019",
+    "created_at": {
+      "$date": "2026-09-28T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-30T14:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "345a02d5c1de5f1184710a12"
+        },
+        "mechanic_id": "U019",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-29T06:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "70aba70862f67b3fbe766cb1"
+        },
+        "mechanic_id": "U019",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-09-29T21:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "190b938408a4e988f297ead6"
+        },
+        "mechanic_id": "U019",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-09-30T14:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0145",
+    "bike_id": "BK0268",
+    "reported_by": "U138",
+    "issue_type": "chain",
+    "description": "Chain rusty and noisy",
+    "status": "resolved",
+    "assigned_to": "U018",
+    "created_at": {
+      "$date": "2026-09-29T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-09-30T07:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "faa9d5d5aa0228aa8384aecc"
+        },
+        "mechanic_id": "U018",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-30T02:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "4165801c45f4d20cdd3652bb"
+        },
+        "mechanic_id": "U018",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-09-30T03:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "d4661580b9f9db3983911cb5"
+        },
+        "mechanic_id": "U018",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-09-30T07:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0146",
+    "bike_id": "BK0296",
+    "reported_by": "U023",
+    "issue_type": "other",
+    "description": "Bell missing",
+    "status": "resolved",
+    "assigned_to": "U007",
+    "created_at": {
+      "$date": "2026-09-30T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-10-02T09:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "c4699eadc13900290a11849f"
+        },
+        "mechanic_id": "U007",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-09-30T21:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "30727329b086657996c8de4f"
+        },
+        "mechanic_id": "U007",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-10-01T14:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "52d7be4add6660cf1657f7bb"
+        },
+        "mechanic_id": "U007",
+        "note": "Adjusted and road tested",
+        "created_at": {
+          "$date": "2026-10-02T09:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0147",
+    "bike_id": "BK0208",
+    "reported_by": "U118",
+    "issue_type": "tyre",
+    "description": "Front tyre flat",
+    "status": "resolved",
+    "assigned_to": "U011",
+    "created_at": {
+      "$date": "2026-10-02T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-10-02T16:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "f5fc71a07a309f45a1c4cc7c"
+        },
+        "mechanic_id": "U011",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-02T15:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "c682413a25c6f16fd4b8e16f"
+        },
+        "mechanic_id": "U011",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-10-02T16:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0148",
+    "bike_id": "BK0640",
+    "reported_by": "U034",
+    "issue_type": "other",
+    "description": "Saddle won't adjust",
+    "status": "resolved",
+    "assigned_to": "U013",
+    "created_at": {
+      "$date": "2026-10-03T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-10-04T06:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "c4462e2f07d1d9426defd20f"
+        },
+        "mechanic_id": "U013",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-03T17:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "b4dd4902427b74d89008c1ac"
+        },
+        "mechanic_id": "U013",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-10-03T21:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "7f4685dc2de28e0e7c64298e"
+        },
+        "mechanic_id": "U013",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-10-04T06:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0149",
+    "bike_id": "BK0324",
+    "reported_by": "U036",
+    "issue_type": "battery",
+    "description": "Battery drains very quickly",
+    "status": "resolved",
+    "assigned_to": "U020",
+    "created_at": {
+      "$date": "2026-10-03T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-10-05T12:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "cd86bd74895bf435c7f92d70"
+        },
+        "mechanic_id": "U020",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-04T06:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "43e3cbacd84cbf6d7cb3bb9e"
+        },
+        "mechanic_id": "U020",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-10-05T12:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0150",
+    "bike_id": "BK0557",
+    "reported_by": "U072",
+    "issue_type": "brakes",
+    "description": "Brakes squeal loudly",
+    "status": "resolved",
+    "assigned_to": "U019",
+    "created_at": {
+      "$date": "2026-10-06T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-10-07T15:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "ebe01a9fef214afc8e3ba1e9"
+        },
+        "mechanic_id": "U019",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-06T14:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "8b2616765b6513455cefc63c"
+        },
+        "mechanic_id": "U019",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-10-07T09:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5ecb74b335163fe7e5033813"
+        },
+        "mechanic_id": "U019",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-10-07T15:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0151",
+    "bike_id": "BK0263",
+    "reported_by": "U052",
+    "issue_type": "brakes",
+    "description": "Rear brake not gripping",
+    "status": "resolved",
+    "assigned_to": "U016",
+    "created_at": {
+      "$date": "2026-10-07T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-10-08T22:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "d0c97ecff1412f4e662232a4"
+        },
+        "mechanic_id": "U016",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-08T01:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "9c5802b6e49bc75e37fa026f"
+        },
+        "mechanic_id": "U016",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-10-08T22:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0152",
+    "bike_id": "BK0268",
+    "reported_by": "U120",
+    "issue_type": "brakes",
+    "description": "Brakes squeal loudly",
+    "status": "resolved",
+    "assigned_to": "U006",
+    "created_at": {
+      "$date": "2026-10-08T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-10-10T06:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "e277a52b98feafc493f5e70c"
+        },
+        "mechanic_id": "U006",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-09T03:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "242c1f34064cf42d22bdc715"
+        },
+        "mechanic_id": "U006",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-10-10T06:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0153",
+    "bike_id": "BK0685",
+    "reported_by": "U026",
+    "issue_type": "brakes",
+    "description": "Front brake feels spongy",
+    "status": "resolved",
+    "assigned_to": "U010",
+    "created_at": {
+      "$date": "2026-10-09T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-10-10T20:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "643bd88d94826451323b8239"
+        },
+        "mechanic_id": "U010",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-09T14:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "a9e1783cf6f9879575f9296c"
+        },
+        "mechanic_id": "U010",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-10-10T12:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "c2449009f8ab18b325d23bd8"
+        },
+        "mechanic_id": "U010",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-10-10T20:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0154",
+    "bike_id": "BK0807",
+    "reported_by": "U063",
+    "issue_type": "chain",
+    "description": "Chain came off",
+    "status": "resolved",
+    "assigned_to": "U019",
+    "created_at": {
+      "$date": "2026-10-09T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-10-11T01:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "5c95af6450ce755a3ed6e6f3"
+        },
+        "mechanic_id": "U019",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-10T09:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5e2fbfd93c925eada8c64f1a"
+        },
+        "mechanic_id": "U019",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-10-10T19:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "4f0e9da0663d15acbc01333a"
+        },
+        "mechanic_id": "U019",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-10-11T01:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0155",
+    "bike_id": "BK0321",
+    "reported_by": "U032",
+    "issue_type": "tyre",
+    "description": "Rear tyre puncture",
+    "status": "resolved",
+    "assigned_to": "U018",
+    "created_at": {
+      "$date": "2026-10-09T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-10-11T16:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "5b53369fc750f329eff5506a"
+        },
+        "mechanic_id": "U018",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-10T05:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "b26350dab3d019e469c7101b"
+        },
+        "mechanic_id": "U018",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-10-10T13:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "873635429ff471155bb9ca31"
+        },
+        "mechanic_id": "U018",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-10-11T16:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0156",
+    "bike_id": "BK0602",
+    "reported_by": "U064",
+    "issue_type": "brakes",
+    "description": "Rear brake not gripping",
+    "status": "resolved",
+    "assigned_to": "U019",
+    "created_at": {
+      "$date": "2026-10-10T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-10-12T04:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "7b4ab5f6fe9eb876a852793a"
+        },
+        "mechanic_id": "U019",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-10T23:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "e7b165c118e44f2992bc7c77"
+        },
+        "mechanic_id": "U019",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-10-11T04:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "c91f6eee160a3a84b6773aff"
+        },
+        "mechanic_id": "U019",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-10-12T04:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0157",
+    "bike_id": "BK0068",
+    "reported_by": "U035",
+    "issue_type": "other",
+    "description": "Bell missing",
+    "status": "resolved",
+    "assigned_to": "U010",
+    "created_at": {
+      "$date": "2026-10-10T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-10-13T03:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "c598de8f281e57e66dd72de7"
+        },
+        "mechanic_id": "U010",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-11T00:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "2ee47f434e187b6eaa116f2d"
+        },
+        "mechanic_id": "U010",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-10-12T00:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "54c403e4b231d9592076e24f"
+        },
+        "mechanic_id": "U010",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-10-13T03:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0158",
+    "bike_id": "BK0039",
+    "reported_by": "U130",
+    "issue_type": "brakes",
+    "description": "Brakes squeal loudly",
+    "status": "resolved",
+    "assigned_to": "U012",
+    "created_at": {
+      "$date": "2026-10-10T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-10-11T06:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "cc7750bd7fd4e3140af9f0a4"
+        },
+        "mechanic_id": "U012",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-10T22:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "05ab2606e839d9fd63ec0edf"
+        },
+        "mechanic_id": "U012",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-10-11T06:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0159",
+    "bike_id": "BK0360",
+    "reported_by": "U067",
+    "issue_type": "tyre",
+    "description": "Slow leak in rear tyre",
+    "status": "resolved",
+    "assigned_to": "U006",
+    "created_at": {
+      "$date": "2026-10-11T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-10-12T22:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "c9e16f25030cc1374544b4ce"
+        },
+        "mechanic_id": "U006",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-12T03:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "8567463f726e3b02bfeb1eb1"
+        },
+        "mechanic_id": "U006",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-10-12T16:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "c292511bf205c9d7067f8bcd"
+        },
+        "mechanic_id": "U006",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-10-12T22:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0160",
+    "bike_id": "BK0321",
+    "reported_by": "U137",
+    "issue_type": "battery",
+    "description": "Motor cuts out on hills",
+    "status": "resolved",
+    "assigned_to": "U017",
+    "created_at": {
+      "$date": "2026-10-12T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-10-13T20:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "6fd9d42200d25d9543d4a4a2"
+        },
+        "mechanic_id": "U017",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-13T09:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "bc2da58536ec9903107df458"
+        },
+        "mechanic_id": "U017",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-10-13T10:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "1a2f5cb1a39d0e9b65796d31"
+        },
+        "mechanic_id": "U017",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-10-13T20:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0161",
+    "bike_id": "BK0613",
+    "reported_by": "U084",
+    "issue_type": "tyre",
+    "description": "Slow leak in rear tyre",
+    "status": "resolved",
+    "assigned_to": "U017",
+    "created_at": {
+      "$date": "2026-10-12T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-10-14T11:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "fede3b9b9905432b02c6cc17"
+        },
+        "mechanic_id": "U017",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-13T00:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "2c24f31f461ddb190a388632"
+        },
+        "mechanic_id": "U017",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-10-13T13:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "43b7ed699fa1d8a149f631d5"
+        },
+        "mechanic_id": "U017",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-10-14T11:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0162",
+    "bike_id": "BK0026",
+    "reported_by": "U007",
+    "issue_type": "chain",
+    "description": "Chain keeps slipping",
+    "status": "resolved",
+    "assigned_to": "U016",
+    "created_at": {
+      "$date": "2026-10-12T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-10-13T05:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "c0a6d687fccf2f9ab7100eb4"
+        },
+        "mechanic_id": "U016",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-12T19:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5f1c7d3b348894f2c293e343"
+        },
+        "mechanic_id": "U016",
+        "note": "Cleaned and lubricated",
+        "created_at": {
+          "$date": "2026-10-13T05:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0163",
+    "bike_id": "BK0291",
+    "reported_by": "U023",
+    "issue_type": "chain",
+    "description": "Chain rusty and noisy",
+    "status": "resolved",
+    "assigned_to": "U013",
+    "created_at": {
+      "$date": "2026-10-12T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-10-14T16:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "703c8c1c1a48973fe5ca202a"
+        },
+        "mechanic_id": "U013",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-12T15:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "33063b270b17334482ff7c2a"
+        },
+        "mechanic_id": "U013",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-10-13T10:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "9e55a6e3a380ce735177914a"
+        },
+        "mechanic_id": "U013",
+        "note": "Safety check passed",
+        "created_at": {
+          "$date": "2026-10-14T16:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0164",
+    "bike_id": "BK0404",
+    "reported_by": "U076",
+    "issue_type": "battery",
+    "description": "Motor cuts out on hills",
+    "status": "resolved",
+    "assigned_to": "U008",
+    "created_at": {
+      "$date": "2026-10-13T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-10-15T05:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "f96a09c7c670c84aa97606af"
+        },
+        "mechanic_id": "U008",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-13T15:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "52a5a8b1d81e42bb3f4f3266"
+        },
+        "mechanic_id": "U008",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-10-14T07:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "c85826e00b846b793137927b"
+        },
+        "mechanic_id": "U008",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-10-15T05:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0165",
+    "bike_id": "BK0701",
+    "reported_by": "U131",
+    "issue_type": "battery",
+    "description": "Display shows battery error",
+    "status": "resolved",
+    "assigned_to": "U018",
+    "created_at": {
+      "$date": "2026-10-14T13:45:00Z"
+    },
+    "resolved_at": {
+      "$date": "2026-10-15T04:45:00Z"
+    },
+    "notes": [
+      {
+        "_id": {
+          "$oid": "344d2215b38812eb7db868cb"
+        },
+        "mechanic_id": "U018",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-14T14:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "a64a735c3abc08ba83504874"
+        },
+        "mechanic_id": "U018",
+        "note": "Replaced part and tested",
+        "created_at": {
+          "$date": "2026-10-15T04:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0166",
+    "bike_id": "BK0297",
+    "reported_by": "U066",
+    "issue_type": "other",
+    "description": "Bell missing",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-15T18:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0167",
+    "bike_id": "BK0426",
+    "reported_by": "U125",
+    "issue_type": "brakes",
+    "description": "Front brake feels spongy",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-15T19:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0168",
+    "bike_id": "BK0236",
+    "reported_by": "U128",
+    "issue_type": "brakes",
+    "description": "Brakes squeal loudly",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-15T20:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0169",
+    "bike_id": "BK0249",
+    "reported_by": "U120",
+    "issue_type": "brakes",
+    "description": "Rear brake not gripping",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-15T20:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0170",
+    "bike_id": "BK0760",
+    "reported_by": "U145",
+    "issue_type": "other",
+    "description": "Front light not working",
+    "status": "in_progress",
+    "assigned_to": "U017",
+    "created_at": {
+      "$date": "2026-10-15T22:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": [
+      {
+        "_id": {
+          "$oid": "e93d0a9ea61bf915654e4f85"
+        },
+        "mechanic_id": "U017",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-16T13:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0171",
+    "bike_id": "BK0310",
+    "reported_by": "U127",
+    "issue_type": "tyre",
+    "description": "Tyre worn down to the tread",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-16T01:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0172",
+    "bike_id": "BK0572",
+    "reported_by": "U028",
+    "issue_type": "battery",
+    "description": "Motor cuts out on hills",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-16T02:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0173",
+    "bike_id": "BK0017",
+    "reported_by": "U102",
+    "issue_type": "tyre",
+    "description": "Tyre worn down to the tread",
+    "status": "in_progress",
+    "assigned_to": "U008",
+    "created_at": {
+      "$date": "2026-10-16T05:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": [
+      {
+        "_id": {
+          "$oid": "6f7ceea89ad88c9dbba48b7a"
+        },
+        "mechanic_id": "U008",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-16T16:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "53cfeade68ea842e226e809f"
+        },
+        "mechanic_id": "U008",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-10-17T13:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0174",
+    "bike_id": "BK0751",
+    "reported_by": "U025",
+    "issue_type": "battery",
+    "description": "Motor cuts out on hills",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-16T05:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0175",
+    "bike_id": "BK0532",
+    "reported_by": "U122",
+    "issue_type": "other",
+    "description": "Bell missing",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-16T07:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0176",
+    "bike_id": "BK0618",
+    "reported_by": "U095",
+    "issue_type": "other",
+    "description": "Basket bent",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-16T07:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0177",
+    "bike_id": "BK0299",
+    "reported_by": "U079",
+    "issue_type": "tyre",
+    "description": "Slow leak in rear tyre",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-16T08:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0178",
+    "bike_id": "BK0832",
+    "reported_by": "U051",
+    "issue_type": "other",
+    "description": "Basket bent",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-16T08:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0179",
+    "bike_id": "BK0895",
+    "reported_by": "U123",
+    "issue_type": "other",
+    "description": "Bell missing",
+    "status": "in_progress",
+    "assigned_to": "U009",
+    "created_at": {
+      "$date": "2026-10-16T15:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": [
+      {
+        "_id": {
+          "$oid": "5274e48f7a1c9e48a4002168"
+        },
+        "mechanic_id": "U009",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-16T18:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "7b2dcc663e0cfe875db21f04"
+        },
+        "mechanic_id": "U009",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-10-17T05:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0180",
+    "bike_id": "BK0611",
+    "reported_by": "U139",
+    "issue_type": "brakes",
+    "description": "Brakes squeal loudly",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-16T16:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0181",
+    "bike_id": "BK0725",
+    "reported_by": "U135",
+    "issue_type": "other",
+    "description": "Saddle won't adjust",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-16T16:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0182",
+    "bike_id": "BK0087",
+    "reported_by": "U068",
+    "issue_type": "brakes",
+    "description": "Front brake feels spongy",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-16T21:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0183",
+    "bike_id": "BK0148",
+    "reported_by": "U095",
+    "issue_type": "other",
+    "description": "Dock lock stuck",
+    "status": "in_progress",
+    "assigned_to": "U008",
+    "created_at": {
+      "$date": "2026-10-16T23:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": [
+      {
+        "_id": {
+          "$oid": "b31a06ed6bb902945774c820"
+        },
+        "mechanic_id": "U008",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-17T11:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "4a90d69e08b43181a2a373de"
+        },
+        "mechanic_id": "U008",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-10-18T09:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0184",
+    "bike_id": "BK0472",
+    "reported_by": "U047",
+    "issue_type": "other",
+    "description": "Saddle won't adjust",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-16T23:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0185",
+    "bike_id": "BK0142",
+    "reported_by": "U138",
+    "issue_type": "other",
+    "description": "Saddle won't adjust",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-17T00:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0186",
+    "bike_id": "BK0041",
+    "reported_by": "U057",
+    "issue_type": "brakes",
+    "description": "Rear brake not gripping",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-17T01:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0187",
+    "bike_id": "BK0089",
+    "reported_by": "U146",
+    "issue_type": "chain",
+    "description": "Chain rusty and noisy",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-17T04:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0188",
+    "bike_id": "BK0699",
+    "reported_by": "U083",
+    "issue_type": "chain",
+    "description": "Gears skipping",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-17T04:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0189",
+    "bike_id": "BK0288",
+    "reported_by": "U113",
+    "issue_type": "chain",
+    "description": "Chain came off",
+    "status": "in_progress",
+    "assigned_to": "U006",
+    "created_at": {
+      "$date": "2026-10-17T06:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": [
+      {
+        "_id": {
+          "$oid": "7b5dcf8e6d5cc42c65f6f205"
+        },
+        "mechanic_id": "U006",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-17T22:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0190",
+    "bike_id": "BK0375",
+    "reported_by": "U083",
+    "issue_type": "brakes",
+    "description": "Front brake feels spongy",
+    "status": "in_progress",
+    "assigned_to": "U008",
+    "created_at": {
+      "$date": "2026-10-17T06:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": [
+      {
+        "_id": {
+          "$oid": "f6a4a2784ae90671391b8f5b"
+        },
+        "mechanic_id": "U008",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-17T18:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0191",
+    "bike_id": "BK0870",
+    "reported_by": "U071",
+    "issue_type": "other",
+    "description": "Basket bent",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-17T09:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0192",
+    "bike_id": "BK0315",
+    "reported_by": "U136",
+    "issue_type": "tyre",
+    "description": "Slow leak in rear tyre",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-17T10:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0193",
+    "bike_id": "BK0537",
+    "reported_by": "U107",
+    "issue_type": "brakes",
+    "description": "Rear brake not gripping",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-17T12:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0194",
+    "bike_id": "BK0848",
+    "reported_by": "U127",
+    "issue_type": "battery",
+    "description": "Battery won't charge",
+    "status": "in_progress",
+    "assigned_to": "U018",
+    "created_at": {
+      "$date": "2026-10-17T12:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": [
+      {
+        "_id": {
+          "$oid": "7d22425e0d37503daa3703cc"
+        },
+        "mechanic_id": "U018",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-17T17:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "17d3ffde1f231ab439645000"
+        },
+        "mechanic_id": "U018",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-10-18T12:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0195",
+    "bike_id": "BK0661",
+    "reported_by": "U116",
+    "issue_type": "brakes",
+    "description": "Rear brake not gripping",
+    "status": "in_progress",
+    "assigned_to": "U010",
+    "created_at": {
+      "$date": "2026-10-17T15:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": [
+      {
+        "_id": {
+          "$oid": "dbdb73c0ef26d95b94878acc"
+        },
+        "mechanic_id": "U010",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-18T05:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0196",
+    "bike_id": "BK0094",
+    "reported_by": "U072",
+    "issue_type": "chain",
+    "description": "Gears skipping",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-17T16:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0197",
+    "bike_id": "BK0378",
+    "reported_by": "U137",
+    "issue_type": "brakes",
+    "description": "Rear brake not gripping",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-17T16:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0198",
+    "bike_id": "BK0530",
+    "reported_by": "U007",
+    "issue_type": "battery",
+    "description": "Motor cuts out on hills",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-17T17:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0199",
+    "bike_id": "BK0638",
+    "reported_by": "U149",
+    "issue_type": "brakes",
+    "description": "Rear brake not gripping",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-17T17:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0200",
+    "bike_id": "BK0736",
+    "reported_by": "U135",
+    "issue_type": "other",
+    "description": "Saddle won't adjust",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-17T18:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0201",
+    "bike_id": "BK0377",
+    "reported_by": "U054",
+    "issue_type": "brakes",
+    "description": "Brakes squeal loudly",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-17T20:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0202",
+    "bike_id": "BK0491",
+    "reported_by": "U054",
+    "issue_type": "battery",
+    "description": "Motor cuts out on hills",
+    "status": "in_progress",
+    "assigned_to": "U006",
+    "created_at": {
+      "$date": "2026-10-18T00:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": [
+      {
+        "_id": {
+          "$oid": "454c9d7ef79f884a0c408501"
+        },
+        "mechanic_id": "U006",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-18T03:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "cd14e05c8001d9c7602631ee"
+        },
+        "mechanic_id": "U006",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-10-18T05:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0203",
+    "bike_id": "BK0488",
+    "reported_by": "U073",
+    "issue_type": "brakes",
+    "description": "Rear brake not gripping",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-18T03:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0204",
+    "bike_id": "BK0662",
+    "reported_by": "U035",
+    "issue_type": "battery",
+    "description": "Battery drains very quickly",
+    "status": "in_progress",
+    "assigned_to": "U018",
+    "created_at": {
+      "$date": "2026-10-18T05:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": [
+      {
+        "_id": {
+          "$oid": "73dfa9cc3ef57a9e413f1787"
+        },
+        "mechanic_id": "U018",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-19T00:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0205",
+    "bike_id": "BK0730",
+    "reported_by": "U050",
+    "issue_type": "brakes",
+    "description": "Front brake feels spongy",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-18T06:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0206",
+    "bike_id": "BK0775",
+    "reported_by": "U142",
+    "issue_type": "tyre",
+    "description": "Tyre worn down to the tread",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-18T07:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0207",
+    "bike_id": "BK0179",
+    "reported_by": "U087",
+    "issue_type": "tyre",
+    "description": "Rear tyre puncture",
+    "status": "in_progress",
+    "assigned_to": "U008",
+    "created_at": {
+      "$date": "2026-10-18T10:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": [
+      {
+        "_id": {
+          "$oid": "68d4ec3b7e18485d3534dbc9"
+        },
+        "mechanic_id": "U008",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-18T22:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "deba1235624f83165a9325fd"
+        },
+        "mechanic_id": "U008",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-10-19T22:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0208",
+    "bike_id": "BK0419",
+    "reported_by": "U105",
+    "issue_type": "tyre",
+    "description": "Front tyre flat",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-18T11:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0209",
+    "bike_id": "BK0120",
+    "reported_by": "U103",
+    "issue_type": "brakes",
+    "description": "Rear brake not gripping",
+    "status": "in_progress",
+    "assigned_to": "U007",
+    "created_at": {
+      "$date": "2026-10-18T15:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": [
+      {
+        "_id": {
+          "$oid": "6211cfbdb7987c7df5722605"
+        },
+        "mechanic_id": "U007",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-19T01:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0210",
+    "bike_id": "BK0326",
+    "reported_by": "U114",
+    "issue_type": "battery",
+    "description": "Motor cuts out on hills",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-18T15:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0211",
+    "bike_id": "BK0408",
+    "reported_by": "U103",
+    "issue_type": "tyre",
+    "description": "Rear tyre puncture",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-18T18:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0212",
+    "bike_id": "BK0443",
+    "reported_by": "U054",
+    "issue_type": "chain",
+    "description": "Gears skipping",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-18T21:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0213",
+    "bike_id": "BK0002",
+    "reported_by": "U142",
+    "issue_type": "tyre",
+    "description": "Slow leak in rear tyre",
+    "status": "in_progress",
+    "assigned_to": "U009",
+    "created_at": {
+      "$date": "2026-10-18T23:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": [
+      {
+        "_id": {
+          "$oid": "0a8042429be433ef4627a181"
+        },
+        "mechanic_id": "U009",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-19T09:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0214",
+    "bike_id": "BK0423",
+    "reported_by": "U118",
+    "issue_type": "brakes",
+    "description": "Rear brake not gripping",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-19T01:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0215",
+    "bike_id": "BK0107",
+    "reported_by": "U006",
+    "issue_type": "chain",
+    "description": "Chain rusty and noisy",
+    "status": "in_progress",
+    "assigned_to": "U014",
+    "created_at": {
+      "$date": "2026-10-19T03:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": [
+      {
+        "_id": {
+          "$oid": "7f0561a0576d638ed5934957"
+        },
+        "mechanic_id": "U014",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-19T11:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0216",
+    "bike_id": "BK0440",
+    "reported_by": "U085",
+    "issue_type": "brakes",
+    "description": "Front brake feels spongy",
+    "status": "in_progress",
+    "assigned_to": "U008",
+    "created_at": {
+      "$date": "2026-10-19T06:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": [
+      {
+        "_id": {
+          "$oid": "8cce2a491968c258c4da6c0a"
+        },
+        "mechanic_id": "U008",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-19T14:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0217",
+    "bike_id": "BK0879",
+    "reported_by": "U101",
+    "issue_type": "chain",
+    "description": "Gears skipping",
+    "status": "in_progress",
+    "assigned_to": "U006",
+    "created_at": {
+      "$date": "2026-10-19T07:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": [
+      {
+        "_id": {
+          "$oid": "b020ef6ba77fdf26c0afe60f"
+        },
+        "mechanic_id": "U006",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-19T21:45:00Z"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "142e4567f801bb83ab5ce589"
+        },
+        "mechanic_id": "U006",
+        "note": "Ordered replacement part",
+        "created_at": {
+          "$date": "2026-10-20T15:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0218",
+    "bike_id": "BK0541",
+    "reported_by": "U066",
+    "issue_type": "chain",
+    "description": "Gears skipping",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-19T09:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  },
+  {
+    "report_id": "MR0219",
+    "bike_id": "BK0040",
+    "reported_by": "U078",
+    "issue_type": "brakes",
+    "description": "Rear brake not gripping",
+    "status": "in_progress",
+    "assigned_to": "U015",
+    "created_at": {
+      "$date": "2026-10-19T11:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": [
+      {
+        "_id": {
+          "$oid": "637e444b95e60b632a0c2c35"
+        },
+        "mechanic_id": "U015",
+        "note": "Inspected bike at station",
+        "created_at": {
+          "$date": "2026-10-20T05:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "report_id": "MR0220",
+    "bike_id": "BK0604",
+    "reported_by": "U056",
+    "issue_type": "tyre",
+    "description": "Rear tyre puncture",
+    "status": "open",
+    "assigned_to": null,
+    "created_at": {
+      "$date": "2026-10-19T11:45:00Z"
+    },
+    "resolved_at": null,
+    "notes": []
+  }
+]

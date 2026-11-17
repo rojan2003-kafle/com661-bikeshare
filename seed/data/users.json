@@ -1,0 +1,1502 @@
+[
+  {
+    "user_id": "U001",
+    "name": "Admin Demo",
+    "email": "admin@bikeshare.test",
+    "password_hash": "$2b$10$eGKciO7nvkyYIxf3aLuZtu8IjEmjxNvT6GsBgWjevb1K9DGddIBhO",
+    "role": "admin",
+    "created_at": {
+      "$date": "2025-05-27T16:12:00Z"
+    }
+  },
+  {
+    "user_id": "U002",
+    "name": "Jack Roberts",
+    "email": "jack.roberts@example.com",
+    "password_hash": "$2b$10$6dC7JXkr0.yXWyFlJha1pOpfVW04kCUcu9gXbKiFSTPLicDp7MTvC",
+    "role": "admin",
+    "created_at": {
+      "$date": "2026-05-14T06:02:00Z"
+    }
+  },
+  {
+    "user_id": "U003",
+    "name": "Diego Mensah",
+    "email": "diego.mensah@example.com",
+    "password_hash": "$2b$10$HXIGnmBM3aTCKcacwUZKcOsp5lcIANxXYk5a2A/gazz4gI/YcPsiu",
+    "role": "admin",
+    "created_at": {
+      "$date": "2025-01-02T12:10:00Z"
+    }
+  },
+  {
+    "user_id": "U004",
+    "name": "Grace Wood",
+    "email": "grace.wood@example.com",
+    "password_hash": "$2b$10$2J/unOdrm0by9o5OFpPIkeeLrJddld22cAdaVkWnOrb2ejKiHXFLG",
+    "role": "admin",
+    "created_at": {
+      "$date": "2025-07-23T10:28:00Z"
+    }
+  },
+  {
+    "user_id": "U005",
+    "name": "Lucia Garcia",
+    "email": "lucia.garcia@example.com",
+    "password_hash": "$2b$10$5PUrH4dm6JcmfWUvgOUi8.pI7lrGYGOLaV7Vr8KZ/uBedKDi.A.Ni",
+    "role": "admin",
+    "created_at": {
+      "$date": "2026-01-22T09:48:00Z"
+    }
+  },
+  {
+    "user_id": "U006",
+    "name": "Mechanic Demo",
+    "email": "mechanic@bikeshare.test",
+    "password_hash": "$2b$10$T1OleX74.okoyYv14pg.7O4n96XMt7P1sBf5BdrvQ51YG31K6fM06",
+    "role": "mechanic",
+    "created_at": {
+      "$date": "2025-06-29T16:20:00Z"
+    }
+  },
+  {
+    "user_id": "U007",
+    "name": "Ethan Thompson",
+    "email": "ethan.thompson@example.com",
+    "password_hash": "$2b$10$VUvM/0/0KSbaglkwbbXnHe2CeBkzStyl5IoxeiD2URSBIFs17aH82",
+    "role": "mechanic",
+    "created_at": {
+      "$date": "2025-07-26T09:47:00Z"
+    }
+  },
+  {
+    "user_id": "U008",
+    "name": "Ewa Wright",
+    "email": "ewa.wright@example.com",
+    "password_hash": "$2b$10$jrXjk/CwgVzA3JdeJcuOuOJGY6A9cDGAfF7ML2zRdsJ2SV3Uu8F5u",
+    "role": "mechanic",
+    "created_at": {
+      "$date": "2025-07-02T18:50:00Z"
+    }
+  },
+  {
+    "user_id": "U009",
+    "name": "Jack Murphy",
+    "email": "jack.murphy@example.com",
+    "password_hash": "$2b$10$taQo5gugwdGHp4vOjCIzzOFwHZJn1En1/PRNb2xsLdCmyYrkInyFe",
+    "role": "mechanic",
+    "created_at": {
+      "$date": "2025-04-23T20:11:00Z"
+    }
+  },
+  {
+    "user_id": "U010",
+    "name": "Lucas White",
+    "email": "lucas.white@example.com",
+    "password_hash": "$2b$10$5nlI3faKYwTtF/hW1WGRf.3oH2NqqPypVHP/h6u2kwmbmY1xcx0Z.",
+    "role": "mechanic",
+    "created_at": {
+      "$date": "2025-10-26T14:41:00Z"
+    }
+  },
+  {
+    "user_id": "U011",
+    "name": "Kwame Jones",
+    "email": "kwame.jones@example.com",
+    "password_hash": "$2b$10$buEPjlp8VYcWy/GA/qy66uYSUBvilvbFedse8aNPIq7LYKYMpb5y.",
+    "role": "mechanic",
+    "created_at": {
+      "$date": "2025-04-24T22:13:00Z"
+    }
+  },
+  {
+    "user_id": "U012",
+    "name": "Finn Lewis",
+    "email": "finn.lewis@example.com",
+    "password_hash": "$2b$10$YC1u8.j.xiimGSXGrpq4c.twersHn3w7T9pAgSzETtFWWO94/tRiq",
+    "role": "mechanic",
+    "created_at": {
+      "$date": "2025-09-09T16:50:00Z"
+    }
+  },
+  {
+    "user_id": "U013",
+    "name": "Daniel Mensah",
+    "email": "daniel.mensah@example.com",
+    "password_hash": "$2b$10$gZYytS8nin0z589OiKMC..tdzonlPMo81jvuMI/RuCN9rpdy4xkG.",
+    "role": "mechanic",
+    "created_at": {
+      "$date": "2026-03-23T16:32:00Z"
+    }
+  },
+  {
+    "user_id": "U014",
+    "name": "Priya Roberts",
+    "email": "priya.roberts@example.com",
+    "password_hash": "$2b$10$daD6QsDFcJ2ppY8MJiqx.uGkuBCn9Ej898ikUxGGPjq9YiFEdKX9u",
+    "role": "mechanic",
+    "created_at": {
+      "$date": "2025-05-14T10:11:00Z"
+    }
+  },
+  {
+    "user_id": "U015",
+    "name": "Aisha Roberts",
+    "email": "aisha.roberts@example.com",
+    "password_hash": "$2b$10$MzmNKF9TH/3XyEJAKS6nNuhpA4wQ5cks9vBcd229aAaWaQuZA4JA.",
+    "role": "mechanic",
+    "created_at": {
+      "$date": "2024-12-18T16:22:00Z"
+    }
+  },
+  {
+    "user_id": "U016",
+    "name": "Jack Gurung",
+    "email": "jack.gurung@example.com",
+    "password_hash": "$2b$10$IE72jh/FvczYfP/Bc8Ohm.TOs4LVDyAmgqnhF8hgeNCyivV7e8YDC",
+    "role": "mechanic",
+    "created_at": {
+      "$date": "2026-04-26T06:40:00Z"
+    }
+  },
+  {
+    "user_id": "U017",
+    "name": "Ryan Lewis",
+    "email": "ryan.lewis@example.com",
+    "password_hash": "$2b$10$MY1PnNDXQzQPivLkF7tgGeFnsYwKFfoJ7SQn/EgbCQdhSmTtLNEoW",
+    "role": "mechanic",
+    "created_at": {
+      "$date": "2025-12-26T21:45:00Z"
+    }
+  },
+  {
+    "user_id": "U018",
+    "name": "Muhammad Smith",
+    "email": "muhammad.smith@example.com",
+    "password_hash": "$2b$10$JoukggAgfHFcLpB5jeg/6uVGUrGOG5UOYQX29GMVbloh3zF7Nw7RG",
+    "role": "mechanic",
+    "created_at": {
+      "$date": "2026-07-21T12:24:00Z"
+    }
+  },
+  {
+    "user_id": "U019",
+    "name": "Lucas Lewis",
+    "email": "lucas.lewis@example.com",
+    "password_hash": "$2b$10$jHmhJCTlIvZDJAkkdOl7oedAtWw9mPo01YfqIST68zvEWrSWkqrai",
+    "role": "mechanic",
+    "created_at": {
+      "$date": "2026-02-12T23:49:00Z"
+    }
+  },
+  {
+    "user_id": "U020",
+    "name": "Zara Wood",
+    "email": "zara.wood@example.com",
+    "password_hash": "$2b$10$QwXez2lnb4JVVZ8Cv2k25OOVk54HggzT/fYOyE5I1.6g8zdZ74x/O",
+    "role": "mechanic",
+    "created_at": {
+      "$date": "2025-06-03T13:47:00Z"
+    }
+  },
+  {
+    "user_id": "U021",
+    "name": "Rider Demo",
+    "email": "rider@bikeshare.test",
+    "password_hash": "$2b$10$yUh/gQv0OevRfs5jLPLj0.atpI/x1nAs98hgw2z0DOJpfsZ0cR7wq",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-09-30T00:07:00Z"
+    }
+  },
+  {
+    "user_id": "U022",
+    "name": "Sophia Rossi",
+    "email": "sophia.rossi@example.com",
+    "password_hash": "$2b$10$kn1O/9wJzGe3ehNTg2ONZuU23ZTYY5HMdZrJskL.lkuCFOXmEqim6",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-02-23T10:16:00Z"
+    }
+  },
+  {
+    "user_id": "U023",
+    "name": "Ethan Evans",
+    "email": "ethan.evans@example.com",
+    "password_hash": "$2b$10$1no73p3KIHVUtDMQZD2rmuuzZH/OvKCrbJh05i9UpvHaU5oJJ09GW",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-04-22T11:31:00Z"
+    }
+  },
+  {
+    "user_id": "U024",
+    "name": "Erin Nowak",
+    "email": "erin.nowak@example.com",
+    "password_hash": "$2b$10$EfN5FlAeSeczvEOtN7yAlO99Qf7inis83tSdHMnFssJVtEmEVGSFi",
+    "role": "rider",
+    "created_at": {
+      "$date": "2024-12-30T09:04:00Z"
+    }
+  },
+  {
+    "user_id": "U025",
+    "name": "Charlie Clarke",
+    "email": "charlie.clarke@example.com",
+    "password_hash": "$2b$10$hPBwY75lrrIpx7eJ3Md3WewviMmm2H5tF/6XVP.Byi.sxN5uKw5Cq",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-05-13T10:59:00Z"
+    }
+  },
+  {
+    "user_id": "U026",
+    "name": "Sophia Walker",
+    "email": "sophia.walker@example.com",
+    "password_hash": "$2b$10$q9wcqEFkx3VTi1dLdbITWOXHY1Bk/XUkonCokYf1vaP32bPfuJikS",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-01-08T07:58:00Z"
+    }
+  },
+  {
+    "user_id": "U027",
+    "name": "Amara Wright",
+    "email": "amara.wright@example.com",
+    "password_hash": "$2b$10$xSdv5qkSAErH/6zF28j2KOboHlS0p3.cDNK4KXc2UTAjPjwW0VVu.",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-01-26T00:38:00Z"
+    }
+  },
+  {
+    "user_id": "U028",
+    "name": "Mia Walker",
+    "email": "mia.walker@example.com",
+    "password_hash": "$2b$10$6InbEn1KOn7V4E3I9tYk.OHaPIlNbrMbjkdzpySgxUAP5wUtLbSEm",
+    "role": "rider",
+    "created_at": {
+      "$date": "2024-12-04T03:36:00Z"
+    }
+  },
+  {
+    "user_id": "U029",
+    "name": "Erin Patel",
+    "email": "erin.patel@example.com",
+    "password_hash": "$2b$10$APUsHbje4O2Tp5DLiv6jb.ze.PQTSbgl8Z01cM0k1a3Z6kXTRr/QS",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-07-30T13:57:00Z"
+    }
+  },
+  {
+    "user_id": "U030",
+    "name": "Freya Johnson",
+    "email": "freya.johnson@example.com",
+    "password_hash": "$2b$10$.XR.ZsJ/K7InBTS4sviR5e8h..e7X2mujWWkNR.CPLuAJLdYSEqJW",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-02-14T22:50:00Z"
+    }
+  },
+  {
+    "user_id": "U031",
+    "name": "Rojan Patel",
+    "email": "rojan.patel@example.com",
+    "password_hash": "$2b$10$hehAK4TFOB8VP.DUWHV8MeMvi2sl.8ejrsOsEbLcKdV1CGM2mdwM2",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-04-08T03:14:00Z"
+    }
+  },
+  {
+    "user_id": "U032",
+    "name": "Lucia Walker",
+    "email": "lucia.walker@example.com",
+    "password_hash": "$2b$10$M.TNpJtNmNyyYWH0Zq6lwe4aBxyfenyXKcddXmxVaXcuF/WrlRxiG",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-02-13T20:36:00Z"
+    }
+  },
+  {
+    "user_id": "U033",
+    "name": "Emily Shah",
+    "email": "emily.shah@example.com",
+    "password_hash": "$2b$10$57tQCtpRTY8Ec.f2H/4Xs.ZJOt0r2Qvh40D8nRgxYgHIR5MxHGSqa",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-04-18T18:24:00Z"
+    }
+  },
+  {
+    "user_id": "U034",
+    "name": "Emily Kafle",
+    "email": "emily.kafle@example.com",
+    "password_hash": "$2b$10$jqJqd6q8n3X3Q3PU2DJZnewMvcgQXgWiGxBQvXwXHDJCmpo63ZY36",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-05-02T15:59:00Z"
+    }
+  },
+  {
+    "user_id": "U035",
+    "name": "Ella Wood",
+    "email": "ella.wood@example.com",
+    "password_hash": "$2b$10$UQ9wWTLiEA76f4PMEVaB5uY82r0kcINbmFAi7LOkaT/YwdwDICU/S",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-09-28T15:08:00Z"
+    }
+  },
+  {
+    "user_id": "U036",
+    "name": "Oscar Garcia",
+    "email": "oscar.garcia@example.com",
+    "password_hash": "$2b$10$/5nmcbYQaUMZRB.hH1O5vO677pwBTB2vFfgPE6cxrs1A9A/lE6DIC",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-05-28T21:58:00Z"
+    }
+  },
+  {
+    "user_id": "U037",
+    "name": "Ava Ahmed",
+    "email": "ava.ahmed@example.com",
+    "password_hash": "$2b$10$d4P12zAD.jWV7P6sowGBbeDjuCJzcz5X9ai9psnN69aHBDs7L1M3.",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-09-05T12:23:00Z"
+    }
+  },
+  {
+    "user_id": "U038",
+    "name": "Aarav Clarke",
+    "email": "aarav.clarke@example.com",
+    "password_hash": "$2b$10$TwNno0ONXN/otWiX8GU6QOxHkmUb6Q5FHx6DRpjG/nZteXOLg/i/S",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-03-15T03:14:00Z"
+    }
+  },
+  {
+    "user_id": "U039",
+    "name": "Charlie Rossi",
+    "email": "charlie.rossi@example.com",
+    "password_hash": "$2b$10$QCdEGMKLVlb9Cqh7Q54uMO19SE79ZK2X/lm8CXW1n9y.lPrUg/uf2",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-03-18T05:00:00Z"
+    }
+  },
+  {
+    "user_id": "U040",
+    "name": "Aarav Roberts",
+    "email": "aarav.roberts@example.com",
+    "password_hash": "$2b$10$izXtwV8mJDXopLgthNdspOEbjSwlMycJD2VvWbP0IHdVVbpSV49aG",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-02-16T23:10:00Z"
+    }
+  },
+  {
+    "user_id": "U041",
+    "name": "Rosie Garcia",
+    "email": "rosie.garcia@example.com",
+    "password_hash": "$2b$10$eM59xnjLPOoJIHVsjkY1dufcdjJGg8uhs.zPj3KcjDgE51HgTnBhy",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-07-18T01:58:00Z"
+    }
+  },
+  {
+    "user_id": "U042",
+    "name": "Erin Singh",
+    "email": "erin.singh@example.com",
+    "password_hash": "$2b$10$XbcVQqxPbQDTd.44924nmu1QeJN2NCRc7/inkrqgjFs4h3uIbHTAy",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-06-06T18:48:00Z"
+    }
+  },
+  {
+    "user_id": "U043",
+    "name": "Rosie Nowak",
+    "email": "rosie.nowak@example.com",
+    "password_hash": "$2b$10$vGbj5APaCNEMPgiKZQwk1uXqPqQfuVMlsqDlKKD.cQsEH8wTZLG9m",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-04-17T12:14:00Z"
+    }
+  },
+  {
+    "user_id": "U044",
+    "name": "Rosie Robinson",
+    "email": "rosie.robinson@example.com",
+    "password_hash": "$2b$10$9xzY8ilSb3zy8jeYtJ3S7uoD0S9eEjn0qlNZKwrs9ExgWXmweVEJq",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-04-27T21:44:00Z"
+    }
+  },
+  {
+    "user_id": "U045",
+    "name": "Muhammad Murphy",
+    "email": "muhammad.murphy@example.com",
+    "password_hash": "$2b$10$q6gZmcqOpNzTIAAZpU7Ktu.3/STPZX9Fi4aSL8H7CXUp6YAkhWImq",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-02-14T08:24:00Z"
+    }
+  },
+  {
+    "user_id": "U046",
+    "name": "Lily Garcia",
+    "email": "lily.garcia@example.com",
+    "password_hash": "$2b$10$anDwRg3cgzXPJMgLp5nuueu0mhG3ts.pDFx3rhA8PJCvVmWmB7Q8S",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-05-29T12:53:00Z"
+    }
+  },
+  {
+    "user_id": "U047",
+    "name": "Maya Jones",
+    "email": "maya.jones@example.com",
+    "password_hash": "$2b$10$AL/gxvCS.4/RJmsHcT/YlOlxiic9Af3tL8XI2AR2CSiPu8Vtjup7S",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-09-25T02:11:00Z"
+    }
+  },
+  {
+    "user_id": "U048",
+    "name": "Isla Mensah",
+    "email": "isla.mensah@example.com",
+    "password_hash": "$2b$10$BT42ffprGdMqETKq84g8peP9tXTWbVXVNqOzreEw6.x44ZCIKFR82",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-01-28T22:06:00Z"
+    }
+  },
+  {
+    "user_id": "U049",
+    "name": "Ewa Garcia",
+    "email": "ewa.garcia@example.com",
+    "password_hash": "$2b$10$yq7WMpR1mURtTOyXmIc6oO6a/rqqz2MslJmRH5fPMJ.ih0Hbl/bna",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-06-17T02:05:00Z"
+    }
+  },
+  {
+    "user_id": "U050",
+    "name": "Lucas Walker",
+    "email": "lucas.walker@example.com",
+    "password_hash": "$2b$10$ffgo0PYRv.L9v2.Bg.Yy8.1Nzsntzh8n/6beLIYSifCB5t0N3IzU.",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-04-01T21:02:00Z"
+    }
+  },
+  {
+    "user_id": "U051",
+    "name": "Amelia Rossi",
+    "email": "amelia.rossi@example.com",
+    "password_hash": "$2b$10$lyhXJS5nxf0ALnPvRjban.tGxe1cYguixb/CQcwu9xjxsK2QZuXeG",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-09-30T19:01:00Z"
+    }
+  },
+  {
+    "user_id": "U052",
+    "name": "Arthur Taylor",
+    "email": "arthur.taylor@example.com",
+    "password_hash": "$2b$10$Bx3JuBE.zkpAeFnUaR2OuuvaYIDXdYCC7wl7FaQuiJkbBG7CmQoES",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-02-03T15:01:00Z"
+    }
+  },
+  {
+    "user_id": "U053",
+    "name": "Ewa Nowak",
+    "email": "ewa.nowak@example.com",
+    "password_hash": "$2b$10$DX./F.JDXuEKmzdVlV0EGu5aGyNe9AJtg9/NIA5jkfwBDj2MhOlVq",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-02-08T19:04:00Z"
+    }
+  },
+  {
+    "user_id": "U054",
+    "name": "Nadia Murphy",
+    "email": "nadia.murphy@example.com",
+    "password_hash": "$2b$10$/K4bN309eoK03TudRZBgUuu07PTgpqI.19RhiMxkCOAzYL0OSMj26",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-04-03T00:43:00Z"
+    }
+  },
+  {
+    "user_id": "U055",
+    "name": "Oliver Kafle",
+    "email": "oliver.kafle@example.com",
+    "password_hash": "$2b$10$VH89vHxXSNVFo2UNPuP1s.DxwFS19vzWFxD6NktGk0mxMIIeDtJYK",
+    "role": "rider",
+    "created_at": {
+      "$date": "2024-11-03T21:03:00Z"
+    }
+  },
+  {
+    "user_id": "U056",
+    "name": "Ava Gurung",
+    "email": "ava.gurung@example.com",
+    "password_hash": "$2b$10$aGym1BXNh7fPQHvNbDTxRuEt2ITQx2iUucFQCTcgHBqEwJ8P30aKK",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-04-25T18:38:00Z"
+    }
+  },
+  {
+    "user_id": "U057",
+    "name": "Lucas Khan",
+    "email": "lucas.khan@example.com",
+    "password_hash": "$2b$10$bbbkJHNzIX8iT4VJ4Rm22OtZl1HPE5AmiwcX1vt2Dg8hMKYZxrp.u",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-03-21T10:06:00Z"
+    }
+  },
+  {
+    "user_id": "U058",
+    "name": "Ryan Green",
+    "email": "ryan.green@example.com",
+    "password_hash": "$2b$10$/ClnS0mI12P2gzNmsO72WO/gMAmyno7mLhQn6JhEXGR9VESwa66L6",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-08-07T17:46:00Z"
+    }
+  },
+  {
+    "user_id": "U059",
+    "name": "Sophia Mensah",
+    "email": "sophia.mensah@example.com",
+    "password_hash": "$2b$10$aflJ6OokNiD0ggED.ZVAdO8FiQtxhmg9n/3oH7gsRz6NMgpko9yKu",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-02-02T13:21:00Z"
+    }
+  },
+  {
+    "user_id": "U060",
+    "name": "Lucas Wood",
+    "email": "lucas.wood@example.com",
+    "password_hash": "$2b$10$/iom.si2Ycjb.NmGvSste.WaAyZP58Rv5wHuvaAHcBen3BL1kJ3Z.",
+    "role": "rider",
+    "created_at": {
+      "$date": "2024-10-31T19:28:00Z"
+    }
+  },
+  {
+    "user_id": "U061",
+    "name": "Amara Lewis",
+    "email": "amara.lewis@example.com",
+    "password_hash": "$2b$10$BG65oXhyf8rWbQCW80p.I.DsmYIDULG1mGogMHbTwcR7kQHm1yQZ2",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-05-24T06:40:00Z"
+    }
+  },
+  {
+    "user_id": "U062",
+    "name": "Henry Khan",
+    "email": "henry.khan@example.com",
+    "password_hash": "$2b$10$mXPlynM2Tq9kbrzhx6S11OCxqRGAu59hRzhWTc/6KE0GDcnmh72gW",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-05-04T20:12:00Z"
+    }
+  },
+  {
+    "user_id": "U063",
+    "name": "Tomasz Taylor",
+    "email": "tomasz.taylor@example.com",
+    "password_hash": "$2b$10$ndTCU7quU1eNwXG2IGKHgO2ypgO0Us93RV/gdjSdQW6v75LSqfqYm",
+    "role": "rider",
+    "created_at": {
+      "$date": "2024-11-02T09:16:00Z"
+    }
+  },
+  {
+    "user_id": "U064",
+    "name": "Theo Wood",
+    "email": "theo.wood@example.com",
+    "password_hash": "$2b$10$WNDQpCYb2DnYlQA2dTFlB.WQ86w5vg7fJsSSD.seYhSuTKMsnwO/K",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-06-27T07:28:00Z"
+    }
+  },
+  {
+    "user_id": "U065",
+    "name": "Daniel Brown",
+    "email": "daniel.brown@example.com",
+    "password_hash": "$2b$10$uZlwwHzPuHZvKYU6LcZaF.B/ixWY.RSDnCXIDF6GTM4Ar/TZi2qc2",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-01-22T16:27:00Z"
+    }
+  },
+  {
+    "user_id": "U066",
+    "name": "Ethan Nowak",
+    "email": "ethan.nowak@example.com",
+    "password_hash": "$2b$10$m8Z9nxpyI4BdDsC040L4OOym6SZiKw9aUpDBsEqCok20TGfDgqKeW",
+    "role": "rider",
+    "created_at": {
+      "$date": "2024-12-21T22:51:00Z"
+    }
+  },
+  {
+    "user_id": "U067",
+    "name": "Lily Green",
+    "email": "lily.green@example.com",
+    "password_hash": "$2b$10$mPh9lYySol3RT.c58M8yz./CEk1oLAcp2zqC9AxaT2WNYSd4nQXGa",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-07-21T23:43:00Z"
+    }
+  },
+  {
+    "user_id": "U068",
+    "name": "Henry Roberts",
+    "email": "henry.roberts@example.com",
+    "password_hash": "$2b$10$DQOAmgabRmQy3S.94WxNaeKJbDMRnu9xps87vlDSHU792VMzxgPw6",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-11-29T09:43:00Z"
+    }
+  },
+  {
+    "user_id": "U069",
+    "name": "Oliver Williams",
+    "email": "oliver.williams@example.com",
+    "password_hash": "$2b$10$cgfJulPL4cUVeZusPpZyv.RJc4I1OzvWM1X3aKGCRD5K8.dvR4MHK",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-04-07T14:09:00Z"
+    }
+  },
+  {
+    "user_id": "U070",
+    "name": "Rojan Rossi",
+    "email": "rojan.rossi@example.com",
+    "password_hash": "$2b$10$KIKXM0O8g3S.10EHZG3k.u30YVbbLVMzic1H5FfE1HLbfazmsnSxW",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-05-27T14:28:00Z"
+    }
+  },
+  {
+    "user_id": "U071",
+    "name": "Aarav Murphy",
+    "email": "aarav.murphy@example.com",
+    "password_hash": "$2b$10$Vf8ifkJg59.354seZNWFn.5kUAhGzyZr2A9jVdyzOeYXNiROGIXEe",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-08-07T20:10:00Z"
+    }
+  },
+  {
+    "user_id": "U072",
+    "name": "Ewa Khan",
+    "email": "ewa.khan@example.com",
+    "password_hash": "$2b$10$6zZyAPxBzKvtk8bSA8ZW.e4zUADYH2b1bpZDdXnWAahHd9qU73y8a",
+    "role": "rider",
+    "created_at": {
+      "$date": "2024-11-24T06:24:00Z"
+    }
+  },
+  {
+    "user_id": "U073",
+    "name": "Aisha Hall",
+    "email": "aisha.hall@example.com",
+    "password_hash": "$2b$10$f9l.mhaU5BhOPHFCVPgqgOnYyQC/JOZld5TJog7UGWhskuLfOGLPy",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-07-12T06:54:00Z"
+    }
+  },
+  {
+    "user_id": "U074",
+    "name": "Diego Singh",
+    "email": "diego.singh@example.com",
+    "password_hash": "$2b$10$3bHpZ96N2iT/UuNw13Fm4uKy7yy9WVZhIUXhSWQA/LIOnAXIPHlkW",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-04-10T18:00:00Z"
+    }
+  },
+  {
+    "user_id": "U075",
+    "name": "Finn Murphy",
+    "email": "finn.murphy@example.com",
+    "password_hash": "$2b$10$2xidgWgMAwTyBXStRq5iNO4Q78RVAJ.HQXTf.5oaWfyoyc2qwnvlW",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-03-02T15:57:00Z"
+    }
+  },
+  {
+    "user_id": "U076",
+    "name": "Theo Walker",
+    "email": "theo.walker@example.com",
+    "password_hash": "$2b$10$EREJZr.JAR3thnosEzzVH.pkGFHq8nSUfZZbK90NrSJOWJyScKMsS",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-07-20T19:09:00Z"
+    }
+  },
+  {
+    "user_id": "U077",
+    "name": "Grace Patel",
+    "email": "grace.patel@example.com",
+    "password_hash": "$2b$10$2ApGgdDzSduHPW9m0maeQ.tWJgtY8IcvM013iCsEuT7bHnKe6ACb.",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-04-30T17:31:00Z"
+    }
+  },
+  {
+    "user_id": "U078",
+    "name": "Lily Wilson",
+    "email": "lily.wilson@example.com",
+    "password_hash": "$2b$10$taPsNSS4RIf8iuahxurb9.sj97qrb0SmcbRezHHzuxtYpXVmd4N1W",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-01-18T20:36:00Z"
+    }
+  },
+  {
+    "user_id": "U079",
+    "name": "Sita Kelly",
+    "email": "sita.kelly@example.com",
+    "password_hash": "$2b$10$ix0MVd5TpN9uj220lYZAre3oqkkp6gfJdppGsf46KP9Fof70tVeze",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-06-06T13:49:00Z"
+    }
+  },
+  {
+    "user_id": "U080",
+    "name": "Freya Nowak",
+    "email": "freya.nowak@example.com",
+    "password_hash": "$2b$10$FOwJZmNMM3YmV3A7bh48IO9Ic.QqeBZ3qjPEknl.O1e8PZduNoMe.",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-02-12T04:43:00Z"
+    }
+  },
+  {
+    "user_id": "U081",
+    "name": "Ethan Kafle",
+    "email": "ethan.kafle@example.com",
+    "password_hash": "$2b$10$Ebly2klLIm.oC0OZyLlHt.GdbG0xseVkVs7jmkX34RBHqMiu3yHdy",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-12-15T10:05:00Z"
+    }
+  },
+  {
+    "user_id": "U082",
+    "name": "Harry Okafor",
+    "email": "harry.okafor@example.com",
+    "password_hash": "$2b$10$AnnHmQDqZWr.q68eTFvs0OMiDnE4eRvMI1XLaiaNlUVrI98ANabLq",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-05-08T09:40:00Z"
+    }
+  },
+  {
+    "user_id": "U083",
+    "name": "Zara Khan",
+    "email": "zara.khan@example.com",
+    "password_hash": "$2b$10$Xnz.DNDg89DjcMWrvwazQ.ai6l4NBa74Q17hJhFVVJ9Jv8X81AHVG",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-12-19T04:34:00Z"
+    }
+  },
+  {
+    "user_id": "U084",
+    "name": "Amelia Ahmed",
+    "email": "amelia.ahmed@example.com",
+    "password_hash": "$2b$10$dNTutx260J5g3T6zfBehmuWe2MvcdgTUEh7UNDEMXuspiTGSPcEke",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-07-31T10:48:00Z"
+    }
+  },
+  {
+    "user_id": "U085",
+    "name": "Lucia Hall",
+    "email": "lucia.hall@example.com",
+    "password_hash": "$2b$10$nRa70wR7bieZZmiyT8jCOuRq3mGsvP2/xLOmKr/ka5iEJKsu84xc.",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-07-03T08:25:00Z"
+    }
+  },
+  {
+    "user_id": "U086",
+    "name": "Isla Wright",
+    "email": "isla.wright@example.com",
+    "password_hash": "$2b$10$FqoPBkZ63DhLVtQhEbA5D.Fi3x1owssJdE4.DN8Kt32lDGic.Ipfe",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-06-13T16:42:00Z"
+    }
+  },
+  {
+    "user_id": "U087",
+    "name": "Kwame Garcia",
+    "email": "kwame.garcia@example.com",
+    "password_hash": "$2b$10$zPL/UIRp1l/S5qW9m4AKuOJIIRACllN.dyixZIscQ7ktYhHz/zMAO",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-04-10T01:38:00Z"
+    }
+  },
+  {
+    "user_id": "U088",
+    "name": "Lily Taylor",
+    "email": "lily.taylor@example.com",
+    "password_hash": "$2b$10$Ox58keo7LjWOCpPsAIoYPeYBAYfYelFaTszsbKgruLBLej74eLTES",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-06-23T08:09:00Z"
+    }
+  },
+  {
+    "user_id": "U089",
+    "name": "Ivy Lewis",
+    "email": "ivy.lewis@example.com",
+    "password_hash": "$2b$10$YobRVvkoighCbt7ng4dAReGmHptk83Vn5JAIQPzYqHh50NdGvazzi",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-04-09T12:11:00Z"
+    }
+  },
+  {
+    "user_id": "U090",
+    "name": "Priya Ahmed",
+    "email": "priya.ahmed@example.com",
+    "password_hash": "$2b$10$73TgbhNLr6v8n4peKULhR.8AipkqC72YmwWGgE2IBq8OZpAoP6fHy",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-11-20T10:18:00Z"
+    }
+  },
+  {
+    "user_id": "U091",
+    "name": "Oliver Mensah",
+    "email": "oliver.mensah@example.com",
+    "password_hash": "$2b$10$XGFKa075euNRpz2x0BJ69e2Idq6DVs6/zepV6GsNJ6GL2fvvYBg3a",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-10-03T20:12:00Z"
+    }
+  },
+  {
+    "user_id": "U092",
+    "name": "Chloe Singh",
+    "email": "chloe.singh@example.com",
+    "password_hash": "$2b$10$uyd0843iEWq4VrRIu6x6o.gQciV3VkFXeH.DK53XM0KpwqyHlQFKu",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-09-07T21:45:00Z"
+    }
+  },
+  {
+    "user_id": "U093",
+    "name": "Grace Wright",
+    "email": "grace.wright@example.com",
+    "password_hash": "$2b$10$Y435pXSlYcADIxqDHZFkVe.rA4sz9X.HDLJ1YnMebY0mUGUCDV8RS",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-07-06T17:01:00Z"
+    }
+  },
+  {
+    "user_id": "U094",
+    "name": "Harry Shah",
+    "email": "harry.shah@example.com",
+    "password_hash": "$2b$10$SMeXfcjdQMAYN1Xj4XrjseiEFP6zqCx/uShlk/ORgOC2EimQhwZwK",
+    "role": "rider",
+    "created_at": {
+      "$date": "2024-12-21T21:14:00Z"
+    }
+  },
+  {
+    "user_id": "U095",
+    "name": "Tomasz Hall",
+    "email": "tomasz.hall@example.com",
+    "password_hash": "$2b$10$e4m6Ucj24WrFhIxmuhfJ1OG4.i4iQm.RnvVWA2KDMAWSKjUZ0CDKi",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-10-16T16:26:00Z"
+    }
+  },
+  {
+    "user_id": "U096",
+    "name": "Priya Clarke",
+    "email": "priya.clarke@example.com",
+    "password_hash": "$2b$10$0cPxFJViA9jQG44Z5CCn5.oiNwBy9LfhKsSRgzbUBu6G8rstSvDta",
+    "role": "rider",
+    "created_at": {
+      "$date": "2024-12-30T02:00:00Z"
+    }
+  },
+  {
+    "user_id": "U097",
+    "name": "Hannah Shah",
+    "email": "hannah.shah@example.com",
+    "password_hash": "$2b$10$woj5ppg0GnqG3kX0uxv8KuEfrvAAJeXthUJzCPvUgkBIRIEX39ML2",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-06-17T08:29:00Z"
+    }
+  },
+  {
+    "user_id": "U098",
+    "name": "Erin Clarke",
+    "email": "erin.clarke@example.com",
+    "password_hash": "$2b$10$gXOylIS.TiQJ.11harACU.kKTjLbwlVS2l3qTtLp2q4.5tdH5EYqS",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-04-27T03:07:00Z"
+    }
+  },
+  {
+    "user_id": "U099",
+    "name": "Amelia Wright",
+    "email": "amelia.wright@example.com",
+    "password_hash": "$2b$10$7/HN25IZsSgWi0C.PETL4uu1jSqBmSwZiy/4oSrPc8BGjMMLjs2Uu",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-03-16T22:47:00Z"
+    }
+  },
+  {
+    "user_id": "U100",
+    "name": "Sita Kafle",
+    "email": "sita.kafle@example.com",
+    "password_hash": "$2b$10$D840D8DtkCH7RX62Xt/nEuclh1geIBAJnHUmkhcJ9mCsDD1vOpx5W",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-02-18T14:03:00Z"
+    }
+  },
+  {
+    "user_id": "U101",
+    "name": "Sophia Taylor",
+    "email": "sophia.taylor@example.com",
+    "password_hash": "$2b$10$oi04oYuO0V484Nff3qrRTe/iklQFgFLwGaoTsQ4aIy3VLJtwlYd/q",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-07-19T04:25:00Z"
+    }
+  },
+  {
+    "user_id": "U102",
+    "name": "Lucia Wright",
+    "email": "lucia.wright@example.com",
+    "password_hash": "$2b$10$/owpGmjlJD3WoNqqk4sSqO2dpZUww3miznQ7LyfdZdwBA.T84yjBu",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-05-27T09:27:00Z"
+    }
+  },
+  {
+    "user_id": "U103",
+    "name": "Oliver Evans",
+    "email": "oliver.evans@example.com",
+    "password_hash": "$2b$10$gc4XRKONwuRD5n3smuohXulO/4xCmS4BNCIBd7wuzd6doja6Vrnla",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-07-13T18:00:00Z"
+    }
+  },
+  {
+    "user_id": "U104",
+    "name": "Ivy Kafle",
+    "email": "ivy.kafle@example.com",
+    "password_hash": "$2b$10$uLpNiB9VYvC63d0awz5KFeDv5w6Y1ARzfsGggzrRd4bQcWzVoFJ.O",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-08-14T07:14:00Z"
+    }
+  },
+  {
+    "user_id": "U105",
+    "name": "Priya Wilson",
+    "email": "priya.wilson@example.com",
+    "password_hash": "$2b$10$Pwz0Fe2XMY.JJ5ywP6NWBu4zgldLnCNSa8wUpWBjcAUa3v2e18LOe",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-01-07T13:30:00Z"
+    }
+  },
+  {
+    "user_id": "U106",
+    "name": "Isla Williams",
+    "email": "isla.williams@example.com",
+    "password_hash": "$2b$10$qY1G1y0n/lQsiUQM5q79ju48819d4w12vxmyVOe03ngw/dAboUBtq",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-03-07T12:17:00Z"
+    }
+  },
+  {
+    "user_id": "U107",
+    "name": "Erin Walker",
+    "email": "erin.walker@example.com",
+    "password_hash": "$2b$10$7SZDXS04V5QHUwSaFdXeV.VytiNIWD/HimLYZxx15EQ3IVTxnDHJu",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-08-04T15:40:00Z"
+    }
+  },
+  {
+    "user_id": "U108",
+    "name": "Finn Patel",
+    "email": "finn.patel@example.com",
+    "password_hash": "$2b$10$8RpehLwn7MIdKBdnhh0T1.fwgoOMWcctzKAbqV3RegxP2N95NTgEG",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-04-08T19:28:00Z"
+    }
+  },
+  {
+    "user_id": "U109",
+    "name": "Liam Kelly",
+    "email": "liam.kelly@example.com",
+    "password_hash": "$2b$10$wLaDszUJ3WibEeDDTGnTEu3KtQ2muXburx3GRTVX0MITf8in4RlYW",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-01-04T10:50:00Z"
+    }
+  },
+  {
+    "user_id": "U110",
+    "name": "Amelia Khan",
+    "email": "amelia.khan@example.com",
+    "password_hash": "$2b$10$Cb57iSzLQvRIahOfsepySOSGJWV9.1dod0EgTacWP7WTd5sIZSI6.",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-12-26T15:35:00Z"
+    }
+  },
+  {
+    "user_id": "U111",
+    "name": "Daniel Khan",
+    "email": "daniel.khan@example.com",
+    "password_hash": "$2b$10$jyumT7ZlI2d.c.nIDgpR0e7/M.XveoR8Dgsy5HEatx9W9mUr/2vsK",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-11-19T21:13:00Z"
+    }
+  },
+  {
+    "user_id": "U112",
+    "name": "Ivy Thompson",
+    "email": "ivy.thompson@example.com",
+    "password_hash": "$2b$10$GcORnKUBogiuaN9p1CQWKeD24jN0D7EwDRKEl2oRATS8zMn2hiuK2",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-08-08T13:29:00Z"
+    }
+  },
+  {
+    "user_id": "U113",
+    "name": "Liam Evans",
+    "email": "liam.evans@example.com",
+    "password_hash": "$2b$10$XZhcDu9487MxCA0rx951ROytNnqgZyam9jqYVw.VpVK5FiEwev2xq",
+    "role": "rider",
+    "created_at": {
+      "$date": "2024-12-26T02:48:00Z"
+    }
+  },
+  {
+    "user_id": "U114",
+    "name": "Harry Okafor",
+    "email": "harry.okafor2@example.com",
+    "password_hash": "$2b$10$DUdodmNj6q7WPPjsH7MPYutokubGtZpQ3qRwTyITDM8XfAM7oyM9W",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-07-04T18:25:00Z"
+    }
+  },
+  {
+    "user_id": "U115",
+    "name": "Oliver Taylor",
+    "email": "oliver.taylor@example.com",
+    "password_hash": "$2b$10$B0cBK13flr6/9DZtMpE7JeSjT60FurGgcZcu7Z2pmLN1dYsJMc4VO",
+    "role": "rider",
+    "created_at": {
+      "$date": "2024-11-13T09:17:00Z"
+    }
+  },
+  {
+    "user_id": "U116",
+    "name": "Ava Smith",
+    "email": "ava.smith@example.com",
+    "password_hash": "$2b$10$hJgJdkG0oncQ6xFwDSXDyOJFOoRh9NHAJ9ewdi/w.XFDkUT2BoCmm",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-02-07T18:43:00Z"
+    }
+  },
+  {
+    "user_id": "U117",
+    "name": "Nadia Gurung",
+    "email": "nadia.gurung@example.com",
+    "password_hash": "$2b$10$o0kE1HoJ4r1BoMahkgT52Oz29Qg8o1GF344AE4c2iR.6KxcXwd0Ga",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-11-23T04:02:00Z"
+    }
+  },
+  {
+    "user_id": "U118",
+    "name": "Tomasz Gurung",
+    "email": "tomasz.gurung@example.com",
+    "password_hash": "$2b$10$j0fGWtCcxl6iwCZQR8rBY.JaeiUDY.qVgDQPCaqISNqaqL1EOJPaW",
+    "role": "rider",
+    "created_at": {
+      "$date": "2024-11-07T17:14:00Z"
+    }
+  },
+  {
+    "user_id": "U119",
+    "name": "Priya Johnson",
+    "email": "priya.johnson@example.com",
+    "password_hash": "$2b$10$gesu80bjJVqEwktJ3MIGVem5qmhKif3pDCKtmCyaluF/9wuKpr4jm",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-05-12T06:24:00Z"
+    }
+  },
+  {
+    "user_id": "U120",
+    "name": "Aisha Hall",
+    "email": "aisha.hall2@example.com",
+    "password_hash": "$2b$10$/Tbb7hkFTMLeTcAGIDF.bud/cz/Bc8ssvV4fJbFkfMLfaZfEYL/pS",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-02-03T02:51:00Z"
+    }
+  },
+  {
+    "user_id": "U121",
+    "name": "Tomasz Davies",
+    "email": "tomasz.davies@example.com",
+    "password_hash": "$2b$10$FyTHUPiCQWhgWGCbMdgCT.2cG.QaDzrE4OAC0kP0OXKGDaozq1ggC",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-04-30T01:36:00Z"
+    }
+  },
+  {
+    "user_id": "U122",
+    "name": "Diego Green",
+    "email": "diego.green@example.com",
+    "password_hash": "$2b$10$swU4jj4FdPdC68gwYgP/jONnObYMzqicZUIwK9DuFHLpZUOpUYA6u",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-06-28T01:55:00Z"
+    }
+  },
+  {
+    "user_id": "U123",
+    "name": "Grace Hall",
+    "email": "grace.hall@example.com",
+    "password_hash": "$2b$10$kesYAF.eZzntA5shPKTjg.FwbWrJIKs1I5GXXz5u4KwMLavJUZEru",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-01-29T22:35:00Z"
+    }
+  },
+  {
+    "user_id": "U124",
+    "name": "Henry Gurung",
+    "email": "henry.gurung@example.com",
+    "password_hash": "$2b$10$U2dOTmDPasx9hGDDZ3NRM.86T3m0MxfaE0pc90YkpU7wE4AxWSN3K",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-04-21T04:49:00Z"
+    }
+  },
+  {
+    "user_id": "U125",
+    "name": "Hannah Wood",
+    "email": "hannah.wood@example.com",
+    "password_hash": "$2b$10$JiEc618fgifRepEih2PlS.C.45RwfF6/HaTaScLLJW8B8Wlrk3pYu",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-10-27T00:06:00Z"
+    }
+  },
+  {
+    "user_id": "U126",
+    "name": "Freya Davies",
+    "email": "freya.davies@example.com",
+    "password_hash": "$2b$10$fy28nnwWePXV44F5t5E9G.U6zAL2e00YpVoH5hmorb2evj6dUj6Zu",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-01-24T09:05:00Z"
+    }
+  },
+  {
+    "user_id": "U127",
+    "name": "Sita Clarke",
+    "email": "sita.clarke@example.com",
+    "password_hash": "$2b$10$D.XPuQNP989mjoqFoB06NuagOOimhByxtV7Lr0uu76QYc1K5zzG3O",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-06-19T07:33:00Z"
+    }
+  },
+  {
+    "user_id": "U128",
+    "name": "Sophia Wright",
+    "email": "sophia.wright@example.com",
+    "password_hash": "$2b$10$j/MnhAipGIDtFUrGzLCuLeRciJ/0QV635rZBqeXOsk/cApSscRKw6",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-12-09T18:53:00Z"
+    }
+  },
+  {
+    "user_id": "U129",
+    "name": "Rojan Williams",
+    "email": "rojan.williams@example.com",
+    "password_hash": "$2b$10$rQer.LVJLVU.NpJcMrQrNellAOdmaiV2RlUmluV5fka/wPcFLfITu",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-03-15T07:06:00Z"
+    }
+  },
+  {
+    "user_id": "U130",
+    "name": "Ewa Garcia",
+    "email": "ewa.garcia2@example.com",
+    "password_hash": "$2b$10$WUhzrcKRpDrOwWJcaR6NGusz02GiFRrzH8wsKu0uJU0jqG8rm/9WK",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-05-15T02:01:00Z"
+    }
+  },
+  {
+    "user_id": "U131",
+    "name": "Charlie Jones",
+    "email": "charlie.jones@example.com",
+    "password_hash": "$2b$10$K3TvZlTiX8d4ln9zzTVzGu6PdioBmkH9XkOxbvKQYXCS53gSLMx9u",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-01-31T03:24:00Z"
+    }
+  },
+  {
+    "user_id": "U132",
+    "name": "Liam Murphy",
+    "email": "liam.murphy@example.com",
+    "password_hash": "$2b$10$9SA5bOekfLagzeupyOaQruep5nFiLGApX7h4foynDA8J4w/tDEbC2",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-04-28T19:02:00Z"
+    }
+  },
+  {
+    "user_id": "U133",
+    "name": "Rojan Evans",
+    "email": "rojan.evans@example.com",
+    "password_hash": "$2b$10$QDXs12ZXmWYWmi415yLWJeSsY.nXQ7co/nhH.TGZsTWlwcmUbzwty",
+    "role": "rider",
+    "created_at": {
+      "$date": "2024-10-28T21:03:00Z"
+    }
+  },
+  {
+    "user_id": "U134",
+    "name": "Zara Okafor",
+    "email": "zara.okafor@example.com",
+    "password_hash": "$2b$10$nfdA/AH7dbQ.pr4qwbnaeeK.Rewdw6Pzs6hX/OsinhzIaZAB2Psui",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-04-03T20:34:00Z"
+    }
+  },
+  {
+    "user_id": "U135",
+    "name": "Lily Rossi",
+    "email": "lily.rossi@example.com",
+    "password_hash": "$2b$10$tsh8MLKzRLEH9MW3zRisPu8skRv5Y13kyj9f7m/jPiPGvNimj6QvW",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-02-03T11:56:00Z"
+    }
+  },
+  {
+    "user_id": "U136",
+    "name": "Oscar Evans",
+    "email": "oscar.evans@example.com",
+    "password_hash": "$2b$10$0/1gQvkxl7rJSYiAWtbWNuQ0RtPpEM6wL6n/jLHFwHDLk08.MOWNS",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-03-03T13:25:00Z"
+    }
+  },
+  {
+    "user_id": "U137",
+    "name": "Theo Okafor",
+    "email": "theo.okafor@example.com",
+    "password_hash": "$2b$10$4yRZX5UhRmT.ulyr.Uo7BOosdgDVpdWKoI4SZXp6vJq50kTxReqaW",
+    "role": "rider",
+    "created_at": {
+      "$date": "2024-12-08T10:29:00Z"
+    }
+  },
+  {
+    "user_id": "U138",
+    "name": "Finn Johnson",
+    "email": "finn.johnson2@example.com",
+    "password_hash": "$2b$10$v7qIVijraTjRudnRVOIYqOfJuVVYkGkJ3TgEPjbvhWLdJiBUhH.nC",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-05-05T18:10:00Z"
+    }
+  },
+  {
+    "user_id": "U139",
+    "name": "Henry Okafor",
+    "email": "henry.okafor@example.com",
+    "password_hash": "$2b$10$zrdiK6.iSjHhsPBHEli4Rur3.hi7oKTFDtbdqhr4qI3wJ8lLJEqb6",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-12-03T18:10:00Z"
+    }
+  },
+  {
+    "user_id": "U140",
+    "name": "Sita Rossi",
+    "email": "sita.rossi@example.com",
+    "password_hash": "$2b$10$GbRzkQle0cj3tZPzPYfSfeLD0BzlXQSFT5AYU/.frANLmbbWPki5K",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-09-17T05:57:00Z"
+    }
+  },
+  {
+    "user_id": "U141",
+    "name": "Aisha Robinson",
+    "email": "aisha.robinson@example.com",
+    "password_hash": "$2b$10$vPnfq1fvvgUGT0o3V/mgZOw8/SLegrigr/qEVRxoDJ/mSVQN4wCRu",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-10-14T19:01:00Z"
+    }
+  },
+  {
+    "user_id": "U142",
+    "name": "Liam Davies",
+    "email": "liam.davies@example.com",
+    "password_hash": "$2b$10$CjjnZlaPZawq.5F1OkzaduCKGRQbUHIO9.ezIJtcfsXY6ehcBktQC",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-07-18T12:32:00Z"
+    }
+  },
+  {
+    "user_id": "U143",
+    "name": "Sita Wood",
+    "email": "sita.wood@example.com",
+    "password_hash": "$2b$10$FI7VVfec.yhUIaXqkJMXHOJjtbTNSzsPSHQIMHBRsV2S6qBjPAOie",
+    "role": "rider",
+    "created_at": {
+      "$date": "2026-04-02T13:46:00Z"
+    }
+  },
+  {
+    "user_id": "U144",
+    "name": "Amara Green",
+    "email": "amara.green@example.com",
+    "password_hash": "$2b$10$lnXRc81xq6J15iVSU2vK7.3jZ.BfmgrwuM/NZ2of4uEZ.k0gD4YK6",
+    "role": "rider",
+    "created_at": {
+      "$date": "2024-12-24T13:44:00Z"
+    }
+  },
+  {
+    "user_id": "U145",
+    "name": "Finn Johnson",
+    "email": "finn.johnson3@example.com",
+    "password_hash": "$2b$10$aQTGxzYYYktK4fp5/pUFPeqtzUnC7RUO9SJtszC10xLVr/Hs1oD7W",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-10-27T15:05:00Z"
+    }
+  },
+  {
+    "user_id": "U146",
+    "name": "Grace Mensah",
+    "email": "grace.mensah@example.com",
+    "password_hash": "$2b$10$7gqOFerohNUn5aY.q33GZOWmDXNxz8DQrV3L8svi4IVcxKQkVrWi2",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-04-11T11:20:00Z"
+    }
+  },
+  {
+    "user_id": "U147",
+    "name": "Lucia Walker",
+    "email": "lucia.walker2@example.com",
+    "password_hash": "$2b$10$YInHF1CKpBjltCE2hRBVauPgmZXZByd3LLkOMWZsmJWIDshbaDv7u",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-06-03T12:27:00Z"
+    }
+  },
+  {
+    "user_id": "U148",
+    "name": "Mia White",
+    "email": "mia.white@example.com",
+    "password_hash": "$2b$10$hdVVh0ogHx1yIdlXVU/4YuoW2nfMwoEJINY45CaTafT4FNLmRKjqm",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-03-23T22:26:00Z"
+    }
+  },
+  {
+    "user_id": "U149",
+    "name": "Mia Wright",
+    "email": "mia.wright@example.com",
+    "password_hash": "$2b$10$s9jFZ0boZ04cSSN2YTYmju0kQ3.vxXEfUOf6bfrJbjCfOgE.nHWMa",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-06-01T06:02:00Z"
+    }
+  },
+  {
+    "user_id": "U150",
+    "name": "Henry Green",
+    "email": "henry.green@example.com",
+    "password_hash": "$2b$10$84LqGl0j1MlNrfjJKBGik.2/E36XVp2eufxXApgjyUnkkG7XmhpZ6",
+    "role": "rider",
+    "created_at": {
+      "$date": "2025-05-28T13:57:00Z"
+    }
+  }
+]

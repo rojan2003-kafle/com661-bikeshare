@@ -1,0 +1,1600 @@
+===== app.py =====
+from flask import Flask, request
+from utils import ApiError, respond
+from blueprints.auth.auth import auth_bp
+from blueprints.stations.stations import stations_bp
+from blueprints.bikes.bikes import bikes_bp
+from blueprints.rentals.rentals import rentals_bp
+from blueprints.payments.payments import payments_bp
+from blueprints.maintenance.maintenance import maintenance_bp
+from blueprints.admin.admin import admin_bp
+
+app = Flask(__name__)
+app.json.sort_keys = False      # keep JSON fields in the order we wrote them
+
+for bp in [auth_bp, stations_bp, bikes_bp, rentals_bp, payments_bp, maintenance_bp, admin_bp]:
+    app.register_blueprint(bp, url_prefix="/api/v1.0")
+
+
+# ---------- error handlers: every error comes back as JSON ----------
+@app.errorhandler(ApiError)
+def handle_api_error(e):
+    return respond({"error": e.message, "status": e.status}, e.status)
+
+
+@app.errorhandler(404)
+def not_found(e):
+    return respond({"error": f"Endpoint {request.path} does not exist", "status": 404}, 404)
+
+
+@app.errorhandler(405)
+def method_not_allowed(e):
+    return respond({"error": f"Method {request.method} not allowed on {request.path}", "status": 405}, 405)
+
+
+if __name__ == "__main__":
+    app.run(debug=True, port=5001)
+
+===== globals.py =====
+from pymongo import MongoClient
+
+# connect to the MongoDB server running on your Mac
+client = MongoClient("mongodb://127.0.0.1:27017", tz_aware=True)
+db = client.bikeshare          # the database we imported
+
+secret_key = "com661-bikeshare-secret"   # used to sign login tokens
+
+# one variable per collection, so other files can just use globals.stations etc.
+users = db.users
+stations = db.stations
+bikes = db.bikes
+rentals = db.rentals
+maintenance = db.maintenance_reports
+blacklist = db.blacklist        # tokens of users who logged out
+counters = db.counters          # for readable IDs like U151
+
+===== utils.py =====
+import math
+import re
+from datetime import datetime, timezone
+
+from bson import ObjectId
+from flask import request, make_response, jsonify
+
+
+class ApiError(Exception):
+    """raise ApiError(400, "message") anywhere -> app.py turns it into a JSON error"""
+    def __init__(self, status, message):
+        super().__init__(message)
+        self.status = status
+        self.message = message
+
+
+def now():
+    return datetime.now(timezone.utc)
+
+
+def to_json(value):
+    """MongoDB gives us ObjectId and datetime objects - jsonify can't handle those,
+    so convert them to strings (and never send password hashes back)"""
+    if isinstance(value, dict):
+        return {k: to_json(v) for k, v in value.items() if k != "password_hash"}
+    if isinstance(value, list):
+        return [to_json(v) for v in value]
+    if isinstance(value, ObjectId):
+        return str(value)
+    if isinstance(value, datetime):
+        return value.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    return value
+
+
+def respond(body, status=200):
+    return make_response(jsonify(to_json(body)), status)
+
+
+# ---------------- validators: check type AND range ----------------
+def parse_int(value, name, min_val=None, max_val=None):
+    try:
+        number = int(str(value).strip())
+    except ValueError:
+        raise ApiError(400, f"'{name}' must be a whole number")
+    if min_val is not None and number < min_val:
+        raise ApiError(400, f"'{name}' must be at least {min_val}")
+    if max_val is not None and number > max_val:
+        raise ApiError(400, f"'{name}' must be no more than {max_val}")
+    return number
+
+
+def parse_enum(value, name, allowed):
+    value = str(value).strip().lower()
+    if value not in allowed:
+        raise ApiError(400, f"'{name}' must be one of: {', '.join(allowed)}")
+    return value
+
+
+def check_id(value, prefix, name):
+    """our IDs look like ST001, BK0001, U001 ..."""
+    if not re.fullmatch(prefix + r"\d{3,6}", value):
+        raise ApiError(400, f"Invalid {name} ID format '{value}' (expected e.g. {prefix}001)")
+    return value
+
+
+# ---------------- pagination ----------------
+def get_pagination(default_size=10, max_size=100):
+    page_num = parse_int(request.args.get("pn", 1), "pn", 1)
+    page_size = parse_int(request.args.get("ps", default_size), "ps", 1, max_size)
+    return page_num, page_size, (page_num - 1) * page_size
+
+
+def paged_response(items, total, page_num, page_size):
+    return {"page": page_num, "page_size": page_size, "total": total,
+            "total_pages": math.ceil(total / page_size), "data": items}
+
+# ---------------- reading the request body ----------------
+def get_data():
+    """accept form-data (like the module) OR a JSON body"""
+    data = request.get_json(silent=True)
+    if isinstance(data, dict):
+        return data
+    return request.form.to_dict()
+
+
+def require_fields(data, fields):
+    missing = [f for f in fields if f not in data or str(data[f]).strip() == ""]
+    if missing:
+        raise ApiError(400, "Missing required field(s): " + ", ".join(missing))
+
+
+def parse_str(value, name, min_len=1, max_len=200):
+    value = str(value).strip()
+    if not (min_len <= len(value) <= max_len):
+        raise ApiError(400, f"'{name}' must be between {min_len} and {max_len} characters")
+    return value
+
+
+def parse_email(value):
+    value = parse_str(value, "email", 5, 120).lower()
+    if not re.match(r"^[^@\s]+@[^@\s]+\.[a-zA-Z]{2,}$", value):
+        raise ApiError(400, "'email' is not a valid email address")
+    return value
+
+
+def parse_password(value):
+    value = parse_str(value, "password", 8, 64)
+    if not (re.search(r"[A-Za-z]", value) and re.search(r"\d", value)):
+        raise ApiError(400, "'password' must contain at least one letter and one number")
+    return value
+
+
+# ---------------- readable IDs: U151, ST121, BK0901 ----------------
+def next_id(counter_name, collection, field, prefix, width):
+    import globals
+    from pymongo import ReturnDocument
+    if globals.counters.find_one({"_id": counter_name}) is None:
+        # first time: start counting from the highest ID already in the collection
+        last = collection.find_one({field: {"$regex": "^" + prefix}}, sort=[(field, -1)])
+        start = int(last[field][len(prefix):]) if last else 0
+        globals.counters.insert_one({"_id": counter_name, "seq": start})
+    # $inc is atomic: two requests at the same time never get the same number
+    doc = globals.counters.find_one_and_update(
+        {"_id": counter_name}, {"$inc": {"seq": 1}}, return_document=ReturnDocument.AFTER)
+    return f"{prefix}{doc['seq']:0{width}d}"
+
+
+def parse_float(value, name, min_val=None, max_val=None):
+    try:
+        number = float(str(value).strip())
+    except ValueError:
+        raise ApiError(400, f"'{name}' must be a number")
+    if min_val is not None and number < min_val:
+        raise ApiError(400, f"'{name}' must be at least {min_val}")
+    if max_val is not None and number > max_val:
+        raise ApiError(400, f"'{name}' must be no more than {max_val}")
+    return number
+
+===== decorators.py =====
+from functools import wraps
+
+import jwt
+from flask import request, g
+
+import globals
+from utils import ApiError
+
+
+def jwt_required(func):
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        token = request.headers.get("x-access-token")
+        if not token:
+            raise ApiError(401, "Token is missing - log in and send it in the x-access-token header")
+        try:
+            data = jwt.decode(token, globals.secret_key, algorithms=["HS256"])
+        except jwt.ExpiredSignatureError:
+            raise ApiError(401, "Token has expired - please log in again")
+        except jwt.InvalidTokenError:
+            raise ApiError(401, "Token is invalid")
+        if globals.blacklist.find_one({"token": token}):
+            raise ApiError(401, "Token has been cancelled (logged out)")
+        # remember who is logged in for the rest of this request
+        g.user_id = data["user_id"]
+        g.role = data["role"]
+        g.token = token
+        return func(*args, **kwargs)
+    return wrapper
+
+
+def role_required(*roles):
+    """@role_required("admin")  or  @role_required("mechanic", "admin")"""
+    def decorator(func):
+        @wraps(func)
+        @jwt_required
+        def wrapper(*args, **kwargs):
+            if g.role not in roles:
+                raise ApiError(403, f"Access denied - this action needs role: {' or '.join(roles)}")
+            return func(*args, **kwargs)
+        return wrapper
+    return decorator
+
+===== blueprints/admin/__init__.py =====
+
+===== blueprints/admin/admin.py =====
+from datetime import timedelta
+from flask import Blueprint, request
+import globals
+from decorators import role_required
+from utils import ApiError, respond, parse_int, parse_enum, now
+from blueprints.stations.stations import availability_stages
+from blueprints.rentals.rentals import haversine_km
+
+admin_bp = Blueprint("admin_bp", __name__)
+
+WEEKDAYS = {1: "Sunday", 2: "Monday", 3: "Tuesday", 4: "Wednesday",
+            5: "Thursday", 6: "Friday", 7: "Saturday"}
+
+
+def since():
+    """?days=30 -> only look at the last 30 days"""
+    days = parse_int(request.args.get("days", 90), "days", 1, 3650)
+    return now() - timedelta(days=days), days
+
+
+def station_names():
+    return {s["station_id"]: s["name"] for s in globals.stations.find({}, {"station_id": 1, "name": 1})}
+
+
+# ---------------- REVENUE ----------------
+@admin_bp.route("/admin/revenue", methods=["GET"])
+@role_required("admin")
+def revenue():
+    """/admin/revenue?group_by=day|month&days=90"""
+    group_by = parse_enum(request.args.get("group_by", "month"), "group_by", ["day", "month"])
+    fmt = "%Y-%m-%d" if group_by == "day" else "%Y-%m"
+    start, days = since()
+
+    result = list(globals.rentals.aggregate([
+        {"$match": {"payment.status": "succeeded", "payment.paid_at": {"$gte": start}}},
+        # join the bike (for its type) and the start station (for its zone)
+        {"$lookup": {"from": "bikes", "localField": "bike_id", "foreignField": "bike_id", "as": "bike"}},
+        {"$lookup": {"from": "stations", "localField": "start_station_id",
+                     "foreignField": "station_id", "as": "station"}},
+        {"$addFields": {"bike_type": {"$arrayElemAt": ["$bike.type", 0]},
+                        "zone": {"$arrayElemAt": ["$station.zone", 0]}}},
+        # $facet = several reports from ONE query
+        {"$facet": {
+            "totals": [{"$group": {"_id": None, "revenue": {"$sum": "$payment.amount"},
+                                   "payments": {"$sum": 1}, "avg": {"$avg": "$payment.amount"}}}],
+            "by_period": [{"$group": {"_id": {"$dateToString": {"format": fmt, "date": "$payment.paid_at"}},
+                                      "revenue": {"$sum": "$payment.amount"}, "rides": {"$sum": 1}}},
+                          {"$sort": {"_id": 1}}],
+            "by_bike_type": [{"$group": {"_id": "$bike_type", "revenue": {"$sum": "$payment.amount"},
+                                         "rides": {"$sum": 1}}}, {"$sort": {"revenue": -1}}],
+            "by_zone": [{"$group": {"_id": "$zone", "revenue": {"$sum": "$payment.amount"},
+                                    "rides": {"$sum": 1}}}, {"$sort": {"revenue": -1}}],
+        }},
+    ]))[0]
+
+    t = result["totals"][0] if result["totals"] else {"revenue": 0, "payments": 0, "avg": 0}
+    rows = lambda items, key: [{key: x["_id"], "revenue": round(x["revenue"], 2), "rides": x["rides"]}
+                               for x in items]
+    return respond({"days": days, "currency": "GBP",
+                    "total_revenue": round(t["revenue"], 2), "payments": t["payments"],
+                    "average_payment": round(t["avg"] or 0, 2),
+                    "by_" + group_by: rows(result["by_period"], group_by),
+                    "by_bike_type": rows(result["by_bike_type"], "bike_type"),
+                    "by_zone": rows(result["by_zone"], "zone")}, 200)
+
+
+# ---------------- ANALYTICS: peak hours, weekdays, popular routes ----------------
+@admin_bp.route("/admin/analytics", methods=["GET"])
+@role_required("admin")
+def analytics():
+    start, days = since()
+    result = list(globals.rentals.aggregate([
+        {"$match": {"status": "completed", "start_time": {"$gte": start}}},
+        {"$facet": {
+            "hours": [{"$group": {"_id": {"$hour": "$start_time"}, "rides": {"$sum": 1}}},
+                      {"$sort": {"_id": 1}}],
+            "weekdays": [{"$group": {"_id": {"$dayOfWeek": "$start_time"}, "rides": {"$sum": 1}}},
+                         {"$sort": {"_id": 1}}],
+            "routes": [
+                {"$match": {"$expr": {"$ne": ["$start_station_id", "$end_station_id"]}}},
+                {"$group": {"_id": {"from": "$start_station_id", "to": "$end_station_id"},
+                            "rides": {"$sum": 1}, "avg_minutes": {"$avg": "$duration_min"}}},
+                {"$sort": {"rides": -1}}, {"$limit": 10}],
+        }},
+    ]))[0]
+    names = station_names()
+    hours = [{"hour": f"{x['_id']:02d}:00", "rides": x["rides"]} for x in result["hours"]]
+    return respond({
+        "days": days,
+        "busiest_hour": max(hours, key=lambda h: h["rides"]) if hours else None,
+        "rides_by_hour": hours,
+        "rides_by_weekday": [{"day": WEEKDAYS[x["_id"]], "rides": x["rides"]} for x in result["weekdays"]],
+        "popular_routes": [{"from": names.get(x["_id"]["from"]), "to": names.get(x["_id"]["to"]),
+                            "rides": x["rides"], "avg_minutes": round(x["avg_minutes"], 1)}
+                           for x in result["routes"]],
+    }, 200)
+
+
+# ---------------- REBALANCING ----------------
+@admin_bp.route("/admin/rebalancing", methods=["GET"])
+@role_required("admin")
+def rebalancing():
+    """
+    Stations under ?low=20% full need bikes, stations over ?high=85% have too many.
+    Pair each overfull station with the NEAREST under-full one and suggest how many bikes to move.
+    """
+    low = parse_int(request.args.get("low", 20), "low", 0, 50)
+    high = parse_int(request.args.get("high", 85), "high", 50, 100)
+    stations = list(globals.stations.aggregate([{"$match": {}}] + availability_stages()))
+    for s in stations:
+        s["occupancy_pct"] = round(100 * s["bikes_docked"] / s["total_docks"], 1)
+    empty = [s for s in stations if s["occupancy_pct"] <= low]
+    full = sorted([s for s in stations if s["occupancy_pct"] >= high], key=lambda s: -s["occupancy_pct"])
+
+    spare = {s["station_id"]: s["bikes_available"] - s["total_docks"] // 2 for s in full}
+    need = {s["station_id"]: s["total_docks"] // 2 - s["bikes_docked"] for s in empty}
+    moves = []
+    for src in full:
+        lng1, lat1 = src["location"]["coordinates"]
+        for dst in sorted(empty, key=lambda d: haversine_km(lat1, lng1, d["location"]["coordinates"][1],
+                                                            d["location"]["coordinates"][0])):
+            qty = min(spare[src["station_id"]], need[dst["station_id"]])
+            if qty <= 0:
+                continue
+            lng2, lat2 = dst["location"]["coordinates"]
+            moves.append({"from": src["name"], "to": dst["name"], "bikes": qty,
+                          "distance_km": round(haversine_km(lat1, lng1, lat2, lng2), 2)})
+            spare[src["station_id"]] -= qty
+            need[dst["station_id"]] -= qty
+            if spare[src["station_id"]] <= 0:
+                break
+
+    short = lambda s: {k: s[k] for k in ["station_id", "name", "total_docks", "bikes_docked",
+                                          "free_docks", "occupancy_pct"]}
+    return respond({"nearly_empty": [short(s) for s in empty],
+                    "nearly_full": [short(s) for s in full],
+                    "suggested_moves": moves,
+                    "bikes_to_move": sum(m["bikes"] for m in moves)}, 200)
+
+
+# ---------------- REPEAT FAULTS ----------------
+@admin_bp.route("/admin/repeat-faults", methods=["GET"])
+@role_required("admin", "mechanic")
+def repeat_faults():
+    """bikes with ?min_reports=3 or more faults in the last ?days=90"""
+    min_reports = parse_int(request.args.get("min_reports", 3), "min_reports", 2, 50)
+    start, days = since()
+    result = list(globals.maintenance.aggregate([
+        {"$match": {"created_at": {"$gte": start}}},
+        {"$group": {"_id": "$bike_id", "reports": {"$sum": 1},
+                    "issues": {"$push": "$issue_type"}, "last_reported": {"$max": "$created_at"}}},
+        {"$match": {"reports": {"$gte": min_reports}}},
+        {"$sort": {"reports": -1}},
+        {"$project": {"_id": 0, "bike_id": "$_id", "reports": 1, "issues": 1, "last_reported": 1}},
+    ]))
+    for r in result:
+        r["recommendation"] = "consider retiring" if r["reports"] >= 5 else "full inspection"
+    return respond({"days": days, "count": len(result), "bikes": result}, 200)
+
+===== blueprints/auth/__init__.py =====
+
+===== blueprints/auth/auth.py =====
+from datetime import timedelta
+
+import bcrypt
+import jwt
+from flask import Blueprint, request, g
+
+import globals
+from decorators import jwt_required
+from utils import (ApiError, respond, get_data, require_fields, parse_str,
+                   parse_email, parse_password, next_id, now)
+
+auth_bp = Blueprint("auth_bp", __name__)
+
+
+@auth_bp.route("/auth/register", methods=["POST"])
+def register():
+    data = get_data()
+    require_fields(data, ["name", "email", "password"])
+    name = parse_str(data["name"], "name", 2, 60)
+    email = parse_email(data["email"])
+    password = parse_password(data["password"])
+
+    if globals.users.find_one({"email": email}):
+        raise ApiError(409, "An account with this email already exists")
+
+    new_user = {
+        "user_id": next_id("users", globals.users, "user_id", "U", 3),
+        "name": name,
+        "email": email,
+        "password_hash": bcrypt.hashpw(password.encode(), bcrypt.gensalt()).decode(),
+        "role": "rider",            # everyone signs up as a rider; admins promote staff
+        "created_at": now(),
+    }
+    globals.users.insert_one(new_user)
+    new_user.pop("_id", None)
+    return respond({"message": "Account created", "user": new_user}, 201)
+
+
+@auth_bp.route("/auth/login", methods=["POST"])
+def login():
+    auth = request.authorization       # Basic Auth: username = email
+    if not auth or not auth.username or not auth.password:
+        raise ApiError(401, "Login required - send email and password using Basic Auth")
+
+    user = globals.users.find_one({"email": auth.username.strip().lower()})
+    if user is None or not bcrypt.checkpw(auth.password.encode(), user["password_hash"].encode()):
+        raise ApiError(401, "Incorrect email or password")
+
+    token = jwt.encode({"user_id": user["user_id"], "role": user["role"],
+                        "exp": now() + timedelta(minutes=60)},
+                       globals.secret_key, algorithm="HS256")
+    return respond({"token": token, "user_id": user["user_id"], "name": user["name"],
+                    "role": user["role"]}, 200)
+
+
+@auth_bp.route("/auth/logout", methods=["POST"])
+@jwt_required
+def logout():
+    globals.blacklist.insert_one({"token": g.token, "user_id": g.user_id, "logged_out_at": now()})
+    return respond({"message": "Logged out"}, 200)
+
+
+@auth_bp.route("/auth/me", methods=["GET"])
+@jwt_required
+def my_profile():
+    user = globals.users.find_one({"user_id": g.user_id}, {"_id": 0, "password_hash": 0})
+    if user is None:
+        raise ApiError(404, "User no longer exists")
+    return respond(user, 200)
+
+===== blueprints/bikes/__init__.py =====
+
+===== blueprints/bikes/bikes.py =====
+from flask import Blueprint, request
+import globals
+from decorators import jwt_required, role_required
+from utils import (ApiError, respond, get_data, require_fields, parse_int, parse_enum,
+                   check_id, get_pagination, paged_response, next_id)
+
+bikes_bp = Blueprint("bikes_bp", __name__)
+
+TYPES = ["standard", "electric"]
+STATUSES = ["available", "in_use", "reserved", "under_repair"]
+
+
+def find_bike(bike_id):
+    check_id(bike_id, "BK", "bike")
+    bike = globals.bikes.find_one({"bike_id": bike_id}, {"_id": 0})
+    if bike is None:
+        raise ApiError(404, f"Bike {bike_id} not found")
+    return bike
+
+
+def check_free_dock(station_id):
+    """a bike can only be placed at a station that exists and has an empty dock"""
+    check_id(station_id, "ST", "station")
+    station = globals.stations.find_one({"station_id": station_id})
+    if station is None:
+        raise ApiError(404, f"Station {station_id} not found")
+    docked = globals.bikes.count_documents({"station_id": station_id})
+    if docked >= station["total_docks"]:
+        raise ApiError(409, f"Station {station_id} is full ({docked}/{station['total_docks']} docks used)")
+
+
+# ---------- GET all bikes with filters: ?status=&type=&station_id=&min_battery= ----------
+@bikes_bp.route("/bikes", methods=["GET"])
+@jwt_required
+def show_all_bikes():
+    page_num, page_size, page_start = get_pagination()
+    query = {}
+    if request.args.get("status"):
+        query["status"] = parse_enum(request.args["status"], "status", STATUSES)
+    if request.args.get("type"):
+        query["type"] = parse_enum(request.args["type"], "type", TYPES)
+    if request.args.get("station_id"):
+        query["station_id"] = check_id(request.args["station_id"], "ST", "station")
+    if request.args.get("min_battery"):
+        query["battery_level"] = {"$gte": parse_int(request.args["min_battery"], "min_battery", 0, 100)}
+
+    total = globals.bikes.count_documents(query)
+    data = list(globals.bikes.find(query, {"_id": 0}).sort("bike_id", 1).skip(page_start).limit(page_size))
+    return respond(paged_response(data, total, page_num, page_size), 200)
+
+
+@bikes_bp.route("/bikes/<string:bike_id>", methods=["GET"])
+@jwt_required
+def show_one_bike(bike_id):
+    return respond(find_bike(bike_id), 200)
+
+
+# ---------- ADMIN: add / edit / delete ----------
+@bikes_bp.route("/bikes", methods=["POST"])
+@role_required("admin")
+def add_bike():
+    data = get_data()
+    require_fields(data, ["type", "station_id"])
+    bike_type = parse_enum(data["type"], "type", TYPES)
+    station_id = str(data["station_id"]).strip()
+    check_free_dock(station_id)
+
+    battery = None
+    if bike_type == "electric":
+        battery = parse_int(data.get("battery_level", 100), "battery_level", 0, 100)
+    elif data.get("battery_level"):
+        raise ApiError(400, "'battery_level' only applies to electric bikes")
+
+    new_bike = {"bike_id": next_id("bikes", globals.bikes, "bike_id", "BK", 4),
+                "station_id": station_id, "type": bike_type,
+                "battery_level": battery, "status": "available"}
+    globals.bikes.insert_one(new_bike)
+    new_bike.pop("_id", None)
+    return respond({"message": "Bike added",
+                    "url": request.host_url + "api/v1.0/bikes/" + new_bike["bike_id"],
+                    "bike": new_bike}, 201)
+
+
+@bikes_bp.route("/bikes/<string:bike_id>", methods=["PUT"])
+@role_required("admin")
+def edit_bike(bike_id):
+    """admin can move a bike (rebalancing), change its battery or take it out of service"""
+    bike = find_bike(bike_id)
+    if bike["status"] in ("in_use", "reserved"):
+        raise ApiError(409, f"Bike {bike_id} is {bike['status']} - wait until the ride ends")
+    data = get_data()
+    changes = {}
+    if "battery_level" in data:
+        if bike["type"] != "electric":
+            raise ApiError(400, "'battery_level' only applies to electric bikes")
+        changes["battery_level"] = parse_int(data["battery_level"], "battery_level", 0, 100)
+    if "status" in data:
+        changes["status"] = parse_enum(data["status"], "status", ["available", "under_repair"])
+    if "station_id" in data:
+        new_station = str(data["station_id"]).strip()
+        if new_station != bike["station_id"]:
+            check_free_dock(new_station)
+        changes["station_id"] = new_station
+    if not changes:
+        raise ApiError(400, "Nothing to update - send battery_level, status and/or station_id")
+    globals.bikes.update_one({"bike_id": bike_id}, {"$set": changes})
+    return respond({"message": "Bike updated", "bike": find_bike(bike_id)}, 200)
+
+
+@bikes_bp.route("/bikes/<string:bike_id>", methods=["DELETE"])
+@role_required("admin")
+def delete_bike(bike_id):
+    bike = find_bike(bike_id)
+    if bike["status"] in ("in_use", "reserved"):
+        raise ApiError(409, f"Bike {bike_id} is {bike['status']} and can't be deleted right now")
+    globals.bikes.delete_one({"bike_id": bike_id})
+    return respond({}, 204)
+
+===== blueprints/maintenance/__init__.py =====
+
+===== blueprints/maintenance/maintenance.py =====
+from bson import ObjectId
+from flask import Blueprint, request, g
+import globals
+from decorators import jwt_required, role_required
+from utils import (ApiError, respond, get_data, require_fields, parse_str, parse_enum,
+                   check_id, get_pagination, paged_response, next_id, now)
+from blueprints.bikes.bikes import find_bike
+
+maintenance_bp = Blueprint("maintenance_bp", __name__)
+
+ISSUES = ["brakes", "tyre", "chain", "battery", "other"]
+
+
+def find_report(report_id):
+    check_id(report_id, "MR", "report")
+    report = globals.maintenance.find_one({"report_id": report_id}, {"_id": 0})
+    if report is None:
+        raise ApiError(404, f"Maintenance report {report_id} not found")
+    return report
+
+
+def check_note_id(note_id):
+    if not ObjectId.is_valid(note_id):
+        raise ApiError(400, f"Invalid note ID '{note_id}'")
+    return ObjectId(note_id)
+
+
+# ---------- rider: report a fault ----------
+@maintenance_bp.route("/maintenance/report", methods=["POST"])
+@jwt_required
+def report_fault():
+    data = get_data()
+    require_fields(data, ["bike_id", "issue_type"])
+    bike = find_bike(str(data["bike_id"]).strip())
+    issue = parse_enum(data["issue_type"], "issue_type", ISSUES)
+    if issue == "battery" and bike["type"] != "electric":
+        raise ApiError(400, "Battery faults can only be reported on electric bikes")
+    if bike["status"] == "in_use":
+        raise ApiError(409, "Please return the bike first, then report the fault")
+    description = parse_str(data.get("description", f"{issue} problem"), "description", 3, 500)
+
+    if globals.maintenance.find_one({"bike_id": bike["bike_id"], "issue_type": issue,
+                                     "status": {"$in": ["open", "in_progress"]}}):
+        raise ApiError(409, f"A {issue} fault is already open for bike {bike['bike_id']}")
+
+    report = {"report_id": next_id("maintenance", globals.maintenance, "report_id", "MR", 4),
+              "bike_id": bike["bike_id"], "reported_by": g.user_id, "issue_type": issue,
+              "description": description, "status": "open", "assigned_to": None,
+              "created_at": now(), "resolved_at": None, "notes": []}
+    globals.maintenance.insert_one(report)
+    report.pop("_id", None)
+    # take the bike out of service straight away
+    globals.bikes.update_one({"bike_id": bike["bike_id"]}, {"$set": {"status": "under_repair"}})
+    return respond({"message": "Thank you - the bike has been taken out of service", "report": report}, 201)
+
+
+# ---------- mechanic: task list ----------
+@maintenance_bp.route("/maintenance/open", methods=["GET"])
+@role_required("mechanic", "admin")
+def open_faults():
+    """?issue_type=&status=open|in_progress  - joined with bike + station so the mechanic knows where to go"""
+    page_num, page_size, page_start = get_pagination()
+    match = {"status": {"$in": ["open", "in_progress"]}}
+    if request.args.get("status"):
+        match["status"] = parse_enum(request.args["status"], "status", ["open", "in_progress"])
+    if request.args.get("issue_type"):
+        match["issue_type"] = parse_enum(request.args["issue_type"], "issue_type", ISSUES)
+
+    result = list(globals.maintenance.aggregate([
+        {"$match": match},
+        {"$lookup": {"from": "bikes", "localField": "bike_id", "foreignField": "bike_id", "as": "bike"}},
+        {"$addFields": {"station_id": {"$arrayElemAt": ["$bike.station_id", 0]}}},
+        {"$lookup": {"from": "stations", "localField": "station_id", "foreignField": "station_id", "as": "st"}},
+        {"$addFields": {"station_name": {"$arrayElemAt": ["$st.name", 0]}, "note_count": {"$size": "$notes"}}},
+        {"$project": {"_id": 0, "bike": 0, "st": 0, "notes": 0}},
+        {"$facet": {
+            "data": [{"$sort": {"created_at": 1}}, {"$skip": page_start}, {"$limit": page_size}],
+            "total": [{"$count": "count"}],
+        }},
+    ]))[0]
+    total = result["total"][0]["count"] if result["total"] else 0
+    return respond(paged_response(result["data"], total, page_num, page_size), 200)
+
+
+@maintenance_bp.route("/maintenance/<string:report_id>", methods=["GET"])
+@role_required("mechanic", "admin")
+def get_one_report(report_id):
+    return respond(find_report(report_id), 200)
+
+
+@maintenance_bp.route("/maintenance/<string:report_id>/assign", methods=["PATCH"])
+@role_required("mechanic")
+def assign_report(report_id):
+    report = find_report(report_id)
+    if report["status"] == "resolved":
+        raise ApiError(409, "This report is already resolved")
+    globals.maintenance.update_one({"report_id": report_id},
+                                   {"$set": {"assigned_to": g.user_id, "status": "in_progress"}})
+    return respond({"message": f"Report assigned to you ({g.user_id})", "report": find_report(report_id)}, 200)
+
+
+@maintenance_bp.route("/maintenance/<string:report_id>/resolve", methods=["PATCH"])
+@role_required("mechanic", "admin")
+def resolve_report(report_id):
+    report = find_report(report_id)
+    if report["status"] == "resolved":
+        raise ApiError(409, "This report is already resolved")
+    globals.maintenance.update_one({"report_id": report_id}, {"$set": {
+        "status": "resolved", "resolved_at": now(), "assigned_to": report["assigned_to"] or g.user_id}})
+    # bike goes back into service only if it has no OTHER unresolved faults
+    still_open = globals.maintenance.count_documents(
+        {"bike_id": report["bike_id"], "status": {"$in": ["open", "in_progress"]}})
+    changes = {}
+    if still_open == 0:
+        changes["status"] = "available"
+    if report["issue_type"] == "battery":
+        changes["battery_level"] = 100
+    if changes:
+        globals.bikes.update_one({"bike_id": report["bike_id"]}, {"$set": changes})
+    return respond({"message": "Fault resolved", "bike": find_bike(report["bike_id"])}, 200)
+
+
+# ================= NOTES: full CRUD on a sub-document array =================
+@maintenance_bp.route("/maintenance/<string:report_id>/notes", methods=["GET"])
+@role_required("mechanic", "admin")
+def get_notes(report_id):
+    report = find_report(report_id)
+    return respond({"report_id": report_id, "count": len(report["notes"]), "notes": report["notes"]}, 200)
+
+
+@maintenance_bp.route("/maintenance/<string:report_id>/notes", methods=["POST"])
+@role_required("mechanic", "admin")
+def add_note(report_id):
+    find_report(report_id)
+    data = get_data()
+    require_fields(data, ["note"])
+    note = {"_id": ObjectId(), "mechanic_id": g.user_id,
+            "note": parse_str(data["note"], "note", 2, 500), "created_at": now()}
+    # $push adds one element to the notes array
+    globals.maintenance.update_one({"report_id": report_id}, {"$push": {"notes": note}})
+    return respond({"message": "Note added", "note": note}, 201)
+
+
+@maintenance_bp.route("/maintenance/<string:report_id>/notes/<string:note_id>", methods=["GET"])
+@role_required("mechanic", "admin")
+def get_one_note(report_id, note_id):
+    oid = check_note_id(note_id)
+    find_report(report_id)
+    # $elemMatch projection returns ONLY the matching element of the array
+    doc = globals.maintenance.find_one({"report_id": report_id},
+                                       {"_id": 0, "notes": {"$elemMatch": {"_id": oid}}})
+    if not doc or not doc.get("notes"):
+        raise ApiError(404, f"Note {note_id} not found")
+    return respond(doc["notes"][0], 200)
+
+
+@maintenance_bp.route("/maintenance/<string:report_id>/notes/<string:note_id>", methods=["PUT"])
+@role_required("mechanic", "admin")
+def edit_note(report_id, note_id):
+    oid = check_note_id(note_id)
+    find_report(report_id)
+    data = get_data()
+    require_fields(data, ["note"])
+    # the positional operator $ means "the array element that matched the query"
+    result = globals.maintenance.update_one(
+        {"report_id": report_id, "notes._id": oid},
+        {"$set": {"notes.$.note": parse_str(data["note"], "note", 2, 500), "notes.$.edited_at": now()}})
+    if result.matched_count == 0:
+        raise ApiError(404, f"Note {note_id} not found")
+    return respond({"message": "Note updated"}, 200)
+
+
+@maintenance_bp.route("/maintenance/<string:report_id>/notes/<string:note_id>", methods=["DELETE"])
+@role_required("mechanic", "admin")
+def delete_note(report_id, note_id):
+    oid = check_note_id(note_id)
+    find_report(report_id)
+    # $pull removes the array element that matches
+    result = globals.maintenance.update_one({"report_id": report_id}, {"$pull": {"notes": {"_id": oid}}})
+    if result.modified_count == 0:
+        raise ApiError(404, f"Note {note_id} not found")
+    return respond({}, 204)
+
+===== blueprints/payments/__init__.py =====
+
+===== blueprints/payments/payments.py =====
+import secrets
+from flask import Blueprint, g
+import globals
+from decorators import jwt_required, role_required
+from utils import ApiError, respond, get_data, require_fields, parse_enum, now
+from blueprints.rentals.rentals import find_rental
+
+payments_bp = Blueprint("payments_bp", __name__)
+
+# Stripe test payment methods (same names Stripe uses in test mode)
+SUCCEED = {"pm_card_visa": "visa", "pm_card_mastercard": "mastercard", "pm_card_amex": "amex"}
+DECLINE = {"pm_card_chargedeclined": "card_declined",
+           "pm_card_visa_chargedeclinedinsufficientfunds": "insufficient_funds"}
+
+
+@payments_bp.route("/payments/create", methods=["POST"])
+@jwt_required
+def create_payment():
+    data = get_data()
+    require_fields(data, ["rental_id"])
+    rental = find_rental(str(data["rental_id"]).strip())
+    if rental["user_id"] != g.user_id:
+        raise ApiError(403, "You can only pay for your own rentals")
+    if rental["status"] != "completed":
+        raise ApiError(409, f"Only completed rides can be paid for - this one is {rental['status']}")
+    if rental["payment"] and rental["payment"].get("status") == "succeeded":
+        raise ApiError(409, "This ride has already been paid")
+
+    method = parse_enum(data.get("payment_method", "pm_card_visa"), "payment_method",
+                        list(SUCCEED) + list(DECLINE))
+    if method in DECLINE:
+        # store the failed attempt using dot notation to update ONE field inside the sub-document
+        globals.rentals.update_one({"rental_id": rental["rental_id"]},
+                                   {"$set": {"payment.status": "failed", "payment.last_attempt": now()}})
+        raise ApiError(402, f"Payment declined: {DECLINE[method]}")
+
+    payment = {"payment_id": "pi_test_" + secrets.token_hex(8), "amount": rental["total_cost"],
+               "currency": "GBP", "method": "card", "card_brand": SUCCEED[method],
+               "status": "succeeded", "paid_at": now()}
+    globals.rentals.update_one({"rental_id": rental["rental_id"]}, {"$set": {"payment": payment}})
+    return respond({"message": f"Payment of £{payment['amount']:.2f} successful",
+                    "rental_id": rental["rental_id"], "payment": payment}, 201)
+
+
+@payments_bp.route("/payments/<string:rental_id>", methods=["GET"])
+@jwt_required
+def payment_status(rental_id):
+    rental = find_rental(rental_id)
+    payment = rental["payment"] or {"status": "not_applicable"}
+    return respond({"rental_id": rental_id, "total_cost": rental["total_cost"],
+                    "paid": payment.get("status") == "succeeded", "payment": payment}, 200)
+
+
+@payments_bp.route("/payments/<string:rental_id>/refund", methods=["POST"])
+@role_required("admin")
+def refund_payment(rental_id):
+    rental = find_rental(rental_id)
+    if not rental["payment"] or rental["payment"].get("status") != "succeeded":
+        raise ApiError(409, "Only a successful payment can be refunded")
+    globals.rentals.update_one({"rental_id": rental_id},
+                               {"$set": {"payment.status": "refunded", "payment.refunded_at": now()}})
+    return respond({"message": "Payment refunded", "payment": find_rental(rental_id)["payment"]}, 200)
+
+===== blueprints/rentals/__init__.py =====
+
+===== blueprints/rentals/rentals.py =====
+import math
+from datetime import timedelta
+
+from flask import Blueprint, request, g
+from pymongo import ReturnDocument
+
+import globals
+from decorators import jwt_required, role_required
+from utils import (ApiError, respond, get_data, require_fields, check_id,
+                   get_pagination, paged_response, next_id, now)
+from blueprints.bikes.bikes import find_bike
+
+rentals_bp = Blueprint("rentals_bp", __name__)
+
+# ---------- pricing ----------
+UNLOCK_FEE = 1.00
+PER_MIN = {"standard": 0.05, "electric": 0.20}
+OUTER_ZONE_DISCOUNT = 0.10        # 10% off rides starting in the outer zone
+RESERVATION_MINUTES = 10
+MIN_BATTERY = 20
+
+
+def calculate_cost(bike_type, minutes, zone):
+    cost = UNLOCK_FEE + PER_MIN[bike_type] * minutes
+    if zone == "outer":
+        cost *= (1 - OUTER_ZONE_DISCOUNT)
+    return round(cost, 2)
+
+
+def haversine_km(lat1, lng1, lat2, lng2):
+    """straight-line distance between two GPS points on the Earth"""
+    r = 6371
+    p1, p2 = math.radians(lat1), math.radians(lat2)
+    dp, dl = math.radians(lat2 - lat1), math.radians(lng2 - lng1)
+    a = math.sin(dp / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(dl / 2) ** 2
+    return 2 * r * math.asin(math.sqrt(a))
+
+
+# ---------- helpers ----------
+def expire_old_reservations():
+    """reservations past their 10 minutes are cancelled and the bike freed (lazy expiry)"""
+    for r in globals.rentals.find({"status": "reserved", "expires_at": {"$lt": now()}}):
+        globals.rentals.update_one({"rental_id": r["rental_id"]},
+                                   {"$set": {"status": "cancelled", "cancel_reason": "expired"}})
+        globals.bikes.update_one({"bike_id": r["bike_id"], "status": "reserved"},
+                                 {"$set": {"status": "available"}})
+
+
+def check_no_open_rental(user_id):
+    current = globals.rentals.find_one({"user_id": user_id, "status": {"$in": ["reserved", "active"]}})
+    if current:
+        raise ApiError(409, f"You already have a {current['status']} rental ({current['rental_id']}) "
+                            "- finish or cancel it first")
+
+
+def grab_bike(bike_id, new_status):
+    """
+    ATOMIC: only changes the bike if it is STILL 'available' at the moment of the update,
+    so two riders pressing 'reserve' at the same time can never both get the same bike.
+    """
+    bike = find_bike(bike_id)
+    if bike["type"] == "electric" and (bike["battery_level"] or 0) < MIN_BATTERY:
+        raise ApiError(409, f"Bike {bike_id} battery is too low ({bike['battery_level']}%)")
+    updated = globals.bikes.find_one_and_update(
+        {"bike_id": bike_id, "status": "available"},
+        {"$set": {"status": new_status}}, return_document=ReturnDocument.AFTER)
+    if updated is None:
+        raise ApiError(409, f"Bike {bike_id} is not available (it is {bike['status']})")
+    return updated
+
+
+def find_rental(rental_id):
+    check_id(rental_id, "R", "rental")
+    rental = globals.rentals.find_one({"rental_id": rental_id}, {"_id": 0})
+    if rental is None:
+        raise ApiError(404, f"Rental {rental_id} not found")
+    if rental["user_id"] != g.user_id and g.role != "admin":
+        raise ApiError(403, "This rental belongs to another user")
+    return rental
+
+
+def new_rental(bike, status):
+    t = now()
+    rental = {
+        "rental_id": next_id("rentals", globals.rentals, "rental_id", "R", 5),
+        "user_id": g.user_id, "bike_id": bike["bike_id"],
+        "start_station_id": bike["station_id"], "end_station_id": None,
+        "reserved_at": t if status == "reserved" else None,
+        "expires_at": t + timedelta(minutes=RESERVATION_MINUTES) if status == "reserved" else None,
+        "start_time": t if status == "active" else None, "end_time": None,
+        "distance_km": 0, "duration_min": 0, "total_cost": 0,
+        "status": status, "payment": None,
+    }
+    globals.rentals.insert_one(rental)
+    rental.pop("_id", None)
+    return rental
+
+
+# ---------- 1. reserve ----------
+@rentals_bp.route("/reservations", methods=["POST"])
+@role_required("rider")
+def reserve_bike():
+    data = get_data()
+    require_fields(data, ["bike_id"])
+    expire_old_reservations()
+    check_no_open_rental(g.user_id)
+    bike = grab_bike(str(data["bike_id"]).strip(), "reserved")
+    rental = new_rental(bike, "reserved")
+    return respond({"message": f"Bike {bike['bike_id']} reserved for {RESERVATION_MINUTES} minutes",
+                    "rental": rental}, 201)
+
+
+@rentals_bp.route("/reservations/<string:rental_id>/cancel", methods=["PATCH"])
+@jwt_required
+def cancel_reservation(rental_id):
+    expire_old_reservations()
+    rental = find_rental(rental_id)
+    if rental["status"] != "reserved":
+        raise ApiError(409, f"Only reserved rentals can be cancelled - this one is {rental['status']}")
+    globals.rentals.update_one({"rental_id": rental_id},
+                               {"$set": {"status": "cancelled", "cancel_reason": "cancelled_by_user"}})
+    globals.bikes.update_one({"bike_id": rental["bike_id"]}, {"$set": {"status": "available"}})
+    return respond({"message": "Reservation cancelled", "rental": find_rental(rental_id)}, 200)
+
+
+# ---------- 2. unlock (start riding) ----------
+@rentals_bp.route("/rentals/<string:rental_id>/unlock", methods=["POST"])
+@role_required("rider")
+def unlock_reserved(rental_id):
+    expire_old_reservations()
+    rental = find_rental(rental_id)
+    if rental["status"] == "cancelled" and rental.get("cancel_reason") == "expired":
+        raise ApiError(410, "This reservation has expired - please reserve again")
+    if rental["status"] != "reserved":
+        raise ApiError(409, f"Only a reserved rental can be unlocked - this one is {rental['status']}")
+    globals.bikes.update_one({"bike_id": rental["bike_id"]},
+                             {"$set": {"status": "in_use", "station_id": None}})
+    globals.rentals.update_one({"rental_id": rental_id},
+                               {"$set": {"status": "active", "start_time": now()}})
+    return respond({"message": "Bike unlocked - enjoy your ride", "rental": find_rental(rental_id)}, 200)
+
+
+@rentals_bp.route("/rentals", methods=["POST"])
+@role_required("rider")
+def walk_up_hire():
+    """unlock an available bike straight away, without reserving first"""
+    data = get_data()
+    require_fields(data, ["bike_id"])
+    expire_old_reservations()
+    check_no_open_rental(g.user_id)
+    bike = grab_bike(str(data["bike_id"]).strip(), "in_use")
+    rental = new_rental(bike, "active")
+    globals.bikes.update_one({"bike_id": bike["bike_id"]}, {"$set": {"station_id": None}})
+    return respond({"message": "Bike unlocked - enjoy your ride", "rental": rental}, 201)
+
+
+# ---------- 3. return ----------
+@rentals_bp.route("/rentals/<string:rental_id>/return", methods=["POST"])
+@role_required("rider")
+def return_bike(rental_id):
+    data = get_data()
+    require_fields(data, ["end_station_id"])
+    end_id = check_id(str(data["end_station_id"]).strip(), "ST", "station")
+    rental = find_rental(rental_id)
+    if rental["status"] != "active":
+        raise ApiError(409, f"Only an active rental can be returned - this one is {rental['status']}")
+    end_station = globals.stations.find_one({"station_id": end_id})
+    if end_station is None:
+        raise ApiError(404, f"Station {end_id} not found")
+
+    # station full? refuse and suggest the 3 closest stations with a free dock
+    docked = globals.bikes.count_documents({"station_id": end_id})
+    if docked >= end_station["total_docks"]:
+        lng, lat = end_station["location"]["coordinates"]
+        nearby = list(globals.stations.aggregate([
+            {"$geoNear": {"near": {"type": "Point", "coordinates": [lng, lat]},
+                          "distanceField": "distance_m", "maxDistance": 3000, "spherical": True}},
+            {"$lookup": {"from": "bikes", "localField": "station_id", "foreignField": "station_id", "as": "d"}},
+            {"$project": {"_id": 0, "station_id": 1, "name": 1, "distance_m": 1,
+                          "free_docks": {"$subtract": ["$total_docks", {"$size": "$d"}]}}},
+            {"$match": {"free_docks": {"$gt": 0}}},
+            {"$limit": 3}]))
+        for s in nearby:
+            s["distance_m"] = round(s["distance_m"])
+        return respond({"error": f"Station {end_id} is full - please return to another station",
+                        "status": 409, "suggested_stations": nearby}, 409)
+
+    bike = find_bike(rental["bike_id"])
+    start_station = globals.stations.find_one({"station_id": rental["start_station_id"]})
+    end_time = now()
+    minutes = max(1, math.ceil((end_time - rental["start_time"]).total_seconds() / 60))
+    a = start_station["location"]["coordinates"]
+    b = end_station["location"]["coordinates"]
+    distance = round(haversine_km(a[1], a[0], b[1], b[0]), 2)
+    cost = calculate_cost(bike["type"], minutes, start_station["zone"])
+
+    globals.rentals.update_one({"rental_id": rental_id}, {"$set": {
+        "status": "completed", "end_station_id": end_id, "end_time": end_time,
+        "duration_min": minutes, "distance_km": distance, "total_cost": cost,
+        "payment": {"status": "unpaid", "amount": cost, "currency": "GBP"}}})
+
+    bike_changes = {"station_id": end_id, "status": "available"}
+    if bike["type"] == "electric":
+        bike_changes["battery_level"] = max(0, bike["battery_level"] - math.ceil(distance * 3))
+    globals.bikes.update_one({"bike_id": bike["bike_id"]}, {"$set": bike_changes})
+
+    return respond({"message": f"Ride complete - {minutes} min, {distance} km, £{cost:.2f}",
+                    "rental": find_rental(rental_id)}, 200)
+
+
+# ---------- viewing ----------
+@rentals_bp.route("/rentals/current", methods=["GET"])
+@jwt_required
+def my_current_rental():
+    expire_old_reservations()
+    rental = globals.rentals.find_one({"user_id": g.user_id, "status": {"$in": ["reserved", "active"]}},
+                                      {"_id": 0})
+    if rental is None:
+        raise ApiError(404, "You have no reservation or ride in progress")
+    if rental["status"] == "reserved":
+        rental["seconds_left"] = max(0, int((rental["expires_at"] - now()).total_seconds()))
+    return respond(rental, 200)
+
+
+@rentals_bp.route("/rentals/history", methods=["GET"])
+@jwt_required
+def my_history():
+    """my past rides + station names ($lookup) + totals - all in ONE query with $facet"""
+    page_num, page_size, page_start = get_pagination()
+    result = list(globals.rentals.aggregate([
+        {"$match": {"user_id": g.user_id}},
+        {"$facet": {
+            "data": [
+                {"$sort": {"rental_id": -1}}, {"$skip": page_start}, {"$limit": page_size},
+                {"$lookup": {"from": "stations", "localField": "start_station_id",
+                             "foreignField": "station_id", "as": "from"}},
+                {"$lookup": {"from": "stations", "localField": "end_station_id",
+                             "foreignField": "station_id", "as": "to"}},
+                {"$addFields": {"from_name": {"$arrayElemAt": ["$from.name", 0]},
+                                "to_name": {"$arrayElemAt": ["$to.name", 0]}}},
+                {"$project": {"_id": 0, "from": 0, "to": 0}},
+            ],
+            "total": [{"$count": "count"}],
+            "summary": [
+                {"$match": {"status": "completed"}},
+                {"$group": {"_id": None, "rides": {"$sum": 1}, "spent": {"$sum": "$total_cost"},
+                            "km": {"$sum": "$distance_km"}}},
+            ],
+        }},
+    ]))[0]
+    total = result["total"][0]["count"] if result["total"] else 0
+    body = paged_response(result["data"], total, page_num, page_size)
+    s = result["summary"][0] if result["summary"] else {"rides": 0, "spent": 0, "km": 0}
+    body["summary"] = {"completed_rides": s["rides"], "total_spent": round(s["spent"], 2),
+                       "total_km": round(s["km"], 2)}
+    return respond(body, 200)
+
+
+@rentals_bp.route("/rentals/<string:rental_id>", methods=["GET"])
+@jwt_required
+def get_one_rental(rental_id):
+    expire_old_reservations()
+    return respond(find_rental(rental_id), 200)
+
+===== blueprints/stations/__init__.py =====
+
+===== blueprints/stations/stations.py =====
+import re
+from flask import Blueprint, request
+import globals
+from utils import (ApiError, respond, parse_int, parse_float, parse_enum, check_id,
+                   get_pagination, paged_response)
+
+stations_bp = Blueprint("stations_bp", __name__)
+
+ZONES = ["central", "inner", "outer"]
+MIN_BATTERY = 20     # electric bikes below 20% can't be hired
+
+
+def availability_stages():
+    """
+    Aggregation stages that JOIN each station to the bikes docked there ($lookup)
+    and work out live numbers. A bike counts as available if its status is
+    'available' and (for electric bikes) the battery is at least MIN_BATTERY.
+    """
+    usable = {"$and": [
+        {"$eq": ["$$b.status", "available"]},
+        {"$or": [{"$eq": ["$$b.type", "standard"]},
+                 {"$gte": ["$$b.battery_level", MIN_BATTERY]}]},
+    ]}
+    return [
+        {"$lookup": {"from": "bikes", "localField": "station_id",
+                     "foreignField": "station_id", "as": "docked"}},
+        {"$addFields": {
+            "bikes_docked": {"$size": "$docked"},
+            "bikes_available": {"$size": {"$filter": {"input": "$docked", "as": "b", "cond": usable}}},
+        }},
+        {"$addFields": {"free_docks": {"$subtract": ["$total_docks", "$bikes_docked"]}}},
+        {"$project": {"_id": 0, "docked": 0}},
+    ]
+
+
+# ---------------- GET all stations (filter, search, paginate) ----------------
+@stations_bp.route("/stations", methods=["GET"])
+def show_all_stations():
+    page_num, page_size, page_start = get_pagination()
+
+    match = {}
+    if request.args.get("zone"):
+        match["zone"] = parse_enum(request.args["zone"], "zone", ZONES)
+    if request.args.get("search"):
+        text = re.escape(request.args["search"].strip())
+        match["$or"] = [{"name": {"$regex": text, "$options": "i"}},
+                        {"address": {"$regex": text, "$options": "i"}}]
+
+    pipeline = [{"$match": match}] + availability_stages()
+    if request.args.get("min_bikes"):
+        pipeline.append({"$match": {"bikes_available":
+                         {"$gte": parse_int(request.args["min_bikes"], "min_bikes", 0, 100)}}})
+
+    # $facet = run two pipelines at once: one page of data + the total count
+    pipeline.append({"$facet": {
+        "data": [{"$sort": {"name": 1}}, {"$skip": page_start}, {"$limit": page_size}],
+        "total": [{"$count": "count"}],
+    }})
+    result = list(globals.stations.aggregate(pipeline))[0]
+    total = result["total"][0]["count"] if result["total"] else 0
+    return respond(paged_response(result["data"], total, page_num, page_size), 200)
+
+
+# ---------------- GEO: stations near me ----------------
+@stations_bp.route("/stations/nearby", methods=["GET"])
+def nearby_stations():
+    """ /stations/nearby?lat=51.5033&lng=-0.1145&radius=800&min_bikes=1 """
+    if not request.args.get("lat") or not request.args.get("lng"):
+        raise ApiError(400, "Query parameters 'lat' and 'lng' are required")
+    lat = parse_float(request.args["lat"], "lat", -90, 90)
+    lng = parse_float(request.args["lng"], "lng", -180, 180)
+    radius = parse_int(request.args.get("radius", 1000), "radius", 50, 20000)   # metres
+    min_bikes = parse_int(request.args.get("min_bikes", 0), "min_bikes", 0, 100)
+
+    pipeline = [
+        # $geoNear MUST be the first stage and needs the 2dsphere index
+        {"$geoNear": {
+            "near": {"type": "Point", "coordinates": [lng, lat]},   # GeoJSON = [lng, lat]
+            "distanceField": "distance_m",
+            "maxDistance": radius,
+            "spherical": True,
+        }},
+    ] + availability_stages() + [
+        {"$match": {"bikes_available": {"$gte": min_bikes}}},
+        {"$limit": 10},
+    ]
+    results = list(globals.stations.aggregate(pipeline))
+    for s in results:
+        s["distance_m"] = round(s["distance_m"])
+        s["walking_minutes"] = max(1, round(s["distance_m"] / 80))   # ~80 m per minute
+    return respond({"count": len(results), "stations": results}, 200)
+
+
+# ---------------- GET one station ----------------
+@stations_bp.route("/stations/<string:station_id>", methods=["GET"])
+def show_one_station(station_id):
+    check_id(station_id, "ST", "station")
+    result = list(globals.stations.aggregate(
+        [{"$match": {"station_id": station_id}}] + availability_stages()))
+    if not result:
+        raise ApiError(404, f"Station {station_id} not found")
+    station = result[0]
+    station["available_bikes"] = list(globals.bikes.find(
+        {"station_id": station_id, "status": "available"},
+        {"_id": 0, "bike_id": 1, "type": 1, "battery_level": 1}))
+    return respond(station, 200)
+
+
+# ================= ADMIN: create / update / delete =================
+from decorators import role_required
+from utils import get_data, require_fields, parse_str, next_id
+
+
+def read_station_fields(data, partial=False):
+    """validate the body; partial=True for PUT (only send what you change)"""
+    if not partial:
+        require_fields(data, ["name", "address", "lat", "lng", "total_docks", "zone"])
+    fields = {}
+    if "name" in data:
+        fields["name"] = parse_str(data["name"], "name", 3, 100)
+    if "address" in data:
+        fields["address"] = parse_str(data["address"], "address", 5, 200)
+    if "lat" in data or "lng" in data:
+        lat = parse_float(data.get("lat"), "lat", 51.25, 51.75)    # Greater London only
+        lng = parse_float(data.get("lng"), "lng", -0.55, 0.35)
+        fields["location"] = {"type": "Point", "coordinates": [lng, lat]}
+    if "total_docks" in data:
+        fields["total_docks"] = parse_int(data["total_docks"], "total_docks", 1, 100)
+    if "zone" in data:
+        fields["zone"] = parse_enum(data["zone"], "zone", ZONES)
+    return fields
+
+
+@stations_bp.route("/stations", methods=["POST"])
+@role_required("admin")
+def add_station():
+    fields = read_station_fields(get_data())
+    fields["station_id"] = next_id("stations", globals.stations, "station_id", "ST", 3)
+    globals.stations.insert_one(fields)
+    fields.pop("_id", None)
+    return respond({"message": "Station created",
+                    "url": request.host_url + "api/v1.0/stations/" + fields["station_id"],
+                    "station": fields}, 201)
+
+
+@stations_bp.route("/stations/<string:station_id>", methods=["PUT"])
+@role_required("admin")
+def edit_station(station_id):
+    check_id(station_id, "ST", "station")
+    fields = read_station_fields(get_data(), partial=True)
+    if not fields:
+        raise ApiError(400, "Nothing to update - send at least one field")
+    if "total_docks" in fields:
+        docked = globals.bikes.count_documents({"station_id": station_id})
+        if fields["total_docks"] < docked:
+            raise ApiError(409, f"{docked} bikes are docked here - total_docks can't be lower than that")
+    result = globals.stations.update_one({"station_id": station_id}, {"$set": fields})
+    if result.matched_count == 0:
+        raise ApiError(404, f"Station {station_id} not found")
+    return respond({"message": "Station updated",
+                    "url": request.host_url + "api/v1.0/stations/" + station_id}, 200)
+
+
+@stations_bp.route("/stations/<string:station_id>", methods=["DELETE"])
+@role_required("admin")
+def delete_station(station_id):
+    check_id(station_id, "ST", "station")
+    docked = globals.bikes.count_documents({"station_id": station_id})
+    if docked:
+        raise ApiError(409, f"Cannot delete - {docked} bike(s) still docked here. Move them first.")
+    result = globals.stations.delete_one({"station_id": station_id})
+    if result.deleted_count == 0:
+        raise ApiError(404, f"Station {station_id} not found")
+    return respond({}, 204)
+
+===== seed/generate_data.py =====
+"""
+Generates the Smart Bike Sharing & Maintenance dataset (London) as JSON files
+ready for mongoimport --jsonArray.
+
+Collections: users, stations, bikes, rentals, maintenance_reports
+All cross-references (station_id, bike_id, user_id) are consistent:
+  - in_use bikes have station_id = null and exactly one 'active' rental
+  - reserved bikes have exactly one 'reserved' rental
+  - under_repair bikes have an open / in_progress maintenance report
+  - bikes docked at a station never exceed that station's total_docks
+"""
+import json, math, random, datetime as dt
+import bcrypt
+
+random.seed(661)
+NOW = dt.datetime(2026, 10, 19, 13, 45, 0)          # UTC
+import os
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
+
+def oid():
+    return {"$oid": "%024x" % random.getrandbits(96)}
+
+def iso(d):  # MongoDB extended JSON date
+    return {"$date": d.strftime("%Y-%m-%dT%H:%M:%SZ")} if d else None
+
+def haversine(lat1, lng1, lat2, lng2):
+    r = 6371
+    p1, p2 = math.radians(lat1), math.radians(lat2)
+    dp, dl = math.radians(lat2 - lat1), math.radians(lng2 - lng1)
+    a = math.sin(dp / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(dl / 2) ** 2
+    return 2 * r * math.asin(math.sqrt(a))
+
+# ---------------------------------------------------------------- stations
+# (area, postcode, lat, lng) - approximate real centre points of London areas
+AREAS = [
+    ("Waterloo", "SE1", 51.5033, -0.1145), ("Southwark", "SE1", 51.5045, -0.1050),
+    ("London Bridge", "SE1", 51.5055, -0.0865), ("Bankside", "SE1", 51.5075, -0.0990),
+    ("Covent Garden", "WC2", 51.5117, -0.1240), ("Soho", "W1", 51.5136, -0.1365),
+    ("Holborn", "WC1", 51.5174, -0.1200), ("Bloomsbury", "WC1", 51.5220, -0.1260),
+    ("Fitzrovia", "W1", 51.5190, -0.1380), ("Marylebone", "W1", 51.5200, -0.1530),
+    ("Mayfair", "W1", 51.5100, -0.1480), ("Westminster", "SW1", 51.4995, -0.1350),
+    ("Victoria", "SW1", 51.4965, -0.1440), ("Pimlico", "SW1", 51.4890, -0.1340),
+    ("Farringdon", "EC1", 51.5203, -0.1050), ("Clerkenwell", "EC1", 51.5240, -0.1060),
+    ("Barbican", "EC2", 51.5200, -0.0940), ("Moorgate", "EC2", 51.5186, -0.0886),
+    ("Liverpool Street", "EC2", 51.5178, -0.0823), ("Aldgate", "EC3", 51.5143, -0.0755),
+    ("Tower Hill", "EC3", 51.5098, -0.0766), ("St Paul's", "EC4", 51.5138, -0.0984),
+    ("King's Cross", "N1", 51.5308, -0.1238), ("Euston", "NW1", 51.5282, -0.1337),
+    ("Camden Town", "NW1", 51.5390, -0.1426), ("Islington", "N1", 51.5362, -0.1033),
+    ("Angel", "N1", 51.5322, -0.1058), ("Shoreditch", "E1", 51.5265, -0.0780),
+    ("Hoxton", "N1", 51.5310, -0.0810), ("Whitechapel", "E1", 51.5195, -0.0596),
+    ("Bethnal Green", "E2", 51.5270, -0.0550), ("Hackney", "E8", 51.5450, -0.0553),
+    ("Kensington", "W8", 51.5010, -0.1920), ("South Kensington", "SW7", 51.4941, -0.1738),
+    ("Chelsea", "SW3", 51.4875, -0.1687), ("Knightsbridge", "SW1", 51.5015, -0.1607),
+    ("Paddington", "W2", 51.5154, -0.1755), ("Notting Hill", "W11", 51.5090, -0.1960),
+    ("Battersea", "SW11", 51.4790, -0.1500), ("Vauxhall", "SE11", 51.4861, -0.1253),
+    ("Kennington", "SE11", 51.4882, -0.1050), ("Elephant & Castle", "SE1", 51.4946, -0.1001),
+    ("Bermondsey", "SE1", 51.4980, -0.0640), ("Canary Wharf", "E14", 51.5054, -0.0235),
+    ("Limehouse", "E14", 51.5123, -0.0397), ("Stratford", "E15", 51.5416, -0.0033),
+    ("Brixton", "SW9", 51.4613, -0.1156), ("Clapham", "SW4", 51.4618, -0.1384),
+    ("Fulham", "SW6", 51.4730, -0.2010), ("Hammersmith", "W6", 51.4927, -0.2240),
+    ("Shepherd's Bush", "W12", 51.5046, -0.2187), ("Wandsworth", "SW18", 51.4567, -0.1910),
+    ("Greenwich", "SE10", 51.4826, -0.0077), ("Peckham", "SE15", 51.4740, -0.0690),
+]
+STREETS = ["Road", "Street", "Square", "Lane", "Place", "Gardens", "Walk", "Row"]
+PREFIX = ["High", "Church", "Station", "Park", "Mill", "Queen's", "King's", "Victoria",
+          "Albert", "Market", "Bridge", "Grove", "Chapel", "Union", "Wharf", "Garden"]
+CHARING_CROSS = (51.5073, -0.1276)
+
+stations, used = [], set()
+for i in range(120):
+    area, pc, lat, lng = AREAS[i % len(AREAS)]
+    while True:
+        street = f"{random.choice(PREFIX)} {random.choice(STREETS)}"
+        if (street, area) not in used:
+            used.add((street, area)); break
+    lat = round(lat + random.uniform(-0.0045, 0.0045), 6)
+    lng = round(lng + random.uniform(-0.0065, 0.0065), 6)
+    d = haversine(lat, lng, *CHARING_CROSS)
+    zone = "central" if d < 3 else "inner" if d < 6.5 else "outer"
+    stations.append({
+        "station_id": f"ST{i+1:03d}",
+        "name": f"{street}, {area}",
+        "address": f"{random.randint(1, 220)} {street}, {area}, London {pc} {random.randint(1,9)}{random.choice('ABDEFGHJLNPQRSTUWXYZ')}{random.choice('ABDEFGHJLNPQRSTUWXYZ')}",
+        "location": {"type": "Point", "coordinates": [lng, lat]},   # GeoJSON: [lng, lat]
+        "total_docks": random.choice([10, 12, 15, 16, 18, 20, 24]),
+        "zone": zone,
+    })
+st_by_id = {s["station_id"]: s for s in stations}
+
+# ---------------------------------------------------------------- users
+FIRST = ["Oliver", "Amelia", "George", "Isla", "Harry", "Ava", "Noah", "Mia", "Jack", "Ivy",
+         "Leo", "Grace", "Arthur", "Freya", "Muhammad", "Lily", "Oscar", "Sophia", "Charlie",
+         "Emily", "Theo", "Ella", "Henry", "Rosie", "Aarav", "Priya", "Rojan", "Sita", "Kwame",
+         "Amara", "Liam", "Chloe", "Ethan", "Zara", "Daniel", "Hannah", "Samuel", "Aisha",
+         "Lucas", "Maya", "Finn", "Nadia", "Ryan", "Erin", "Tomasz", "Ewa", "Diego", "Lucia"]
+LAST = ["Smith", "Jones", "Taylor", "Brown", "Williams", "Wilson", "Johnson", "Davies",
+        "Patel", "Khan", "Robinson", "Wright", "Thompson", "Evans", "Walker", "White",
+        "Roberts", "Green", "Hall", "Wood", "Clarke", "Shah", "Ahmed", "Murphy", "Kelly",
+        "Nowak", "Okafor", "Mensah", "Garcia", "Rossi", "Kafle", "Gurung", "Singh", "Lewis"]
+PASSWORDS = {"rider": "Rider123!", "mechanic": "Mechanic123!", "admin": "Admin123!"}
+roles = ["admin"] * 5 + ["mechanic"] * 15 + ["rider"] * 130
+users, emails = [], set()
+for i, role in enumerate(roles):
+    fn, ln = random.choice(FIRST), random.choice(LAST)
+    base = f"{fn}.{ln}".lower()
+    email, n = f"{base}@example.com", 1
+    while email in emails:
+        n += 1; email = f"{base}{n}@example.com"
+    emails.add(email)
+    created = NOW - dt.timedelta(days=random.randint(90, 720), minutes=random.randint(0, 1440))
+    users.append({
+        "user_id": f"U{i+1:03d}",
+        "name": f"{fn} {ln}",
+        "email": email,
+        "password_hash": bcrypt.hashpw(PASSWORDS[role].encode(), bcrypt.gensalt(rounds=10)).decode(),
+        "role": role,
+        "created_at": created,
+    })
+# fixed, easy-to-remember accounts for testing / Postman
+for u, (name, email) in zip([users[0], users[5], users[20]],
+                            [("Admin Demo", "admin@bikeshare.test"),
+                             ("Mechanic Demo", "mechanic@bikeshare.test"),
+                             ("Rider Demo", "rider@bikeshare.test")]):
+    u["name"], u["email"] = name, email
+riders = [u for u in users if u["role"] == "rider"]
+mechanics = [u for u in users if u["role"] == "mechanic"]
+
+# ---------------------------------------------------------------- bikes
+bikes = []
+for i in range(900):
+    btype = "electric" if random.random() < 0.35 else "standard"
+    bikes.append({"bike_id": f"BK{i+1:04d}", "station_id": None, "type": btype,
+                  "battery_level": random.randint(15, 100) if btype == "electric" else None,
+                  "status": "available"})
+random.shuffle(bikes)
+statuses = ["in_use"] * 45 + ["reserved"] * 12 + ["under_repair"] * 55
+for b, s in zip(bikes, statuses):
+    b["status"] = s
+# dock all non-in_use bikes, respecting capacity; leave a few stations empty / full
+capacity = {s["station_id"]: s["total_docks"] for s in stations}
+empty = set(random.sample(list(capacity), 6))
+full = set(random.sample([k for k in capacity if k not in empty], 6))
+docked = {k: 0 for k in capacity}
+for sid in full:                                  # fill these stations to the brim
+    for b in bikes:
+        if docked[sid] >= capacity[sid]: break
+        if b["status"] != "in_use" and b["station_id"] is None:
+            b["station_id"] = sid; docked[sid] += 1
+for b in bikes:
+    if b["status"] == "in_use" or b["station_id"]: continue
+    choices = [k for k in capacity if k not in empty and k not in full and docked[k] < capacity[k] - 2]
+    sid = random.choice(choices)
+    b["station_id"] = sid; docked[sid] += 1
+for b in bikes:                                   # electric bikes under 20% are flagged low
+    if b["type"] == "electric" and b["status"] == "in_use":
+        b["battery_level"] = random.randint(30, 95)
+bikes.sort(key=lambda b: b["bike_id"])
+bike_by_id = {b["bike_id"]: b for b in bikes}
+
+# ---------------------------------------------------------------- rentals
+PRICING = {"standard": {"unlock": 1.00, "per_min": 0.05},
+           "electric": {"unlock": 1.00, "per_min": 0.20}}
+ZONE_MULT = {"central": 1.0, "inner": 1.0, "outer": 0.9}
+HOUR_WEIGHTS = [1, 1, 1, 1, 1, 2, 5, 14, 22, 12, 6, 6, 9, 8, 6, 7, 11, 22, 18, 10, 7, 5, 3, 2]
+
+def price(btype, mins, zone):
+    p = PRICING[btype]
+    return round((p["unlock"] + p["per_min"] * mins) * ZONE_MULT[zone], 2)
+
+# popular routes: commuter pairs ridden repeatedly
+popular = [tuple(random.sample(stations, 2)) for _ in range(15)]
+rentals = []
+def new_id(): return f"R{len(rentals)+1:05d}"
+
+for _ in range(1500):
+    bike = random.choice(bikes)
+    if random.random() < 0.25:
+        a, b = random.choice(popular)
+    else:
+        a = random.choice(stations)
+        near = sorted(stations, key=lambda s: haversine(*a["location"]["coordinates"][::-1],
+                                                         *s["location"]["coordinates"][::-1]))[1:25]
+        b = random.choice(near)
+    day = NOW - dt.timedelta(days=random.randint(1, 80))
+    hour = random.choices(range(24), weights=HOUR_WEIGHTS)[0]
+    start = day.replace(hour=hour, minute=random.randint(0, 59), second=random.randint(0, 59))
+    dist = haversine(*a["location"]["coordinates"][::-1], *b["location"]["coordinates"][::-1]) * 1.3
+    dist = round(max(dist, 0.4) + random.uniform(0, 0.6), 2)
+    speed = 17 if bike["type"] == "electric" else 12            # km/h
+    mins = max(3, round(dist / speed * 60 + random.uniform(1, 6)))
+    end = start + dt.timedelta(minutes=mins)
+    rider = random.choice(riders)
+    if random.random() < 0.05:   # cancelled reservation
+        reserved_at = start - dt.timedelta(minutes=random.randint(2, 9))
+        rentals.append({"rental_id": new_id(), "user_id": rider["user_id"], "bike_id": bike["bike_id"],
+                        "start_station_id": a["station_id"], "end_station_id": None,
+                        "reserved_at": reserved_at, "expires_at": reserved_at + dt.timedelta(minutes=10),
+                        "start_time": None, "end_time": None, "distance_km": 0, "duration_min": 0,
+                        "total_cost": 0, "status": "cancelled", "payment": None})
+        continue
+    cost = price(bike["type"], mins, a["zone"])
+    paid = random.random() < 0.96
+    rentals.append({
+        "rental_id": new_id(), "user_id": rider["user_id"], "bike_id": bike["bike_id"],
+        "start_station_id": a["station_id"], "end_station_id": b["station_id"],
+        "reserved_at": start - dt.timedelta(minutes=random.randint(1, 8)) if random.random() < 0.4 else None,
+        "expires_at": None,
+        "start_time": start, "end_time": end, "distance_km": dist, "duration_min": mins,
+        "total_cost": cost, "status": "completed",
+        "payment": {   # embedded sub-document
+            "payment_id": f"pi_test_{random.getrandbits(64):016x}",
+            "amount": cost, "currency": "GBP", "method": "card",
+            "card_brand": random.choice(["visa", "mastercard", "amex"]),
+            "card_last4": random.choice(["4242", "4444", "0005", "5556"]),
+            "status": "succeeded" if paid else "pending",
+            "paid_at": end + dt.timedelta(seconds=random.randint(5, 90)) if paid else None,
+        },
+    })
+for r in rentals[:]:  # make reserved_at None consistent for rides with no reservation
+    if r["status"] == "completed" and r["reserved_at"] is None:
+        r["expires_at"] = None
+    elif r["status"] == "completed":
+        r["expires_at"] = r["reserved_at"] + dt.timedelta(minutes=10)
+
+# current active rides & live reservations, one per rider, matching bike status
+free_riders = random.sample(riders, 57)
+for bike in [b for b in bikes if b["status"] == "in_use"]:
+    rider = free_riders.pop()
+    a = random.choice(stations)
+    start = NOW - dt.timedelta(minutes=random.randint(2, 40))
+    rentals.append({"rental_id": new_id(), "user_id": rider["user_id"], "bike_id": bike["bike_id"],
+                    "start_station_id": a["station_id"], "end_station_id": None,
+                    "reserved_at": None, "expires_at": None, "start_time": start, "end_time": None,
+                    "distance_km": 0, "duration_min": 0, "total_cost": 0, "status": "active", "payment": None})
+for bike in [b for b in bikes if b["status"] == "reserved"]:
+    rider = free_riders.pop()
+    reserved_at = NOW - dt.timedelta(minutes=random.randint(0, 4))
+    rentals.append({"rental_id": new_id(), "user_id": rider["user_id"], "bike_id": bike["bike_id"],
+                    "start_station_id": bike["station_id"], "end_station_id": None,
+                    "reserved_at": reserved_at, "expires_at": reserved_at + dt.timedelta(minutes=10),
+                    "start_time": None, "end_time": None, "distance_km": 0, "duration_min": 0,
+                    "total_cost": 0, "status": "reserved", "payment": None})
+
+# ---------------------------------------------------------------- maintenance reports
+ISSUES = {
+    "brakes": ["Front brake feels spongy", "Rear brake not gripping", "Brake lever loose", "Brakes squeal loudly"],
+    "tyre": ["Front tyre flat", "Rear tyre puncture", "Tyre worn down to the tread", "Slow leak in rear tyre"],
+    "chain": ["Chain keeps slipping", "Chain came off", "Chain rusty and noisy", "Gears skipping"],
+    "battery": ["Battery drains very quickly", "Battery won't charge", "Motor cuts out on hills", "Display shows battery error"],
+    "other": ["Saddle won't adjust", "Bell missing", "Front light not working", "Basket bent", "Dock lock stuck"],
+}
+MECH_NOTES = ["Inspected bike at station", "Ordered replacement part", "Replaced part and tested",
+              "Adjusted and road tested", "Cleaned and lubricated", "Safety check passed"]
+reports = []
+def add_report(bike, status, created):
+    itype = "battery" if bike["type"] == "electric" and random.random() < 0.4 else \
+            random.choice(["brakes", "tyre", "chain", "other"])
+    reporter = random.choice(riders + mechanics[:3])
+    mech = random.choice(mechanics)
+    notes, resolved = [], None
+    if status in ("in_progress", "resolved"):
+        t = created + dt.timedelta(hours=random.randint(1, 20))
+        notes.append({"_id": oid(), "mechanic_id": mech["user_id"], "note": MECH_NOTES[0], "created_at": t})
+        if random.random() < 0.5:
+            t += dt.timedelta(hours=random.randint(1, 24))
+            notes.append({"_id": oid(), "mechanic_id": mech["user_id"], "note": MECH_NOTES[1], "created_at": t})
+        if status == "resolved":
+            resolved = t + dt.timedelta(hours=random.randint(1, 30))
+            notes.append({"_id": oid(), "mechanic_id": mech["user_id"], "note": random.choice(MECH_NOTES[2:]), "created_at": resolved})
+    reports.append({
+        "report_id": f"MR{len(reports)+1:04d}", "bike_id": bike["bike_id"],
+        "reported_by": reporter["user_id"], "issue_type": itype,
+        "description": random.choice(ISSUES[itype]),
+        "status": status,
+        "assigned_to": mech["user_id"] if status != "open" else None,
+        "created_at": created, "resolved_at": resolved,
+        "notes": notes,   # embedded sub-documents
+    })
+
+for b in [b for b in bikes if b["status"] == "under_repair"]:     # live faults
+    add_report(b, random.choice(["open", "open", "in_progress"]),
+               NOW - dt.timedelta(hours=random.randint(2, 96)))
+repeat_offenders = random.sample([b for b in bikes if b["status"] == "available"], 12)
+for b in repeat_offenders:                                         # repeated faults
+    for _ in range(random.randint(3, 5)):
+        add_report(b, "resolved", NOW - dt.timedelta(days=random.randint(5, 85)))
+while len(reports) < 220:                                          # one-off historic faults
+    b = random.choice([b for b in bikes if b["status"] != "under_repair"])
+    add_report(b, "resolved", NOW - dt.timedelta(days=random.randint(5, 85)))
+reports.sort(key=lambda r: r["created_at"])
+for i, r in enumerate(reports):
+    r["report_id"] = f"MR{i+1:04d}"
+
+# ---------------------------------------------------------------- write
+def to_json(o):
+    if isinstance(o, dict): return {k: to_json(v) for k, v in o.items()}
+    if isinstance(o, list): return [to_json(v) for v in o]
+    if isinstance(o, dt.datetime): return iso(o)
+    return o
+
+import os
+os.makedirs(OUT, exist_ok=True)
+for name, data in [("users", users), ("stations", stations), ("bikes", bikes),
+                   ("rentals", rentals), ("maintenance_reports", reports)]:
+    with open(f"{OUT}/{name}.json", "w") as f:
+        json.dump(to_json(data), f, indent=2)
+    print(f"{name:20s} {len(data)}")
+

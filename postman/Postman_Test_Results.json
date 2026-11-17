@@ -1,0 +1,4764 @@
+{
+	"id": "ef5e1717-b60a-4683-9eff-e144b550b7c4",
+	"name": "Smart Bike Sharing API (automated tests)",
+	"timestamp": "2026-10-26T13:18:56.633Z",
+	"collection_id": "59055137-864261b4-cc0e-4468-a78c-8c262ab34b74",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 357,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2026-10-26T13:18:54.085Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "9ae37ce0-c2b0-431f-9a19-b61df955938b",
+			"name": "Register new rider",
+			"url": "http://127.0.0.1:5001/api/v1.0/auth/register",
+			"time": 214,
+			"responseCode": {
+				"code": 201,
+				"name": "CREATED"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response time under 2s": true,
+				"New user is a rider": true,
+				"Password hash is not returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"New user is a rider": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Password hash is not returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				214
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response time under 2s": true,
+					"New user is a rider": true,
+					"Password hash is not returned": true
+				}
+			]
+		},
+		{
+			"id": "428db1ca-a6f3-48a4-9b5a-60f9541f942c",
+			"name": "Register - duplicate email (409)",
+			"url": "http://127.0.0.1:5001/api/v1.0/auth/register",
+			"time": 3,
+			"responseCode": {
+				"code": 409,
+				"name": "CONFLICT"
+			},
+			"tests": {
+				"Status code is 409": true,
+				"Response time under 2s": true,
+				"Error message is returned": true,
+				"Says it already exists": true
+			},
+			"testPassFailCounts": {
+				"Status code is 409": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Says it already exists": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 409": true,
+					"Response time under 2s": true,
+					"Error message is returned": true,
+					"Says it already exists": true
+				}
+			]
+		},
+		{
+			"id": "8d71aeac-7e9a-4f82-8766-e3285482202b",
+			"name": "Register - invalid email (400)",
+			"url": "http://127.0.0.1:5001/api/v1.0/auth/register",
+			"time": 2,
+			"responseCode": {
+				"code": 400,
+				"name": "BAD REQUEST"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response time under 2s": true,
+				"Error message is returned": true,
+				"Explains the email problem": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Explains the email problem": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response time under 2s": true,
+					"Error message is returned": true,
+					"Explains the email problem": true
+				}
+			]
+		},
+		{
+			"id": "90a55f2c-e51b-489a-bbb8-71bfeb52f273",
+			"name": "Register - weak password (400)",
+			"url": "http://127.0.0.1:5001/api/v1.0/auth/register",
+			"time": 2,
+			"responseCode": {
+				"code": 400,
+				"name": "BAD REQUEST"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response time under 2s": true,
+				"Error message is returned": true,
+				"Explains the password problem": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Explains the password problem": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response time under 2s": true,
+					"Error message is returned": true,
+					"Explains the password problem": true
+				}
+			]
+		},
+		{
+			"id": "41be93d8-2941-425f-bc6c-d0307001f1d2",
+			"name": "Register - missing fields (400)",
+			"url": "http://127.0.0.1:5001/api/v1.0/auth/register",
+			"time": 2,
+			"responseCode": {
+				"code": 400,
+				"name": "BAD REQUEST"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response time under 2s": true,
+				"Error message is returned": true,
+				"Lists the missing fields": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Lists the missing fields": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response time under 2s": true,
+					"Error message is returned": true,
+					"Lists the missing fields": true
+				}
+			]
+		},
+		{
+			"id": "c208c6e4-d475-4585-ac8e-f1aea834eea3",
+			"name": "Login - new rider",
+			"url": "http://127.0.0.1:5001/api/v1.0/auth/login",
+			"time": 180,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"Token returned": true,
+				"Role is rider": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Token returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Role is rider": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				180
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"Token returned": true,
+					"Role is rider": true
+				}
+			]
+		},
+		{
+			"id": "225a6fb7-fd55-454a-837c-d000804b9be4",
+			"name": "Login - wrong password (401)",
+			"url": "http://127.0.0.1:5001/api/v1.0/auth/login",
+			"time": 171,
+			"responseCode": {
+				"code": 401,
+				"name": "UNAUTHORIZED"
+			},
+			"tests": {
+				"Status code is 401": true,
+				"Response time under 2s": true,
+				"Error message is returned": true,
+				"Says incorrect": true
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Says incorrect": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				171
+			],
+			"allTests": [
+				{
+					"Status code is 401": true,
+					"Response time under 2s": true,
+					"Error message is returned": true,
+					"Says incorrect": true
+				}
+			]
+		},
+		{
+			"id": "70beb13d-9f53-4db5-b166-0b7f548b33c0",
+			"name": "Login - admin",
+			"url": "http://127.0.0.1:5001/api/v1.0/auth/login",
+			"time": 46,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"Role is admin": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Role is admin": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				46
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"Role is admin": true
+				}
+			]
+		},
+		{
+			"id": "01d1d093-b58b-4664-a835-de0468ab808e",
+			"name": "Login - mechanic",
+			"url": "http://127.0.0.1:5001/api/v1.0/auth/login",
+			"time": 45,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"Role is mechanic": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Role is mechanic": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				45
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"Role is mechanic": true
+				}
+			]
+		},
+		{
+			"id": "f07824f8-5c20-4878-b21a-4815b12f255b",
+			"name": "My profile",
+			"url": "http://127.0.0.1:5001/api/v1.0/auth/me",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"Correct user": true,
+				"No password hash": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct user": {
+					"pass": 1,
+					"fail": 0
+				},
+				"No password hash": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"Correct user": true,
+					"No password hash": true
+				}
+			]
+		},
+		{
+			"id": "1e087101-2dbd-4e53-bdd8-b2b7ae65b40b",
+			"name": "My profile - no token (401)",
+			"url": "http://127.0.0.1:5001/api/v1.0/auth/me",
+			"time": 2,
+			"responseCode": {
+				"code": 401,
+				"name": "UNAUTHORIZED"
+			},
+			"tests": {
+				"Status code is 401": true,
+				"Response time under 2s": true,
+				"Error message is returned": true,
+				"Token is missing": true
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Token is missing": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Status code is 401": true,
+					"Response time under 2s": true,
+					"Error message is returned": true,
+					"Token is missing": true
+				}
+			]
+		},
+		{
+			"id": "e7b223b9-9195-4656-aeba-54e1f6301b63",
+			"name": "My profile - invalid token (401)",
+			"url": "http://127.0.0.1:5001/api/v1.0/auth/me",
+			"time": 2,
+			"responseCode": {
+				"code": 401,
+				"name": "UNAUTHORIZED"
+			},
+			"tests": {
+				"Status code is 401": true,
+				"Response time under 2s": true,
+				"Error message is returned": true,
+				"Token is invalid": true
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Token is invalid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Status code is 401": true,
+					"Response time under 2s": true,
+					"Error message is returned": true,
+					"Token is invalid": true
+				}
+			]
+		},
+		{
+			"id": "ea4035c1-afbc-45e7-a886-3dff80233cfa",
+			"name": "All stations (paginated)",
+			"url": "http://127.0.0.1:5001/api/v1.0/stations?pn=1&ps=5",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"5 stations on the page": true,
+				"Pagination info": true,
+				"Live counts": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"5 stations on the page": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pagination info": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Live counts": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"5 stations on the page": true,
+					"Pagination info": true,
+					"Live counts": true
+				}
+			]
+		},
+		{
+			"id": "427cfb6f-d939-41b2-bdca-ecfa44cf801f",
+			"name": "Filter by zone + search",
+			"url": "http://127.0.0.1:5001/api/v1.0/stations?zone=central&search=road&min_bikes=1",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"All central": true,
+				"All have a bike": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"All central": {
+					"pass": 1,
+					"fail": 0
+				},
+				"All have a bike": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"All central": true,
+					"All have a bike": true
+				}
+			]
+		},
+		{
+			"id": "d07f416b-d891-484b-8f57-430324f7bbfd",
+			"name": "Invalid zone (400)",
+			"url": "http://127.0.0.1:5001/api/v1.0/stations?zone=north",
+			"time": 2,
+			"responseCode": {
+				"code": 400,
+				"name": "BAD REQUEST"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response time under 2s": true,
+				"Error message is returned": true,
+				"Lists allowed zones": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Lists allowed zones": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response time under 2s": true,
+					"Error message is returned": true,
+					"Lists allowed zones": true
+				}
+			]
+		},
+		{
+			"id": "6ad1f25c-fbed-4c33-b8bd-5c44a5773f35",
+			"name": "Page size too big (400)",
+			"url": "http://127.0.0.1:5001/api/v1.0/stations?ps=500",
+			"time": 1,
+			"responseCode": {
+				"code": 400,
+				"name": "BAD REQUEST"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response time under 2s": true,
+				"Error message is returned": true,
+				"Range message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Range message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response time under 2s": true,
+					"Error message is returned": true,
+					"Range message": true
+				}
+			]
+		},
+		{
+			"id": "5028d6f4-652c-41f2-bdb0-7a0833a36c07",
+			"name": "Page not a number (400)",
+			"url": "http://127.0.0.1:5001/api/v1.0/stations?pn=abc",
+			"time": 1,
+			"responseCode": {
+				"code": 400,
+				"name": "BAD REQUEST"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response time under 2s": true,
+				"Error message is returned": true,
+				"Type message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Type message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response time under 2s": true,
+					"Error message is returned": true,
+					"Type message": true
+				}
+			]
+		},
+		{
+			"id": "c05fc609-2e68-4c3a-9580-337b8ee3e010",
+			"name": "Nearby stations (geo)",
+			"url": "http://127.0.0.1:5001/api/v1.0/stations/nearby?lat=51.5033&lng=-0.1145&radius=800&min_bikes=1",
+			"time": 11,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"Ordered by distance": true,
+				"All within radius": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Ordered by distance": {
+					"pass": 1,
+					"fail": 0
+				},
+				"All within radius": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				11
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"Ordered by distance": true,
+					"All within radius": true
+				}
+			]
+		},
+		{
+			"id": "da122ef3-71ea-4605-8dcc-51d4fb0de785",
+			"name": "Nearby - missing lat/lng (400)",
+			"url": "http://127.0.0.1:5001/api/v1.0/stations/nearby",
+			"time": 2,
+			"responseCode": {
+				"code": 400,
+				"name": "BAD REQUEST"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response time under 2s": true,
+				"Error message is returned": true,
+				"Says lat and lng required": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Says lat and lng required": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response time under 2s": true,
+					"Error message is returned": true,
+					"Says lat and lng required": true
+				}
+			]
+		},
+		{
+			"id": "94b027e6-2c7a-45ea-9462-562038fd1323",
+			"name": "Nearby - invalid latitude (400)",
+			"url": "http://127.0.0.1:5001/api/v1.0/stations/nearby?lat=200&lng=-0.11",
+			"time": 2,
+			"responseCode": {
+				"code": 400,
+				"name": "BAD REQUEST"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response time under 2s": true,
+				"Error message is returned": true,
+				"Range message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Range message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response time under 2s": true,
+					"Error message is returned": true,
+					"Range message": true
+				}
+			]
+		},
+		{
+			"id": "519ec56a-585f-4c56-8cff-4d8bca3eb1da",
+			"name": "One station",
+			"url": "http://127.0.0.1:5001/api/v1.0/stations/ST001",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"Correct station": true,
+				"Has a usable bike": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct station": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has a usable bike": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"Correct station": true,
+					"Has a usable bike": true
+				}
+			]
+		},
+		{
+			"id": "d0a29851-f60d-40e8-bcde-60b927205647",
+			"name": "Bad station ID format (400)",
+			"url": "http://127.0.0.1:5001/api/v1.0/stations/ABC",
+			"time": 2,
+			"responseCode": {
+				"code": 400,
+				"name": "BAD REQUEST"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response time under 2s": true,
+				"Error message is returned": true,
+				"Format message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Format message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response time under 2s": true,
+					"Error message is returned": true,
+					"Format message": true
+				}
+			]
+		},
+		{
+			"id": "65ad20ec-2302-41e9-a160-2365baba00ca",
+			"name": "Station not found (404)",
+			"url": "http://127.0.0.1:5001/api/v1.0/stations/ST999",
+			"time": 4,
+			"responseCode": {
+				"code": 404,
+				"name": "NOT FOUND"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Response time under 2s": true,
+				"Error message is returned": true,
+				"Not found": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Not found": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Response time under 2s": true,
+					"Error message is returned": true,
+					"Not found": true
+				}
+			]
+		},
+		{
+			"id": "c2896ed6-ec0b-4756-aa19-6f8e369e537e",
+			"name": "Create station (admin)",
+			"url": "http://127.0.0.1:5001/api/v1.0/stations",
+			"time": 7,
+			"responseCode": {
+				"code": 201,
+				"name": "CREATED"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response time under 2s": true,
+				"Returns its URL": true,
+				"GeoJSON stored [lng, lat]": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Returns its URL": {
+					"pass": 1,
+					"fail": 0
+				},
+				"GeoJSON stored [lng, lat]": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response time under 2s": true,
+					"Returns its URL": true,
+					"GeoJSON stored [lng, lat]": true
+				}
+			]
+		},
+		{
+			"id": "0dd2a45b-c08a-4c09-b9ed-5eabd231fc84",
+			"name": "Create station - rider (403)",
+			"url": "http://127.0.0.1:5001/api/v1.0/stations",
+			"time": 3,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true,
+				"Response time under 2s": true,
+				"Error message is returned": true,
+				"Access denied": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Access denied": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 403": true,
+					"Response time under 2s": true,
+					"Error message is returned": true,
+					"Access denied": true
+				}
+			]
+		},
+		{
+			"id": "276ff454-4f48-4b56-bea9-9ab3ca0789c3",
+			"name": "Create station - outside London (400)",
+			"url": "http://127.0.0.1:5001/api/v1.0/stations",
+			"time": 4,
+			"responseCode": {
+				"code": 400,
+				"name": "BAD REQUEST"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response time under 2s": true,
+				"Error message is returned": true,
+				"Explains lat": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Explains lat": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response time under 2s": true,
+					"Error message is returned": true,
+					"Explains lat": true
+				}
+			]
+		},
+		{
+			"id": "03c7e3a4-b740-45b2-96ce-979c821efd2d",
+			"name": "Create station - missing fields (400)",
+			"url": "http://127.0.0.1:5001/api/v1.0/stations",
+			"time": 4,
+			"responseCode": {
+				"code": 400,
+				"name": "BAD REQUEST"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response time under 2s": true,
+				"Error message is returned": true,
+				"Lists missing": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Lists missing": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response time under 2s": true,
+					"Error message is returned": true,
+					"Lists missing": true
+				}
+			]
+		},
+		{
+			"id": "af4ee941-94f2-4e9d-bbb1-f1cfee2bfd2d",
+			"name": "Edit station",
+			"url": "http://127.0.0.1:5001/api/v1.0/stations/ST124",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"Updated": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Updated": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"Updated": true
+				}
+			]
+		},
+		{
+			"id": "f046186f-cc68-49d1-8d64-cd91a0035ded",
+			"name": "Edit station - not found (404)",
+			"url": "http://127.0.0.1:5001/api/v1.0/stations/ST999",
+			"time": 7,
+			"responseCode": {
+				"code": 404,
+				"name": "NOT FOUND"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Response time under 2s": true,
+				"Error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Response time under 2s": true,
+					"Error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "472f108f-73b0-4efd-a4b4-fa1d589181c6",
+			"name": "Bikes - no token (401)",
+			"url": "http://127.0.0.1:5001/api/v1.0/bikes",
+			"time": 3,
+			"responseCode": {
+				"code": 401,
+				"name": "UNAUTHORIZED"
+			},
+			"tests": {
+				"Status code is 401": true,
+				"Response time under 2s": true,
+				"Error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 401": true,
+					"Response time under 2s": true,
+					"Error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "a5e3bb4c-5683-43a0-81ff-33aef0830035",
+			"name": "Filter bikes",
+			"url": "http://127.0.0.1:5001/api/v1.0/bikes?status=available&type=electric&min_battery=80&ps=5",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"Electric with 80%+": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Electric with 80%+": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"Electric with 80%+": true
+				}
+			]
+		},
+		{
+			"id": "6985fc4a-0ca9-486a-a940-8dd79c48d391",
+			"name": "Filter bikes - invalid status (400)",
+			"url": "http://127.0.0.1:5001/api/v1.0/bikes?status=broken",
+			"time": 6,
+			"responseCode": {
+				"code": 400,
+				"name": "BAD REQUEST"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response time under 2s": true,
+				"Error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response time under 2s": true,
+					"Error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "6c12f300-8c5d-4011-8d01-4ea910f30849",
+			"name": "One bike",
+			"url": "http://127.0.0.1:5001/api/v1.0/bikes/BK0681",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"Correct bike": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct bike": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"Correct bike": true
+				}
+			]
+		},
+		{
+			"id": "6009ee2e-7b80-4ccb-810c-31f43eae8a47",
+			"name": "Bike not found (404)",
+			"url": "http://127.0.0.1:5001/api/v1.0/bikes/BK9999",
+			"time": 5,
+			"responseCode": {
+				"code": 404,
+				"name": "NOT FOUND"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Response time under 2s": true,
+				"Error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Response time under 2s": true,
+					"Error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "1406e2af-5b1d-4cc0-a3d4-f610d23b3fe8",
+			"name": "Add bike (admin)",
+			"url": "http://127.0.0.1:5001/api/v1.0/bikes",
+			"time": 11,
+			"responseCode": {
+				"code": 201,
+				"name": "CREATED"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response time under 2s": true,
+				"Starts available": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Starts available": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				11
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response time under 2s": true,
+					"Starts available": true
+				}
+			]
+		},
+		{
+			"id": "68bca38c-1bfd-4ef2-a38a-d5634b95b06a",
+			"name": "Add bike - battery on standard (400)",
+			"url": "http://127.0.0.1:5001/api/v1.0/bikes",
+			"time": 8,
+			"responseCode": {
+				"code": 400,
+				"name": "BAD REQUEST"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response time under 2s": true,
+				"Error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response time under 2s": true,
+					"Error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "01b0abbd-df07-4cd0-a9d9-0da8e7d88421",
+			"name": "Add bike - full station (409)",
+			"url": "http://127.0.0.1:5001/api/v1.0/bikes",
+			"time": 5,
+			"responseCode": {
+				"code": 409,
+				"name": "CONFLICT"
+			},
+			"tests": {
+				"Status code is 409": true,
+				"Response time under 2s": true,
+				"Error message is returned": true,
+				"Says full": true
+			},
+			"testPassFailCounts": {
+				"Status code is 409": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Says full": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 409": true,
+					"Response time under 2s": true,
+					"Error message is returned": true,
+					"Says full": true
+				}
+			]
+		},
+		{
+			"id": "500754bf-4a28-4c84-927d-e82f4d9d6519",
+			"name": "Edit bike",
+			"url": "http://127.0.0.1:5001/api/v1.0/bikes/BK0903",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"Battery updated": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Battery updated": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"Battery updated": true
+				}
+			]
+		},
+		{
+			"id": "7f90acbd-e694-4c44-a4fa-af4d0d6fa385",
+			"name": "Edit bike - battery over 100 (400)",
+			"url": "http://127.0.0.1:5001/api/v1.0/bikes/BK0903",
+			"time": 4,
+			"responseCode": {
+				"code": 400,
+				"name": "BAD REQUEST"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response time under 2s": true,
+				"Error message is returned": true,
+				"Range message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Range message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response time under 2s": true,
+					"Error message is returned": true,
+					"Range message": true
+				}
+			]
+		},
+		{
+			"id": "78740cb9-c3cb-4a27-a3d0-0e2f257b3ee0",
+			"name": "Edit bike - rider (403)",
+			"url": "http://127.0.0.1:5001/api/v1.0/bikes/BK0903",
+			"time": 2,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true,
+				"Response time under 2s": true,
+				"Error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Status code is 403": true,
+					"Response time under 2s": true,
+					"Error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "8e8bf98a-a454-430f-bbe0-e26d461bc33a",
+			"name": "Delete station with bikes (409)",
+			"url": "http://127.0.0.1:5001/api/v1.0/stations/ST124",
+			"time": 4,
+			"responseCode": {
+				"code": 409,
+				"name": "CONFLICT"
+			},
+			"tests": {
+				"Status code is 409": true,
+				"Response time under 2s": true,
+				"Error message is returned": true,
+				"Explains why": true
+			},
+			"testPassFailCounts": {
+				"Status code is 409": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Explains why": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status code is 409": true,
+					"Response time under 2s": true,
+					"Error message is returned": true,
+					"Explains why": true
+				}
+			]
+		},
+		{
+			"id": "bfc15b8b-85ed-4421-84d6-305b203cd1ae",
+			"name": "Delete bike",
+			"url": "http://127.0.0.1:5001/api/v1.0/bikes/BK0903",
+			"time": 4,
+			"responseCode": {
+				"code": 204,
+				"name": "NO CONTENT"
+			},
+			"tests": {
+				"Status code is 204": true,
+				"Response time under 2s": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status code is 204": true,
+					"Response time under 2s": true
+				}
+			]
+		},
+		{
+			"id": "00e4d97e-5f91-44aa-afd1-7aaa2a0e54d2",
+			"name": "Delete station",
+			"url": "http://127.0.0.1:5001/api/v1.0/stations/ST124",
+			"time": 4,
+			"responseCode": {
+				"code": 204,
+				"name": "NO CONTENT"
+			},
+			"tests": {
+				"Status code is 204": true,
+				"Response time under 2s": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status code is 204": true,
+					"Response time under 2s": true
+				}
+			]
+		},
+		{
+			"id": "74625c2e-8031-4924-ad20-08bb8b8d7f75",
+			"name": "Delete station again (404)",
+			"url": "http://127.0.0.1:5001/api/v1.0/stations/ST124",
+			"time": 4,
+			"responseCode": {
+				"code": 404,
+				"name": "NOT FOUND"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Response time under 2s": true,
+				"Error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Response time under 2s": true,
+					"Error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "22057c1c-4a66-47c8-b6cc-0461b89b0fb4",
+			"name": "Current rental - none (404)",
+			"url": "http://127.0.0.1:5001/api/v1.0/rentals/current",
+			"time": 8,
+			"responseCode": {
+				"code": 404,
+				"name": "NOT FOUND"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Response time under 2s": true,
+				"Error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Response time under 2s": true,
+					"Error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "0f2868a8-b7fc-47eb-befe-ebf2d9fcc188",
+			"name": "Reserve a bike",
+			"url": "http://127.0.0.1:5001/api/v1.0/reservations",
+			"time": 10,
+			"responseCode": {
+				"code": 201,
+				"name": "CREATED"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response time under 2s": true,
+				"Reserved": true,
+				"Has expiry time": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Reserved": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has expiry time": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response time under 2s": true,
+					"Reserved": true,
+					"Has expiry time": true
+				}
+			]
+		},
+		{
+			"id": "0903bb2d-a287-4def-9ed4-f52cc47435ad",
+			"name": "Reserve again (409)",
+			"url": "http://127.0.0.1:5001/api/v1.0/reservations",
+			"time": 5,
+			"responseCode": {
+				"code": 409,
+				"name": "CONFLICT"
+			},
+			"tests": {
+				"Status code is 409": true,
+				"Response time under 2s": true,
+				"Error message is returned": true,
+				"Already have one": true
+			},
+			"testPassFailCounts": {
+				"Status code is 409": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Already have one": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 409": true,
+					"Response time under 2s": true,
+					"Error message is returned": true,
+					"Already have one": true
+				}
+			]
+		},
+		{
+			"id": "108ba64a-0a02-4fb5-aadc-1228dd326b0d",
+			"name": "Reserve - missing bike_id (400)",
+			"url": "http://127.0.0.1:5001/api/v1.0/reservations",
+			"time": 4,
+			"responseCode": {
+				"code": 400,
+				"name": "BAD REQUEST"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response time under 2s": true,
+				"Error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response time under 2s": true,
+					"Error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "64c82f8b-dc30-483c-8213-f51b4dbbaa8d",
+			"name": "Reserve - admin (403)",
+			"url": "http://127.0.0.1:5001/api/v1.0/reservations",
+			"time": 4,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true,
+				"Response time under 2s": true,
+				"Error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status code is 403": true,
+					"Response time under 2s": true,
+					"Error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "1dcbe872-6a78-4c2d-9a3e-f8bacad1875a",
+			"name": "Current rental",
+			"url": "http://127.0.0.1:5001/api/v1.0/rentals/current",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"Seconds left": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Seconds left": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"Seconds left": true
+				}
+			]
+		},
+		{
+			"id": "18385e7a-51a4-4718-9e21-e7d50ef3135e",
+			"name": "Return before unlocking (409)",
+			"url": "http://127.0.0.1:5001/api/v1.0/rentals/R01565/return",
+			"time": 5,
+			"responseCode": {
+				"code": 409,
+				"name": "CONFLICT"
+			},
+			"tests": {
+				"Status code is 409": true,
+				"Response time under 2s": true,
+				"Error message is returned": true,
+				"Says reserved": true
+			},
+			"testPassFailCounts": {
+				"Status code is 409": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Says reserved": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 409": true,
+					"Response time under 2s": true,
+					"Error message is returned": true,
+					"Says reserved": true
+				}
+			]
+		},
+		{
+			"id": "01742324-f440-4013-a9e6-7b3216538c0e",
+			"name": "Unlock bike",
+			"url": "http://127.0.0.1:5001/api/v1.0/rentals/R01565/unlock",
+			"time": 21,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"Active": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Active": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				21
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"Active": true
+				}
+			]
+		},
+		{
+			"id": "414333a2-9d7f-47d0-ac66-a1a4eb620578",
+			"name": "Bike is in use",
+			"url": "http://127.0.0.1:5001/api/v1.0/bikes/BK0681",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"in_use and not docked": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"in_use and not docked": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"in_use and not docked": true
+				}
+			]
+		},
+		{
+			"id": "f2b28d20-dd2e-41d5-9308-b0e66a678b36",
+			"name": "Report fault during ride (409)",
+			"url": "http://127.0.0.1:5001/api/v1.0/maintenance/report",
+			"time": 5,
+			"responseCode": {
+				"code": 409,
+				"name": "CONFLICT"
+			},
+			"tests": {
+				"Status code is 409": true,
+				"Response time under 2s": true,
+				"Error message is returned": true,
+				"Asks to return first": true
+			},
+			"testPassFailCounts": {
+				"Status code is 409": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Asks to return first": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 409": true,
+					"Response time under 2s": true,
+					"Error message is returned": true,
+					"Asks to return first": true
+				}
+			]
+		},
+		{
+			"id": "1ff1f9a6-0f14-414f-b5ef-4f14c2468b4c",
+			"name": "Return to a full station (409)",
+			"url": "http://127.0.0.1:5001/api/v1.0/rentals/R01565/return",
+			"time": 13,
+			"responseCode": {
+				"code": 409,
+				"name": "CONFLICT"
+			},
+			"tests": {
+				"Status code is 409": true,
+				"Response time under 2s": true,
+				"Error message is returned": true,
+				"Suggests stations": true
+			},
+			"testPassFailCounts": {
+				"Status code is 409": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Suggests stations": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				13
+			],
+			"allTests": [
+				{
+					"Status code is 409": true,
+					"Response time under 2s": true,
+					"Error message is returned": true,
+					"Suggests stations": true
+				}
+			]
+		},
+		{
+			"id": "4f517549-1778-4c64-84af-ebaf96e947b0",
+			"name": "Return bike",
+			"url": "http://127.0.0.1:5001/api/v1.0/rentals/R01565/return",
+			"time": 19,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"Completed": true,
+				"Cost calculated": true,
+				"Payment unpaid": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Completed": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Cost calculated": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payment unpaid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				19
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"Completed": true,
+					"Cost calculated": true,
+					"Payment unpaid": true
+				}
+			]
+		},
+		{
+			"id": "d6f3d1f3-4208-4d18-8696-224e803dce7e",
+			"name": "Unlock a finished ride (409)",
+			"url": "http://127.0.0.1:5001/api/v1.0/rentals/R01565/unlock",
+			"time": 10,
+			"responseCode": {
+				"code": 409,
+				"name": "CONFLICT"
+			},
+			"tests": {
+				"Status code is 409": true,
+				"Response time under 2s": true,
+				"Error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 409": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Status code is 409": true,
+					"Response time under 2s": true,
+					"Error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "70d3f69d-c9c7-446e-bc11-382caf7d72bf",
+			"name": "Reserve (to cancel)",
+			"url": "http://127.0.0.1:5001/api/v1.0/reservations",
+			"time": 11,
+			"responseCode": {
+				"code": 201,
+				"name": "CREATED"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response time under 2s": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				11
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response time under 2s": true
+				}
+			]
+		},
+		{
+			"id": "3dcdcbf9-4815-42f0-9ae0-4f741c76426d",
+			"name": "Cancel reservation",
+			"url": "http://127.0.0.1:5001/api/v1.0/reservations/R01566/cancel",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"Cancelled": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Cancelled": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"Cancelled": true
+				}
+			]
+		},
+		{
+			"id": "19edc1d2-5c28-4405-bb78-f86fe2959159",
+			"name": "Cancel again (409)",
+			"url": "http://127.0.0.1:5001/api/v1.0/reservations/R01566/cancel",
+			"time": 7,
+			"responseCode": {
+				"code": 409,
+				"name": "CONFLICT"
+			},
+			"tests": {
+				"Status code is 409": true,
+				"Response time under 2s": true,
+				"Error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 409": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 409": true,
+					"Response time under 2s": true,
+					"Error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "2566a9f7-3849-432d-970f-bc261c3aa662",
+			"name": "Walk-up hire",
+			"url": "http://127.0.0.1:5001/api/v1.0/rentals",
+			"time": 14,
+			"responseCode": {
+				"code": 201,
+				"name": "CREATED"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response time under 2s": true,
+				"Active": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Active": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				14
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response time under 2s": true,
+					"Active": true
+				}
+			]
+		},
+		{
+			"id": "502691d2-7dce-4fcd-8b92-2e522867c5f5",
+			"name": "Another user's rental (403)",
+			"url": "http://127.0.0.1:5001/api/v1.0/rentals/R01567",
+			"time": 6,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true,
+				"Response time under 2s": true,
+				"Error message is returned": true,
+				"Belongs to another user": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Belongs to another user": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code is 403": true,
+					"Response time under 2s": true,
+					"Error message is returned": true,
+					"Belongs to another user": true
+				}
+			]
+		},
+		{
+			"id": "447fd791-43d5-4fd4-9cbe-17f6b1b54045",
+			"name": "Return walk-up ride",
+			"url": "http://127.0.0.1:5001/api/v1.0/rentals/R01567/return",
+			"time": 12,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"Completed": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Completed": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				12
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"Completed": true
+				}
+			]
+		},
+		{
+			"id": "b47b9384-00b7-45f3-b76f-199455a5b128",
+			"name": "Ride history",
+			"url": "http://127.0.0.1:5001/api/v1.0/rentals/history",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"Contains the ride": true,
+				"Summary counts 2 rides": true,
+				"Station names joined": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Contains the ride": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Summary counts 2 rides": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Station names joined": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"Contains the ride": true,
+					"Summary counts 2 rides": true,
+					"Station names joined": true
+				}
+			]
+		},
+		{
+			"id": "14011f09-178b-446b-88cb-d9d134903f9d",
+			"name": "Pay - declined card (402)",
+			"url": "http://127.0.0.1:5001/api/v1.0/payments/create",
+			"time": 6,
+			"responseCode": {
+				"code": 402,
+				"name": "PAYMENT REQUIRED"
+			},
+			"tests": {
+				"Status code is 402": true,
+				"Response time under 2s": true,
+				"Error message is returned": true,
+				"Declined": true
+			},
+			"testPassFailCounts": {
+				"Status code is 402": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Declined": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code is 402": true,
+					"Response time under 2s": true,
+					"Error message is returned": true,
+					"Declined": true
+				}
+			]
+		},
+		{
+			"id": "50d0a134-8da1-4b0e-9475-f8434a4c3673",
+			"name": "Pay - unknown method (400)",
+			"url": "http://127.0.0.1:5001/api/v1.0/payments/create",
+			"time": 8,
+			"responseCode": {
+				"code": 400,
+				"name": "BAD REQUEST"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response time under 2s": true,
+				"Error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response time under 2s": true,
+					"Error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "44662b3c-c74d-40b4-9872-a5d268e78686",
+			"name": "Pay for ride",
+			"url": "http://127.0.0.1:5001/api/v1.0/payments/create",
+			"time": 12,
+			"responseCode": {
+				"code": 201,
+				"name": "CREATED"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response time under 2s": true,
+				"Succeeded": true,
+				"Test payment ID": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Succeeded": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Test payment ID": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				12
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response time under 2s": true,
+					"Succeeded": true,
+					"Test payment ID": true
+				}
+			]
+		},
+		{
+			"id": "38f8124d-cddf-4154-8ce0-27b759a7dd32",
+			"name": "Pay twice (409)",
+			"url": "http://127.0.0.1:5001/api/v1.0/payments/create",
+			"time": 7,
+			"responseCode": {
+				"code": 409,
+				"name": "CONFLICT"
+			},
+			"tests": {
+				"Status code is 409": true,
+				"Response time under 2s": true,
+				"Error message is returned": true,
+				"Already paid": true
+			},
+			"testPassFailCounts": {
+				"Status code is 409": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Already paid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 409": true,
+					"Response time under 2s": true,
+					"Error message is returned": true,
+					"Already paid": true
+				}
+			]
+		},
+		{
+			"id": "8ed0068e-bba5-461d-b778-5a6cfaf9807f",
+			"name": "Pay for a cancelled rental (409)",
+			"url": "http://127.0.0.1:5001/api/v1.0/payments/create",
+			"time": 7,
+			"responseCode": {
+				"code": 409,
+				"name": "CONFLICT"
+			},
+			"tests": {
+				"Status code is 409": true,
+				"Response time under 2s": true,
+				"Error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 409": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 409": true,
+					"Response time under 2s": true,
+					"Error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "35d51caa-617b-4494-b6f0-eef084a5b02d",
+			"name": "Payment status",
+			"url": "http://127.0.0.1:5001/api/v1.0/payments/R01565",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"Paid": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Paid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"Paid": true
+				}
+			]
+		},
+		{
+			"id": "7dac0de6-ad49-436c-a553-ae2e456f5d75",
+			"name": "Refund - rider (403)",
+			"url": "http://127.0.0.1:5001/api/v1.0/payments/R01565/refund",
+			"time": 4,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true,
+				"Response time under 2s": true,
+				"Error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status code is 403": true,
+					"Response time under 2s": true,
+					"Error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "3b929008-13f4-4efb-8651-a13d5ea54745",
+			"name": "Refund payment (admin)",
+			"url": "http://127.0.0.1:5001/api/v1.0/payments/R01565/refund",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"Refunded": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Refunded": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"Refunded": true
+				}
+			]
+		},
+		{
+			"id": "6cc3f2dc-6d9c-41a7-a930-3d840bc4f75b",
+			"name": "Refund again (409)",
+			"url": "http://127.0.0.1:5001/api/v1.0/payments/R01565/refund",
+			"time": 6,
+			"responseCode": {
+				"code": 409,
+				"name": "CONFLICT"
+			},
+			"tests": {
+				"Status code is 409": true,
+				"Response time under 2s": true,
+				"Error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 409": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code is 409": true,
+					"Response time under 2s": true,
+					"Error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "c8966441-bfe8-46f4-9139-7b5e5ad4060b",
+			"name": "Report a fault",
+			"url": "http://127.0.0.1:5001/api/v1.0/maintenance/report",
+			"time": 7,
+			"responseCode": {
+				"code": 201,
+				"name": "CREATED"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response time under 2s": true,
+				"Open": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Open": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response time under 2s": true,
+					"Open": true
+				}
+			]
+		},
+		{
+			"id": "da2aa8b1-faed-4d81-ba6d-d2c352c694ae",
+			"name": "Report same fault again (409)",
+			"url": "http://127.0.0.1:5001/api/v1.0/maintenance/report",
+			"time": 6,
+			"responseCode": {
+				"code": 409,
+				"name": "CONFLICT"
+			},
+			"tests": {
+				"Status code is 409": true,
+				"Response time under 2s": true,
+				"Error message is returned": true,
+				"Already open": true
+			},
+			"testPassFailCounts": {
+				"Status code is 409": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Already open": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code is 409": true,
+					"Response time under 2s": true,
+					"Error message is returned": true,
+					"Already open": true
+				}
+			]
+		},
+		{
+			"id": "336378b0-44ad-4bc4-a091-c7134183c4e0",
+			"name": "Report - invalid issue type (400)",
+			"url": "http://127.0.0.1:5001/api/v1.0/maintenance/report",
+			"time": 7,
+			"responseCode": {
+				"code": 400,
+				"name": "BAD REQUEST"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response time under 2s": true,
+				"Error message is returned": true,
+				"Lists issue types": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Lists issue types": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response time under 2s": true,
+					"Error message is returned": true,
+					"Lists issue types": true
+				}
+			]
+		},
+		{
+			"id": "61ce8490-2f43-4b4c-a17c-dad5431c4f65",
+			"name": "Bike is under repair",
+			"url": "http://127.0.0.1:5001/api/v1.0/bikes/BK0681",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"under_repair": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"under_repair": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"under_repair": true
+				}
+			]
+		},
+		{
+			"id": "79721c9e-9da9-456c-9afb-428b3ee98d4f",
+			"name": "Reserve a faulty bike (409)",
+			"url": "http://127.0.0.1:5001/api/v1.0/reservations",
+			"time": 9,
+			"responseCode": {
+				"code": 409,
+				"name": "CONFLICT"
+			},
+			"tests": {
+				"Status code is 409": true,
+				"Response time under 2s": true,
+				"Error message is returned": true,
+				"Not available": true
+			},
+			"testPassFailCounts": {
+				"Status code is 409": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Not available": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status code is 409": true,
+					"Response time under 2s": true,
+					"Error message is returned": true,
+					"Not available": true
+				}
+			]
+		},
+		{
+			"id": "29dcb0eb-bcf0-4eef-87ee-f755f7095636",
+			"name": "Open faults (mechanic)",
+			"url": "http://127.0.0.1:5001/api/v1.0/maintenance/open?issue_type=brakes&ps=5",
+			"time": 13,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"Only brakes": true,
+				"Has station name": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Only brakes": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has station name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				13
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"Only brakes": true,
+					"Has station name": true
+				}
+			]
+		},
+		{
+			"id": "c7a49510-0b80-4214-8652-29bf85d692e9",
+			"name": "Open faults - rider (403)",
+			"url": "http://127.0.0.1:5001/api/v1.0/maintenance/open",
+			"time": 4,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true,
+				"Response time under 2s": true,
+				"Error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status code is 403": true,
+					"Response time under 2s": true,
+					"Error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "0c1201a0-0f2c-43e8-9d42-9a5f720466bc",
+			"name": "One report",
+			"url": "http://127.0.0.1:5001/api/v1.0/maintenance/MR0224",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"Correct report": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct report": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"Correct report": true
+				}
+			]
+		},
+		{
+			"id": "bae04280-0071-4ecb-a1fb-7778edf75181",
+			"name": "Assign - admin (403)",
+			"url": "http://127.0.0.1:5001/api/v1.0/maintenance/MR0224/assign",
+			"time": 4,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true,
+				"Response time under 2s": true,
+				"Error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status code is 403": true,
+					"Response time under 2s": true,
+					"Error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "c43e50c0-1a6d-4749-b472-cbaed8c4e8ca",
+			"name": "Assign to me",
+			"url": "http://127.0.0.1:5001/api/v1.0/maintenance/MR0224/assign",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"In progress": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"In progress": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"In progress": true
+				}
+			]
+		},
+		{
+			"id": "288620fd-4670-4397-8a0c-a6721c8d5d5c",
+			"name": "Add note",
+			"url": "http://127.0.0.1:5001/api/v1.0/maintenance/MR0224/notes",
+			"time": 7,
+			"responseCode": {
+				"code": 201,
+				"name": "CREATED"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response time under 2s": true,
+				"Saved": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Saved": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response time under 2s": true,
+					"Saved": true
+				}
+			]
+		},
+		{
+			"id": "62432a60-4324-4e8f-a98a-92f80a41fc84",
+			"name": "Add note - empty (400)",
+			"url": "http://127.0.0.1:5001/api/v1.0/maintenance/MR0224/notes",
+			"time": 6,
+			"responseCode": {
+				"code": 400,
+				"name": "BAD REQUEST"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response time under 2s": true,
+				"Error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response time under 2s": true,
+					"Error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "be121107-bb14-400b-9cd9-5e008a3dbc75",
+			"name": "Get one note",
+			"url": "http://127.0.0.1:5001/api/v1.0/maintenance/MR0224/notes/6adf53404f56722b3a4be9cc",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"Correct note": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct note": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"Correct note": true
+				}
+			]
+		},
+		{
+			"id": "f0e6c3d0-014d-4c4e-b27a-dcc13213b344",
+			"name": "Edit note",
+			"url": "http://127.0.0.1:5001/api/v1.0/maintenance/MR0224/notes/6adf53404f56722b3a4be9cc",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"Updated": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Updated": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"Updated": true
+				}
+			]
+		},
+		{
+			"id": "369b46ca-1578-4255-8d7e-36386b64d430",
+			"name": "All notes",
+			"url": "http://127.0.0.1:5001/api/v1.0/maintenance/MR0224/notes",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"Shows edited text": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Shows edited text": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"Shows edited text": true
+				}
+			]
+		},
+		{
+			"id": "f92c13cc-3199-4809-9f6e-9ceca1355181",
+			"name": "Delete note",
+			"url": "http://127.0.0.1:5001/api/v1.0/maintenance/MR0224/notes/6adf53404f56722b3a4be9cc",
+			"time": 9,
+			"responseCode": {
+				"code": 204,
+				"name": "NO CONTENT"
+			},
+			"tests": {
+				"Status code is 204": true,
+				"Response time under 2s": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status code is 204": true,
+					"Response time under 2s": true
+				}
+			]
+		},
+		{
+			"id": "324a98b4-e52c-4a60-82f7-f41623a72bb6",
+			"name": "Deleted note (404)",
+			"url": "http://127.0.0.1:5001/api/v1.0/maintenance/MR0224/notes/6adf53404f56722b3a4be9cc",
+			"time": 8,
+			"responseCode": {
+				"code": 404,
+				"name": "NOT FOUND"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Response time under 2s": true,
+				"Error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Response time under 2s": true,
+					"Error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "3c9929fd-34ed-4405-917b-e5c79dc14fb5",
+			"name": "Bad note ID (400)",
+			"url": "http://127.0.0.1:5001/api/v1.0/maintenance/MR0224/notes/xyz",
+			"time": 5,
+			"responseCode": {
+				"code": 400,
+				"name": "BAD REQUEST"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response time under 2s": true,
+				"Error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response time under 2s": true,
+					"Error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "037c62c4-92d3-4d62-a262-fc10417f5d72",
+			"name": "Resolve fault",
+			"url": "http://127.0.0.1:5001/api/v1.0/maintenance/MR0224/resolve",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"Bike available": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Bike available": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"Bike available": true
+				}
+			]
+		},
+		{
+			"id": "c5147bbf-1e94-4550-872b-7d387f2c5b39",
+			"name": "Resolve again (409)",
+			"url": "http://127.0.0.1:5001/api/v1.0/maintenance/MR0224/resolve",
+			"time": 8,
+			"responseCode": {
+				"code": 409,
+				"name": "CONFLICT"
+			},
+			"tests": {
+				"Status code is 409": true,
+				"Response time under 2s": true,
+				"Error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 409": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code is 409": true,
+					"Response time under 2s": true,
+					"Error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "4b83af15-aca2-45bf-a81c-9f50b7600ef1",
+			"name": "Revenue report",
+			"url": "http://127.0.0.1:5001/api/v1.0/admin/revenue?group_by=month&days=90",
+			"time": 32,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"Has revenue": true,
+				"Grouped by month": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has revenue": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Grouped by month": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				32
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"Has revenue": true,
+					"Grouped by month": true
+				}
+			]
+		},
+		{
+			"id": "592fffdd-f020-4903-ab21-c1ae0fc0df0a",
+			"name": "Revenue - invalid group_by (400)",
+			"url": "http://127.0.0.1:5001/api/v1.0/admin/revenue?group_by=year",
+			"time": 3,
+			"responseCode": {
+				"code": 400,
+				"name": "BAD REQUEST"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response time under 2s": true,
+				"Error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response time under 2s": true,
+					"Error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "930cdf6a-82b8-4f0e-aca1-f6063d729d57",
+			"name": "Revenue - rider (403)",
+			"url": "http://127.0.0.1:5001/api/v1.0/admin/revenue",
+			"time": 4,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true,
+				"Response time under 2s": true,
+				"Error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status code is 403": true,
+					"Response time under 2s": true,
+					"Error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "6d0a97e4-b668-49b1-adba-7d237af44121",
+			"name": "Usage analytics",
+			"url": "http://127.0.0.1:5001/api/v1.0/admin/analytics?days=90",
+			"time": 12,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"Busiest hour": true,
+				"7 weekdays": true,
+				"Top 10 routes at most": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Busiest hour": {
+					"pass": 1,
+					"fail": 0
+				},
+				"7 weekdays": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Top 10 routes at most": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				12
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"Busiest hour": true,
+					"7 weekdays": true,
+					"Top 10 routes at most": true
+				}
+			]
+		},
+		{
+			"id": "6d5b292f-c2a8-42ae-ad93-0a2d2d579a57",
+			"name": "Rebalancing",
+			"url": "http://127.0.0.1:5001/api/v1.0/admin/rebalancing?low=20&high=85",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"Has suggestions": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has suggestions": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"Has suggestions": true
+				}
+			]
+		},
+		{
+			"id": "ee07be50-0a7b-4b6c-bad0-c02659ff66c2",
+			"name": "Rebalancing - invalid threshold (400)",
+			"url": "http://127.0.0.1:5001/api/v1.0/admin/rebalancing?low=80",
+			"time": 2,
+			"responseCode": {
+				"code": 400,
+				"name": "BAD REQUEST"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response time under 2s": true,
+				"Error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response time under 2s": true,
+					"Error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "262af9be-15ea-4038-8b30-266101567ac3",
+			"name": "Repeat faults (mechanic)",
+			"url": "http://127.0.0.1:5001/api/v1.0/admin/repeat-faults?min_reports=3&days=90",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true,
+				"All have 3+": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"All have 3+": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true,
+					"All have 3+": true
+				}
+			]
+		},
+		{
+			"id": "8ab24765-582c-4828-a430-ea26b34df799",
+			"name": "Unknown endpoint (404)",
+			"url": "http://127.0.0.1:5001/api/v1.0/does-not-exist",
+			"time": 1,
+			"responseCode": {
+				"code": 404,
+				"name": "NOT FOUND"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Response time under 2s": true,
+				"Error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Response time under 2s": true,
+					"Error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "c86cdd60-0064-41ab-b78f-d9e1681c63a7",
+			"name": "Wrong method (405)",
+			"url": "http://127.0.0.1:5001/api/v1.0/stations",
+			"time": 2,
+			"responseCode": {
+				"code": 405,
+				"name": "METHOD NOT ALLOWED"
+			},
+			"tests": {
+				"Status code is 405": true,
+				"Response time under 2s": true,
+				"Error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 405": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Status code is 405": true,
+					"Response time under 2s": true,
+					"Error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "c0e42454-5e32-4442-85c6-90dcbc3bbe5a",
+			"name": "Logout",
+			"url": "http://127.0.0.1:5001/api/v1.0/auth/logout",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time under 2s": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time under 2s": true
+				}
+			]
+		},
+		{
+			"id": "7365f9c5-79db-40a0-a47a-1174a04058d0",
+			"name": "Use token after logout (401)",
+			"url": "http://127.0.0.1:5001/api/v1.0/auth/me",
+			"time": 2,
+			"responseCode": {
+				"code": 401,
+				"name": "UNAUTHORIZED"
+			},
+			"tests": {
+				"Status code is 401": true,
+				"Response time under 2s": true,
+				"Error message is returned": true,
+				"Cancelled": true
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time under 2s": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Cancelled": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Status code is 401": true,
+					"Response time under 2s": true,
+					"Error message is returned": true,
+					"Cancelled": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1296,
+	"collection": {
+		"requests": [
+			{
+				"id": "9ae37ce0-c2b0-431f-9a19-b61df955938b",
+				"method": "POST"
+			},
+			{
+				"id": "428db1ca-a6f3-48a4-9b5a-60f9541f942c",
+				"method": "POST"
+			},
+			{
+				"id": "8d71aeac-7e9a-4f82-8766-e3285482202b",
+				"method": "POST"
+			},
+			{
+				"id": "90a55f2c-e51b-489a-bbb8-71bfeb52f273",
+				"method": "POST"
+			},
+			{
+				"id": "41be93d8-2941-425f-bc6c-d0307001f1d2",
+				"method": "POST"
+			},
+			{
+				"id": "c208c6e4-d475-4585-ac8e-f1aea834eea3",
+				"method": "POST"
+			},
+			{
+				"id": "225a6fb7-fd55-454a-837c-d000804b9be4",
+				"method": "POST"
+			},
+			{
+				"id": "70beb13d-9f53-4db5-b166-0b7f548b33c0",
+				"method": "POST"
+			},
+			{
+				"id": "01d1d093-b58b-4664-a835-de0468ab808e",
+				"method": "POST"
+			},
+			{
+				"id": "f07824f8-5c20-4878-b21a-4815b12f255b",
+				"method": "GET"
+			},
+			{
+				"id": "1e087101-2dbd-4e53-bdd8-b2b7ae65b40b",
+				"method": "GET"
+			},
+			{
+				"id": "e7b223b9-9195-4656-aeba-54e1f6301b63",
+				"method": "GET"
+			},
+			{
+				"id": "ea4035c1-afbc-45e7-a886-3dff80233cfa",
+				"method": "GET"
+			},
+			{
+				"id": "427cfb6f-d939-41b2-bdca-ecfa44cf801f",
+				"method": "GET"
+			},
+			{
+				"id": "d07f416b-d891-484b-8f57-430324f7bbfd",
+				"method": "GET"
+			},
+			{
+				"id": "6ad1f25c-fbed-4c33-b8bd-5c44a5773f35",
+				"method": "GET"
+			},
+			{
+				"id": "5028d6f4-652c-41f2-bdb0-7a0833a36c07",
+				"method": "GET"
+			},
+			{
+				"id": "c05fc609-2e68-4c3a-9580-337b8ee3e010",
+				"method": "GET"
+			},
+			{
+				"id": "da122ef3-71ea-4605-8dcc-51d4fb0de785",
+				"method": "GET"
+			},
+			{
+				"id": "94b027e6-2c7a-45ea-9462-562038fd1323",
+				"method": "GET"
+			},
+			{
+				"id": "519ec56a-585f-4c56-8cff-4d8bca3eb1da",
+				"method": "GET"
+			},
+			{
+				"id": "d0a29851-f60d-40e8-bcde-60b927205647",
+				"method": "GET"
+			},
+			{
+				"id": "65ad20ec-2302-41e9-a160-2365baba00ca",
+				"method": "GET"
+			},
+			{
+				"id": "c2896ed6-ec0b-4756-aa19-6f8e369e537e",
+				"method": "POST"
+			},
+			{
+				"id": "0dd2a45b-c08a-4c09-b9ed-5eabd231fc84",
+				"method": "POST"
+			},
+			{
+				"id": "276ff454-4f48-4b56-bea9-9ab3ca0789c3",
+				"method": "POST"
+			},
+			{
+				"id": "03c7e3a4-b740-45b2-96ce-979c821efd2d",
+				"method": "POST"
+			},
+			{
+				"id": "af4ee941-94f2-4e9d-bbb1-f1cfee2bfd2d",
+				"method": "PUT"
+			},
+			{
+				"id": "f046186f-cc68-49d1-8d64-cd91a0035ded",
+				"method": "PUT"
+			},
+			{
+				"id": "472f108f-73b0-4efd-a4b4-fa1d589181c6",
+				"method": "GET"
+			},
+			{
+				"id": "a5e3bb4c-5683-43a0-81ff-33aef0830035",
+				"method": "GET"
+			},
+			{
+				"id": "6985fc4a-0ca9-486a-a940-8dd79c48d391",
+				"method": "GET"
+			},
+			{
+				"id": "6c12f300-8c5d-4011-8d01-4ea910f30849",
+				"method": "GET"
+			},
+			{
+				"id": "6009ee2e-7b80-4ccb-810c-31f43eae8a47",
+				"method": "GET"
+			},
+			{
+				"id": "1406e2af-5b1d-4cc0-a3d4-f610d23b3fe8",
+				"method": "POST"
+			},
+			{
+				"id": "68bca38c-1bfd-4ef2-a38a-d5634b95b06a",
+				"method": "POST"
+			},
+			{
+				"id": "01b0abbd-df07-4cd0-a9d9-0da8e7d88421",
+				"method": "POST"
+			},
+			{
+				"id": "500754bf-4a28-4c84-927d-e82f4d9d6519",
+				"method": "PUT"
+			},
+			{
+				"id": "7f90acbd-e694-4c44-a4fa-af4d0d6fa385",
+				"method": "PUT"
+			},
+			{
+				"id": "78740cb9-c3cb-4a27-a3d0-0e2f257b3ee0",
+				"method": "PUT"
+			},
+			{
+				"id": "8e8bf98a-a454-430f-bbe0-e26d461bc33a",
+				"method": "DELETE"
+			},
+			{
+				"id": "bfc15b8b-85ed-4421-84d6-305b203cd1ae",
+				"method": "DELETE"
+			},
+			{
+				"id": "00e4d97e-5f91-44aa-afd1-7aaa2a0e54d2",
+				"method": "DELETE"
+			},
+			{
+				"id": "74625c2e-8031-4924-ad20-08bb8b8d7f75",
+				"method": "DELETE"
+			},
+			{
+				"id": "22057c1c-4a66-47c8-b6cc-0461b89b0fb4",
+				"method": "GET"
+			},
+			{
+				"id": "0f2868a8-b7fc-47eb-befe-ebf2d9fcc188",
+				"method": "POST"
+			},
+			{
+				"id": "0903bb2d-a287-4def-9ed4-f52cc47435ad",
+				"method": "POST"
+			},
+			{
+				"id": "108ba64a-0a02-4fb5-aadc-1228dd326b0d",
+				"method": "POST"
+			},
+			{
+				"id": "64c82f8b-dc30-483c-8213-f51b4dbbaa8d",
+				"method": "POST"
+			},
+			{
+				"id": "1dcbe872-6a78-4c2d-9a3e-f8bacad1875a",
+				"method": "GET"
+			},
+			{
+				"id": "18385e7a-51a4-4718-9e21-e7d50ef3135e",
+				"method": "POST"
+			},
+			{
+				"id": "01742324-f440-4013-a9e6-7b3216538c0e",
+				"method": "POST"
+			},
+			{
+				"id": "414333a2-9d7f-47d0-ac66-a1a4eb620578",
+				"method": "GET"
+			},
+			{
+				"id": "f2b28d20-dd2e-41d5-9308-b0e66a678b36",
+				"method": "POST"
+			},
+			{
+				"id": "1ff1f9a6-0f14-414f-b5ef-4f14c2468b4c",
+				"method": "POST"
+			},
+			{
+				"id": "4f517549-1778-4c64-84af-ebaf96e947b0",
+				"method": "POST"
+			},
+			{
+				"id": "d6f3d1f3-4208-4d18-8696-224e803dce7e",
+				"method": "POST"
+			},
+			{
+				"id": "70d3f69d-c9c7-446e-bc11-382caf7d72bf",
+				"method": "POST"
+			},
+			{
+				"id": "3dcdcbf9-4815-42f0-9ae0-4f741c76426d",
+				"method": "PATCH"
+			},
+			{
+				"id": "19edc1d2-5c28-4405-bb78-f86fe2959159",
+				"method": "PATCH"
+			},
+			{
+				"id": "2566a9f7-3849-432d-970f-bc261c3aa662",
+				"method": "POST"
+			},
+			{
+				"id": "502691d2-7dce-4fcd-8b92-2e522867c5f5",
+				"method": "GET"
+			},
+			{
+				"id": "447fd791-43d5-4fd4-9cbe-17f6b1b54045",
+				"method": "POST"
+			},
+			{
+				"id": "b47b9384-00b7-45f3-b76f-199455a5b128",
+				"method": "GET"
+			},
+			{
+				"id": "14011f09-178b-446b-88cb-d9d134903f9d",
+				"method": "POST"
+			},
+			{
+				"id": "50d0a134-8da1-4b0e-9475-f8434a4c3673",
+				"method": "POST"
+			},
+			{
+				"id": "44662b3c-c74d-40b4-9872-a5d268e78686",
+				"method": "POST"
+			},
+			{
+				"id": "38f8124d-cddf-4154-8ce0-27b759a7dd32",
+				"method": "POST"
+			},
+			{
+				"id": "8ed0068e-bba5-461d-b778-5a6cfaf9807f",
+				"method": "POST"
+			},
+			{
+				"id": "35d51caa-617b-4494-b6f0-eef084a5b02d",
+				"method": "GET"
+			},
+			{
+				"id": "7dac0de6-ad49-436c-a553-ae2e456f5d75",
+				"method": "POST"
+			},
+			{
+				"id": "3b929008-13f4-4efb-8651-a13d5ea54745",
+				"method": "POST"
+			},
+			{
+				"id": "6cc3f2dc-6d9c-41a7-a930-3d840bc4f75b",
+				"method": "POST"
+			},
+			{
+				"id": "c8966441-bfe8-46f4-9139-7b5e5ad4060b",
+				"method": "POST"
+			},
+			{
+				"id": "da2aa8b1-faed-4d81-ba6d-d2c352c694ae",
+				"method": "POST"
+			},
+			{
+				"id": "336378b0-44ad-4bc4-a091-c7134183c4e0",
+				"method": "POST"
+			},
+			{
+				"id": "61ce8490-2f43-4b4c-a17c-dad5431c4f65",
+				"method": "GET"
+			},
+			{
+				"id": "79721c9e-9da9-456c-9afb-428b3ee98d4f",
+				"method": "POST"
+			},
+			{
+				"id": "29dcb0eb-bcf0-4eef-87ee-f755f7095636",
+				"method": "GET"
+			},
+			{
+				"id": "c7a49510-0b80-4214-8652-29bf85d692e9",
+				"method": "GET"
+			},
+			{
+				"id": "0c1201a0-0f2c-43e8-9d42-9a5f720466bc",
+				"method": "GET"
+			},
+			{
+				"id": "bae04280-0071-4ecb-a1fb-7778edf75181",
+				"method": "PATCH"
+			},
+			{
+				"id": "c43e50c0-1a6d-4749-b472-cbaed8c4e8ca",
+				"method": "PATCH"
+			},
+			{
+				"id": "288620fd-4670-4397-8a0c-a6721c8d5d5c",
+				"method": "POST"
+			},
+			{
+				"id": "62432a60-4324-4e8f-a98a-92f80a41fc84",
+				"method": "POST"
+			},
+			{
+				"id": "be121107-bb14-400b-9cd9-5e008a3dbc75",
+				"method": "GET"
+			},
+			{
+				"id": "f0e6c3d0-014d-4c4e-b27a-dcc13213b344",
+				"method": "PUT"
+			},
+			{
+				"id": "369b46ca-1578-4255-8d7e-36386b64d430",
+				"method": "GET"
+			},
+			{
+				"id": "f92c13cc-3199-4809-9f6e-9ceca1355181",
+				"method": "DELETE"
+			},
+			{
+				"id": "324a98b4-e52c-4a60-82f7-f41623a72bb6",
+				"method": "GET"
+			},
+			{
+				"id": "3c9929fd-34ed-4405-917b-e5c79dc14fb5",
+				"method": "GET"
+			},
+			{
+				"id": "037c62c4-92d3-4d62-a262-fc10417f5d72",
+				"method": "PATCH"
+			},
+			{
+				"id": "c5147bbf-1e94-4550-872b-7d387f2c5b39",
+				"method": "PATCH"
+			},
+			{
+				"id": "4b83af15-aca2-45bf-a81c-9f50b7600ef1",
+				"method": "GET"
+			},
+			{
+				"id": "592fffdd-f020-4903-ab21-c1ae0fc0df0a",
+				"method": "GET"
+			},
+			{
+				"id": "930cdf6a-82b8-4f0e-aca1-f6063d729d57",
+				"method": "GET"
+			},
+			{
+				"id": "6d0a97e4-b668-49b1-adba-7d237af44121",
+				"method": "GET"
+			},
+			{
+				"id": "6d5b292f-c2a8-42ae-ad93-0a2d2d579a57",
+				"method": "GET"
+			},
+			{
+				"id": "ee07be50-0a7b-4b6c-bad0-c02659ff66c2",
+				"method": "GET"
+			},
+			{
+				"id": "262af9be-15ea-4038-8b30-266101567ac3",
+				"method": "GET"
+			},
+			{
+				"id": "8ab24765-582c-4828-a430-ea26b34df799",
+				"method": "GET"
+			},
+			{
+				"id": "c86cdd60-0064-41ab-b78f-d9e1681c63a7",
+				"method": "DELETE"
+			},
+			{
+				"id": "c0e42454-5e32-4442-85c6-90dcbc3bbe5a",
+				"method": "POST"
+			},
+			{
+				"id": "7365f9c5-79db-40a0-a47a-1174a04058d0",
+				"method": "GET"
+			}
+		]
+	}
+}
