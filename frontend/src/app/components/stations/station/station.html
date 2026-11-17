@@ -1,0 +1,20 @@
+<div class="container mt-3">
+    @if (station(); as s) {
+      <div class="card text-white bg-primary mb-3">
+        <div class="card-header">{{ s.name }}</div>
+        <div class="card-body">
+          {{ s.address }}<br>
+          Zone: {{ s.zone }} · Bikes available: {{ s.bikes_available }} · Free docks: {{ s.free_docks }}
+        </div>
+      </div>
+      <h5>Bikes at this station</h5>
+      <ul class="list-group">
+        @for (bike of s.available_bikes; track bike.bike_id) {
+          <li class="list-group-item">
+            {{ bike.bike_id }} — {{ bike.type }}
+            @if (bike.type === 'electric') { ({{ bike.battery_level }}% battery) }
+          </li>
+        }
+      </ul>
+    }
+  </div>
