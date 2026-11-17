@@ -1,30 +1,53 @@
-<div class="container mt-3">
+<div class="container mt-4">
+    <h1 class="mb-4">Docking stations</h1>
+  
+    <div class="row g-2 mb-4">
+      <div class="col-md-6">
+        <input #searchBox class="form-control" placeholder="Search by name or area"
+               (keyup.enter)="applyFilters(searchBox.value, zoneBox.value)">
+      </div>
+      <div class="col-md-4">
+        <select #zoneBox class="form-select"
+                (change)="applyFilters(searchBox.value, zoneBox.value)">
+          <option value="">All zones</option>
+          <option value="central">Central</option>
+          <option value="inner">Inner</option>
+          <option value="outer">Outer</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <button class="btn btn-success w-100"
+                (click)="applyFilters(searchBox.value, zoneBox.value)">Search</button>
+      </div>
+    </div>
+  
     <div class="row">
       @for (station of station_list(); track station.station_id) {
-        <div class="col-sm-6 col-lg-4">
-          <div class="card text-white bg-secondary mb-3" style="cursor: pointer;"
+        <div class="col-md-6 col-lg-4">
+          <div class="card mb-4" style="cursor: pointer;"
                [routerLink]="['/stations', station.station_id]">
-            <div class="card-header">{{ station.name }}</div>
+            <div class="card-header fw-bold">{{ station.name }}</div>
             <div class="card-body">
-              Zone: {{ station.zone }}<br>
-              Bikes available: {{ station.bikes_available }}
+              <p class="mb-1">Bikes available: <strong>{{ station.bikes_available }}</strong></p>
+              <p class="mb-0">Free docks: <strong>{{ station.free_docks }}</strong></p>
             </div>
-            <div class="card-footer">
-              Free docks: {{ station.free_docks }} / {{ station.total_docks }}
-            </div>
+            <div class="card-footer text-capitalize">Zone: {{ station.zone }}</div>
           </div>
         </div>
+      } @empty {
+        <p>No stations match your search.</p>
       }
     </div>
-    <div class="row">
-      <div class="col-sm-4">
-        <button class="btn btn-primary" (click)="previousPage()">Previous</button>
+  
+    <div class="row mb-4">
+      <div class="col-4">
+        <button class="btn btn-success" (click)="previousPage()" [disabled]="page() === 1">Previous</button>
       </div>
-      <div class="col-sm-4 text-center align-self-center">
+      <div class="col-4 text-center align-self-center">
         Showing page {{ page() }} of {{ lastPage() }}
       </div>
-      <div class="col-sm-4 text-end">
-        <button class="btn btn-primary" (click)="nextPage()">Next</button>
+      <div class="col-4 text-end">
+        <button class="btn btn-success" (click)="nextPage()" [disabled]="page() === lastPage()">Next</button>
       </div>
     </div>
   </div>

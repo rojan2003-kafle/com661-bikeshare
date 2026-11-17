@@ -10,8 +10,11 @@ export class StationData {
 
   constructor(private http: HttpClient) { }
 
-  getStations(page: number) {
-    return this.http.get<any>(`${this.apiUrl}/stations?pn=${page}&ps=${this.pageSize}`);
+  getStations(page: number, search: string = '', zone: string = '') {
+    let url = `${this.apiUrl}/stations?pn=${page}&ps=${this.pageSize}`;
+    if (search) url += `&search=${encodeURIComponent(search)}`;
+    if (zone) url += `&zone=${zone}`;
+    return this.http.get<any>(url);
   }
 
   getStation(id: any) {

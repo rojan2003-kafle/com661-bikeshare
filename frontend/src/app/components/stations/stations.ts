@@ -12,6 +12,8 @@ export class Stations {
   station_list = signal<any[]>([]);
   page = signal(1);
   lastPage = signal(1);
+  search = signal('');
+  zone = signal('');
 
   constructor(private stationData: StationData) { }
 
@@ -20,10 +22,18 @@ export class Stations {
   }
 
   loadPage() {
-    this.stationData.getStations(this.page()).subscribe(response => {
-      this.station_list.set(response.data);
-      this.lastPage.set(response.total_pages);
-    });
+    this.stationData.getStations(this.page(), this.search(), this.zone())
+      .subscribe(response => {
+        this.station_list.set(response.data);
+        this.lastPage.set(Math.max(1, response.total_pages));
+      });
+  }
+
+  applyFilters(search: string, zone: string) {
+    this.search.set(search);
+    this.zone.set(zone);
+    this.page.set(1);
+    this.loadPage();
   }
 
   nextPage() {
