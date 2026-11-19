@@ -1,1 +1,51 @@
-<p>home works!</p>
+<div class="bg-light border-bottom py-5 mb-4">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Ride across London</h1>
+      <p class="lead">
+        {{ totalStations() }} docking stations, standard and electric bikes,
+        ready when you are.
+      </p>
+      <a class="btn btn-success btn-lg" routerLink="/stations">Find a station</a>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4 h-100">
+          <div class="card-header fw-bold">1. Find a bike</div>
+          <div class="card-body">
+            Search stations by name or zone and see how many bikes and free docks each one has.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 h-100">
+          <div class="card-header fw-bold">2. Reserve and ride</div>
+          <div class="card-body">
+            Hold a bike for 10 minutes, unlock it at the station, and ride anywhere in London.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 h-100">
+          <div class="card-header fw-bold">3. Return and pay</div>
+          <div class="card-body">
+            Dock at any station with a free space and pay by card when your ride ends.
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <h2 class="mt-5 mb-3">Pricing</h2>
+    <table class="table table-bordered w-auto">
+      <thead class="table-light">
+        <tr><th>Bike</th><th>Unlock</th><th>Per minute</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Standard</td><td>£1.00</td><td>5p</td></tr>
+        <tr><td>Electric</td><td>£1.00</td><td>20p</td></tr>
+      </tbody>
+    </table>
+    <p class="text-muted mb-5">Rides starting in the outer zone get 10% off.</p>
+  </div>
